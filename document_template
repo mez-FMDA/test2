@@ -1,0 +1,50 @@
+:doctype: article
+:encoding: utf-8
+:lang: en
+:toc: left
+:toclevels: 3
+:sectnums:
+:icons: font
+:source-highlighter: rouge
+:stylesheet: styles.css  // <--- Link your CSS file here
+// For relative path if CSS is in a subfolder: :stylesheet: css/styles.css
+
+// You can add a custom block for the brand name
+[.header-brand]
+ELEXON
+
+= _[Title]_
+_[Click and type meeting name]_
+
+:docdate: _[DD Month YYYY]_
+:papernumber: _[Click and type]_
+:ownerauthor: _[Click and type]_
+:purposeofpaper: _[Click and type]_
+:classification: _Click to choose an item:_
+:docversion: _[Click and type]_
+
+// Add a role to your table for specific styling
+[.%header, cols="1,2a,1,2a", options="header", caption=".Document Details",frame=all,grid=all,role="DocumentDetails"]
+|===
+| Date of meeting  | {docdate}
+| Paper number     | {papernumber}
+
+| Owner/author     | {ownerauthor}
+| Purpose of paper | {purposeofpaper}
+
+| Classification   | {classification}
+| Document version | {docversion}
+|===
+
+== Summary
+
+_[Click and type]_
+
+// ... rest of your document ...
+
+// Optional: Add a footer block
+[.footer]
+--
+© Elexon 2025
+Page {page-number} of {page-count} // Works best with PDF, Asciidoctor might not replace for HTML by default
+--
