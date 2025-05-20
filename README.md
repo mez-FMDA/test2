@@ -1,6 +1,6 @@
-# Industry Feedback – 2025 Consultations
+# Industry Feedback – 2025 Working Groups
 
-This repository contains 10 documents for industry review. We welcome open discussion via the **Discussions** tab.
+This repository contains artefacts from X different Working Groups for industry collaboratio non. We welcome open discussion via the **Discussions** tab.
 
 📥 To give feedback:
 - Go to the "Discussions" tab
