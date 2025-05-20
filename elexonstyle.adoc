@@ -1,84 +1,92 @@
-ELEXON
+# custom-theme.yml
+extends: default # Start by extending the default theme
 
-= _[Title]_
-_[Click and type meeting name]_
+font:
+  catalog:
+    # Define font families. Make sure these fonts are installed on your system or accessible.
+    MySerif:
+      normal: Times-Roman # Example, use actual font names
+      italic: Times-Italic
+      bold: Times-Bold
+      bold_italic: Times-BoldItalic
+    MySans:
+      normal: Helvetica # Example
+      italic: Helvetica-Oblique
+      bold: Helvetica-Bold
+      bold_italic: Helvetica-BoldOblique
+    MyMono:
+      normal: Courier # Example
+    # Elexon-like blue
+    elexon_blue: '004080' # Hex color
 
-// Document Metadata Table
-// Using attributes for these fields allows them to be potentially reused elsewhere or easily managed.
-// Alternatively, you can type them directly into the table cells.
-:docdate: _[DD Month YYYY]_
-:papernumber: _[Click and type]_
-:ownerauthor: _[Click and type]_
-:purposeofpaper: _[Click and type]_
-:classification: _Click to choose an item:_
-:docversion: _[Click and type]_
+  fallbacks: [Noto Serif] # Good for unicode character coverage
 
-.Document Details
-[cols="1,2a,1,2a", options="header"]
-|===
-| Date of meeting  | {docdate}
-| Paper number     | {papernumber}
+base:
+  font_family: MySerif
+  font_size: 11
+  line_height_length: 15
+  font_color: '333333'
 
-| Owner/author     | {ownerauthor}
-| Purpose of paper | {purposeofpaper}
+heading:
+  font_family: MySans
+  font_color: $elexon_blue
+  h1_font_size: $base_font_size * 2.2
+  h2_font_size: $base_font_size * 1.8
+  h3_font_size: $base_font_size * 1.4
+  # ... and so on
 
-| Classification   | {classification}
-| Document version | {docversion}
-|===
+link:
+  font_color: '0056b3'
 
-== Summary
+table:
+  head:
+    font_style: bold
+    background_color: 'E6F2FF' # Light blue
+  # You can define specific styling for tables with a role
+  role:
+    DocumentDetails: # Must match the role in your .adoc file
+      head:
+        background_color: $elexon_blue
+        font_color: 'FFFFFF'
 
-_[Click and type]_
+# Header/Footer for ELEXON branding and page numbers
+header:
+  height: 0.75in
+  recto:
+    right:
+      content: 'ELEXON'
+  verso:
+    left:
+      content: 'ELEXON'
+  font_color: $elexon_blue
+  font_size: $base_font_size * 0.9
+  font_style: bold
 
-// The main content often starts with numbered sections.
-// The following sections are numbered implicitly by AsciiDoc.
-// If you want explicit numbering like 1., 2., use leading dots.
+footer:
+  height: 0.5in
+  recto:
+    right:
+      content: '{page-number} / {page-count}'
+  verso:
+    left:
+      content: '{page-number} / {page-count}'
+  font_size: $base_font_size * 0.8
+  border_color: 'DDDDDD'
+  border_width: 0.5
+  padding: [5,0,0,0]
 
-. List level 1, to maintain consistency across the numbering styles it is important to use the list styles from the style's menu.
-.. List level 2.
-... List level 3.
-....[loweralpha] List level 4.
-.....[lowerroman] List level 5.
-
-. _[Continue as needed]_
-.. _[Click and type]_
-...[loweralpha] _[Click and type]_
-
-* Bullet level 1, to maintain consistency across the numbering styles it is important to use the bullet styles from the style's menu.
-** Bullet level 2.
-*** Bullet level 3. (Original uses square, AsciiDoc cycles through *, **, ***, ****, *****)
-**** Bullet level 4. (Original uses hyphen, AsciiDoc continues cycle)
-
-
-[appendix]
-== Appendices
-
-=== Appendix 1 - _[Click to type Appendix Title]_
-
-_[Content for Appendix 1]_
-
-// Add more appendices by repeating the === Appendix X - [Title] structure
-
-
-== Attachments
-
-=== Attachment A - _[Click to type Attachment Title]_
-
-_[Details or link to Attachment A]_
-
-// Add more attachments by repeating the === Attachment X - [Title] structure
-
-
-== For more information, please contact:
-
-_[Firstname Lastname]_, _[Job title]_ +
-_[firstname.lastname]@elexon.co.uk_ +
-020 7380 _[XXXX]_
-
-// Footer information (often handled by AsciiDoc processor's themes or attributes)
-// :copyright: Elexon 2025
-// Page numbering is typically automatic.
-// If you have a specific copyright line for the document body:
-// ---
-// © Elexon 2025
-// Page {page-number} of {page-count} // This is more for PDF generation customization
+# You can style the 'ELEXON' text at the top if it's part of the document body
+# using roles and the block theming keys.
+# For example, if you had:
+# [role=header-brand]
+# ELEXON
+#
+# Then in your theme:
+# block:
+#   role:
+#     header-brand:
+#       font_size: $base_font_size * 1.8
+#       font_color: $elexon_blue
+#       font_style: bold
+#       align: right
+#       margin_bottom: $base_font_size * 2
