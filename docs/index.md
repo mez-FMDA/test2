@@ -8,7 +8,7 @@ Welcome to the FMDA documentation repository. Browse the documents below and par
 
 ## 🗂 Market Facilitator
 
-### 🔧 FMAR Design
+### 🔧 FMAR Design Artefacts
 #### Workshop #1 - Asset IDs and Core attributes
 - [Workshop 1](./Market_Facilitator/FMAR_Design/Workshop-1.md)
 
