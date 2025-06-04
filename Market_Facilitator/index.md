@@ -1,1 +1,1 @@
-#Welcome to Market Facilitator Repostiory
+# Welcome to Market Facilitator Repository
