@@ -4,7 +4,7 @@ title: FMDA Repository Home
 
 # 📘 Market Facilitator Repository
 
-Welcome to the Market Facilitator repository. Browse the documents below and participate in open discussions.
+Welcome to the Market Facilitator repository. Browse the documents below and participate in open discussions...
 
 ## 🗂 Market Facilitator
 
