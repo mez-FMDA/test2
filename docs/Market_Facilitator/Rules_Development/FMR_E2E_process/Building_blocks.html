@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Business Process Building Blocks Glossary v1</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+      background-color: #f9f9f9;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .search-box {
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .search-box input {
+      width: 60%;
+      padding: 0.5rem;
+      font-size: 1rem;
+    }
+
+    .toggle-view {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    button {
+      padding: 0.5rem 1rem;
+      margin: 0.2rem;
+      font-size: 0.9rem;
+    }
+
+    details {
+      margin-bottom: 1rem;
+      background-color: #fff;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    summary {
+      font-weight: bold;
+      font-size: 1.1rem;
+      cursor: pointer;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 1rem;
+    }
+
+    th, td {
+      padding: 0.6rem;
+      border: 1px solid #ccc;
+      text-align: left;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    pre {
+      background-color: #eee;
+      padding: 1rem;
+      overflow-x: auto;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>📘 Business Process Building Blocks Glossary v1 </h1>
+
+<div class="search-box">
+  <input type="text" id="searchInput" placeholder="Search processes...">
+</div>
+
+<div class="toggle-view">
+  <button onclick="showView('accordion')">Accordion View</button>
+  <button onclick="showView('table')">Table View</button>
+  <button onclick="showView('json')">Raw JSON</button>
+</div>
+
+<div id="accordionView"></div>
+<div id="tableView" class="hidden"></div>
+<div id="jsonView" class="hidden"><pre id="jsonContent"></pre></div>
+
+<script>
+  const glossary = {
+    "Exploration": [
+      { "code": "E.1", "process": "Define Sub-Market" },
+      { "code": "E.2", "process": "Understand markets" },
+      { "code": "E.3", "process": "Build Investment case" },
+      { "code": "E.4", "process": "Develop Operational Strategy" }
+    ],
+    "Registration": [
+      { "code": "R.1", "process": "Register/Manage Users" },
+      { "code": "R.2", "process": "Register/Manage Organisations" },
+      { "code": "R.3", "process": "Register/Manage Related Entities" },
+      { "code": "R.4", "process": "Issue and Sign Service T&Cs" },
+      { "code": "R.5", "process": "Qualify Commercially" },
+      { "code": "R.6", "process": "Register/Manage Assets" },
+      { "code": "R.7", "process": "Manage Asset Data" },
+      { "code": "R.8", "process": "Qualify Assets" },
+      { "code": "R.9", "process": "Register/Manage Units" },
+      { "code": "R.10", "process": "Qualify Units" },
+      { "code": "R.11", "process": "Test Units" },
+      { "code": "R.12", "process": "Manage Unit Data" }
+    ],
+    "Competition": [
+      { "code": "C.1", "process": "Communicate Buy Requirements" },
+      { "code": "C.2", "process": "Communicate Sell Requirements" },
+      { "code": "C.3", "process": "Clear Market" },
+      { "code": "C.4", "process": "Communicate Results / Award Contracts" }
+    ],
+    "Schedule/Dispatch": [
+      { "code": "D.1", "process": "Maintain Unit Availability" },
+      { "code": "D.2", "process": "Provide Operational Visibility/Metering" },
+      { "code": "D.3", "process": "Dispatch Units" },
+      { "code": "D.4", "process": "Deliver Service" },
+      { "code": "D.5", "process": "Cease Units" }
+    ],
+    "Verification": [
+      { "code": "V.1", "process": "Collate Verification Data" },
+      { "code": "V.2", "process": "Process Verification Data" },
+      { "code": "V.3", "process": "Communicate performance" },
+      { "code": "V.4", "process": "Manage disputes" }
+    ],
+    "Settlement": [
+      { "code": "S.1", "process": "Generate Invoices" },
+      { "code": "S.2", "process": "Process Payments" }
+    ]
+  };
+
+  function buildAccordionView(filter = '') {
+    const container = document.getElementById('accordionView');
+    container.innerHTML = '';
+    for (const category in glossary) {
+      const matches = glossary[category].filter(item =>
+        item.code.toLowerCase().includes(filter) ||
+        item.process.toLowerCase().includes(filter)
+      );
+      if (matches.length > 0) {
+        const section = document.createElement('details');
+        const summary = document.createElement('summary');
+        summary.textContent = category;
+        section.appendChild(summary);
+        const ul = document.createElement('ul');
+        matches.forEach(item => {
+          const li = document.createElement('li');
+          li.textContent = `${item.code} – ${item.process}`;
+          ul.appendChild(li);
+        });
+        section.appendChild(ul);
+        container.appendChild(section);
+      }
+    }
+  }
+
+  function buildTableView(filter = '') {
+    const container = document.getElementById('tableView');
+    container.innerHTML = '<table><thead><tr><th>Category</th><th>Code</th><th>Process</th></tr></thead><tbody></tbody></table>';
+    const tbody = container.querySelector('tbody');
+    for (const category in glossary) {
+      glossary[category].forEach(item => {
+        if (
+          item.code.toLowerCase().includes(filter) ||
+          item.process.toLowerCase().includes(filter) ||
+          category.toLowerCase().includes(filter)
+        ) {
+          const row = document.createElement('tr');
+          row.innerHTML = `<td>${category}</td><td>${item.code}</td><td>${item.process}</td>`;
+          tbody.appendChild(row);
+        }
+      });
+    }
+  }
+
+  function showView(view) {
+    document.getElementById('accordionView').classList.add('hidden');
+    document.getElementById('tableView').classList.add('hidden');
+    document.getElementById('jsonView').classList.add('hidden');
+    if (view === 'accordion') {
+      document.getElementById('accordionView').classList.remove('hidden');
+    } else if (view === 'table') {
+      document.getElementById('tableView').classList.remove('hidden');
+    } else if (view === 'json') {
+      document.getElementById('jsonView').classList.remove('hidden');
+    }
+  }
+
+  document.getElementById('searchInput').addEventListener('input', e => {
+    const query = e.target.value.toLowerCase();
+    buildAccordionView(query);
+    buildTableView(query);
+  });
+
+  // Initial render
+  buildAccordionView();
+  buildTableView();
+  document.getElementById('jsonContent').textContent = JSON.stringify(glossary, null, 2);
+</script>
+
+</body>
+</html>
