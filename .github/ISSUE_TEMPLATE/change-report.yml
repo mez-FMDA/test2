@@ -1,0 +1,66 @@
+name: FMR Change Request
+description: Propose a change, clarification, or withdrawal of a Flexibility Market Rule.
+title: "FMR-XXX | Change request: [Short Description]"
+labels: [change/draft]
+assignees: []
+body:
+  - type: input
+    id: rule_id
+    attributes:
+      label: Rule ID
+      description: ID of the rule you want to amend (e.g. FMR-007).
+      placeholder: FMR-007
+    validations:
+      required: true
+
+  - type: input
+    id: proposer
+    attributes:
+      label: Proposing Organisation or Individual
+      description: Who is proposing this change?
+      placeholder: e.g. DSO X or John Smith (NESO)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: change_type
+    attributes:
+      label: Change Type
+      description: What kind of change are you proposing?
+      options:
+        - Amendment
+        - Clarification
+        - Withdrawal
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description of Change
+      description: Describe the problem or improvement and what change is being proposed.
+      placeholder: |
+        The current rule does not allow for partial dispatch reversals.
+        We propose adding a clause that enables multi-stage activation rollback.
+    validations:
+      required: true
+
+  - type: textarea
+    id: impact_scope
+    attributes:
+      label: Affected Processes, Sub-Markets or Stakeholders
+      description: Where does this change apply? Which actors or workflows will be impacted?
+      placeholder: |
+        Affects: DNO Sustain market, Validation stage
+        Stakeholders: Platform integrators, DSO ops teams
+    validations:
+      required: false
+
+  - type: input
+    id: attachments
+    attributes:
+      label: Supporting Documents or Links
+      description: Add links to draft wording, diagrams, or prior discussions.
+      placeholder: https://example.com/fmr-007-change-draft
+    validations:
+      required: false
