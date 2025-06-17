@@ -1,4 +1,6 @@
 # FMAR Programme Vision and Scope
+>define all acronyms
+>boilerplate text about the vision from UC descriptions document
 
 ## Vision:
 
