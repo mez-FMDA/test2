@@ -99,17 +99,17 @@
 
 ## 7. Key Data Exchanged / Information Requirements
 
-| Data Element / Group        | Description                               | Source(s)                | Destination(s)      | Format/Standard (FMAR Ontology) | FMR Linkage | DSI Component |
-| :-------------------------- | :---------------------------------------- | :----------------------- | :------------------ | :------------------------------ | :---------- | :------------ |
-| **(Minimum FMAR FSP Data Set - TBD in workshops)** | *This set needs to be defined to support both direct and platform-based registration.* |                          |                     |                                 |             |               |
-| FSP Legal Name              | Official registered name of the FSP       | FSP Admin / Ext. Platform| FMAR SPUM           | `fmarOntology:LegalName`        | FMR-XXX (Actor Def) | N/A           |
-| Company Registration Number | FSP's official registration number        | FSP Admin / Ext. Platform| FMAR SPUM, DSI (for validation) | `fmarOntology:CompanyRegNo`     | FMR-XXX     | DSM-TS (Entity Mgmt) |
-| Registered Address          | Official address of the FSP               | FSP Admin / Ext. Platform| FMAR SPUM           | `fmarOntology:Address`          |             | N/A           |
-| Primary Contact Email       | Main operational contact for the FSP      | FSP Admin / Ext. Platform| FMAR SPUM           | `fmarOntology:Email`            |             | N/A           |
-| Unique FMAR FSP ID          | System-generated/managed unique ID for FSP| FMAR SPUM                | FSP Admin, Ext. Platform, ARM, PSQM| `fmarOntology:FspID` (UUID)   | FMR-YYY (Actor ID) | N/A           |
-| User Credentials (for direct access) | Login details for FSP Admin               | FMAR SPUM                | FSP Admin           | (Secure Hashed)                 |             | DSM-SS (Directory) |
-| DPN Certificate Info (if platform uses DPN) | Info for DSI Trust Authority to issue DPN cert | FSP Admin (via DPN-UI)/ Ext. Platform | DSI Trust Authority | (DSI Standard)                  |             | DSM-TS (Digital Cert) |
-| External Platform ID (Optional)| Identifier of the platform submitting data| External Platform        | FMAR SPUM (for audit)| `fmarOntology:PlatformID`     |             | N/A           |
+| Data Element / Group        | Description                               | Source(s)                | Destination(s)       | DSI Component |
+| :-------------------------- | :---------------------------------------- | :----------------------- | :------------------ |:------------ |
+| **(Minimum FMAR FSP Data Set - TBD in workshops)** | *This set needs to be defined to support both direct and platform-based registration.* |                 |                                 |             |               |
+| FSP Legal Name              | Official registered name of the FSP       | FSP Admin / Ext. Platform| FMAR SPUM          | N/A           |
+| Company Registration Number | FSP's official registration number        | FSP Admin / Ext. Platform| FMAR SPUM, DSI (for validation) |  | DSM-TS (Entity Mgmt) |
+| Registered Address          | Official address of the FSP               | FSP Admin / Ext. Platform| FMAR SPUM   | N/A           |
+| Primary Contact Email       | Main operational contact for the FSP      | FSP Admin / Ext. Platform| FMAR SPUM   | N/A           |
+| Unique FMAR FSP ID          | System-generated/managed unique ID for FSP| FMAR SPUM                | FSP Admin, Ext. Platform, ARM, PSQM | N/A           |
+| User Credentials (for direct access) | Login details for FSP Admin               | FMAR SPUM                | FSP Admin         | DSM-SS (Directory) |
+| DPN Certificate Info (if platform uses DPN) | Info for DSI Trust Authority to issue DPN cert | FSP Admin (via DPN-UI)/ Ext. Platform  | DSM-TS (Digital Cert) |
+| External Platform ID (Optional)| Identifier of the platform submitting data| External Platform        | FMAR SPUM (for audit) | N/A           |
 
 ## 8. Non-Functional Requirements (Specific to this UC)
 
