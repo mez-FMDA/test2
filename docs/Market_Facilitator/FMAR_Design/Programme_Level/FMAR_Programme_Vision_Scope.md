@@ -2,15 +2,15 @@
 
 ## Vision:
 
-FMAR Hub:
+**FMAR Hub:**
 
-ARM:
+**ARM:** To be the definitive, central registry for all flexible assets participating, or intending to participate, in GB flexibility markets. It is the Single Source of Truth for asset-specific data.
 
-SPUM:
+**SPUM:** To be the central registry for all entities (Flexibility Service Providers, System Operators, Asset Owners, etc.) that interact with the FMAR Hub. It manages their identity, roles, general market standing (where applicable), and user accounts. 
 
-PSQM:
+**PSQM:** To manage the qualification and verification status of specific Service Providing Units (SPUs - single asset or co-located assets at one connection point) or Service Providing Groups (SPGs - aggregated assets across multiple connection points) for defined GB flexibility products and services.
 
-GICM:
+**GICM:** To manage and disseminate information about the grid-related operational status of SPUs/SPGs, including their grid prequalification status and any temporary operational limits imposed by System Operators due to network conditions.
 
 ## Design workflow:
 
