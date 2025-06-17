@@ -1,4 +1,4 @@
-# UC-002: Register Flexibility Service Provider (FSP) with FMAR Hub
+# UC-002: Register and Maintain Flexibility Service Provider (FSP) with FMAR Hub
 
 **Version:** v0.2
 
@@ -43,6 +43,7 @@
 *   The FSP Administrator (or External Platform acting on their behalf) has the authority to register/update the FSP's details with FMAR.
 *   **If via External Platform:** The External Platform is authorized and technically integrated to submit FSP registration data to FMAR SPUM via the defined API.
 *   FMAR Hub (SPUM) is operational and accessible.
+*   Relevant Actors have installed Data Preparation Node (DPN) (assumption)
 
 ## 4. Postconditions
 
@@ -63,10 +64,10 @@
 3.  **FMAR System (SPUM)** presents a registration form (or API schema) requesting the **defined minimum set of core FSP details**.
 4.  **FSP Administrator** submits the FSP details.
 5.  **FMAR System (SPUM)**:
-    a.  Performs initial data validation.
-    b.  (Potentially via DSI) Verifies FSP entity against external trusted sources.
-    c.  If successful, creates a new FSP record in SPUM and assigns a Unique FMAR FSP ID.
-    d.  Creates an initial administrator user account for the FSP Rep.
+    - a.  Performs initial data validation.
+    - b.  (Potentially via DSI) Verifies FSP entity against external trusted sources.
+    - c.  If successful, creates a new FSP record in SPUM and assigns a Unique FMAR FSP ID.
+    - d.  Creates an initial administrator user account for the FSP Rep.
 6.  **FMAR System (SPUM)** notifies the FSP Administrator of successful registration.
 
 **Scenario B: Registration via an Authorized External Platform**
@@ -74,10 +75,10 @@
 2.  **External Platform** (acting on behalf of the FSP, with appropriate authorization) prepares the **defined minimum set of FSP data** required by FMAR.
 3.  **External Platform** submits this FSP data to **FMAR System (SPUM) via a standardized "FSP Registration API"**. (This interaction would use DSI principles for secure data exchange if the platform has a DPN).
 4.  **FMAR System (SPUM)**:
-    a.  Authenticates the External Platform.
-    b.  Performs initial data validation on the submitted FSP data.
-    c.  (Potentially via DSI) Verifies FSP entity against external trusted sources.
-    d.  If successful, creates/updates the FSP record in SPUM and assigns/confirms the Unique FMAR FSP ID.
+    - a.  Authenticates the External Platform.
+    - b.  Performs initial data validation on the submitted FSP data.
+    - c.  (Potentially via DSI) Verifies FSP entity against external trusted sources.
+    - d.  If successful, creates/updates the FSP record in SPUM and assigns/confirms the Unique FMAR FSP ID.
 5.  **FMAR System (SPUM)** sends an acknowledgement (success/failure with FMAR FSP ID) back to the **External Platform via API**.
 6.  **External Platform** updates its local records and informs the FSP Administrator.
 
@@ -141,6 +142,7 @@
 *   What is the process for an FSP to authorize/de-authorize an external platform to manage its FMAR data?
 *   What are the data validation responsibilities: what checks does the external platform perform vs. what checks does FMAR SPUM perform on data received via API?
 *   How will FMAR SPUM handle potential conflicts if an FSP attempts direct registration while also being managed via an external platform?
+*   How would DSI Trust Services function to attest for FSP in Scenario B where DPN installed on external platform?
 
 ## 12. Related Artefacts
 
