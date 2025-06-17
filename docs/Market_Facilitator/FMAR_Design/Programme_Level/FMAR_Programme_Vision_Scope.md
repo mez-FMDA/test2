@@ -1,5 +1,17 @@
 # FMAR Programme Vision and Scope
 
+## Vision:
+
+FMAR Hub:
+
+ARM:
+
+SPUM:
+
+PSQM:
+
+GICM:
+
 ## Design workflow:
 
 1. **Artefact Publication:** Architecture Team publishes vX.Y of an artefact to the main branch (or your primary working branch).
@@ -12,10 +24,6 @@
 6. **Offline Artefact Refinement:** If accepted, the Architecture Team incorporates the changes into their offline working copy of the artefact.
 7. **New Version Publication:** The Architecture Team publishes the new version of the artefact (e.g., vX.Y+1) to the main branch in a new commit. The commit message should ideally summarize key changes and can reference Issue numbers (e.g., "Update Asset Identity Paper to v0.2, incorporating feedback from #123, #128. Addresses VTN prefix query.").
 8. **Close Issues:** Relevant Issues are closed, with a comment linking to the commit/new version where the feedback was addressed (e.g., "Addressed in v0.2 of Asset Identity Paper - see commit [commit hash]").
-
-
-
-
 
 
 ## Roles and responsibilities:
@@ -31,7 +39,7 @@ Wider Industry: Can view all public artefacts and raise Issues for questions or 
 
 ## Overview of Artefact delivery plan
 
-The following provides a comprehensive list of artefacts that will be developed iteratively throughout the entire design programme, with each workshop series contributing to their refinement.
+The following provides a comprehensive list of artefacts that will be developed iteratively throughout the entire design programme, with each workshop series contributing to their refinement. >API-led design
 
 **Ecosystem Architecture:**
 
@@ -59,15 +67,23 @@ Metadata Specification (ISO 8601, IEC 61850): Defined iteratively as data attrib
 
 **Application Architecture:**
 
-Service Blueprint (C4/ArchiMate): Evolves from high-level FMAR Hub in Workshop #1 to detailed module interactions.
+Service Blueprint (TBD): Evolves from high-level FMAR Hub in Workshop #1 to detailed module interactions.
 
-API Catalogue (OpenAPI 3.0): Core APIs for ARM discussed in Workshop #1. Expands with SPUM, PSQM, GICM APIs.
+API Catalogue (TBD): Core APIs for ARM discussed in Workshop #1. Expands with SPUM, PSQM, GICM APIs.
 
-MVP Design Patterns (DDD): Architectural decisions made by the FMAR Architecture Team, informed by workshop outputs.
+MVP Design Patterns (TBD): Architectural decisions made by the FMAR Architecture Team, informed by workshop outputs.
 
-**Technology Architecture & Supporting Artefacts:** 
+**Technology Architecture** 
+
+These artefacts will be subject to decisions the Architecture Team make with the Delivery Partner about **infrastructure stack**, **security model**, and consideration of **ongoing monitoring and observability assurances** needed; in addition to responses from the MVP consultation on Ecosystem/Data/Application at the conclusion of the Industry Design working groups.
 
 These are generally produced by the FMAR Architecture Team, with input/review from the Industry Experts Committee and potentially the Insights Design Group. The "Assurance Traceability Matrix" is key for linking requirements to all these design components.
+
+**Supporting Artefacts:**
+
+DSI specification requirements
+
+Unique ID conventions for Dispatch API
 
 **Running the Workshops with this Artefact-Driven Approach:**
 
