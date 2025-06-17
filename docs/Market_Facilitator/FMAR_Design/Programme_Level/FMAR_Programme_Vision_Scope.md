@@ -1,12 +1,30 @@
 # FMAR Programme Vision and Scope
 
+## Design workflow:
+
+1. **Artefact Publication:** Architecture Team publishes vX.Y of an artefact to the main branch (or your primary working branch).
+2. **Feedback via Issues:** Stakeholders use the Issue Templates to provide feedback, questions, or proposals, referencing the specific artefact version.
+3. **Triage & Labelling:** Architecture Team triages new Issues, labels them (e.g., status:under-review, artefact:asset-identity-paper, version:v0.1).
+4. **Discussion:**
+- Clarifications happen in Issue comments.
+- Broader points are taken to relevant workshops (and the Issue is labelled status:workshop-input-needed). Workshop outcomes are summarized back in the Issue.
+5. **Internal Decision:** Architecture Team decides on the Issue (Accepted, Rejected, etc.).
+6. **Offline Artefact Refinement:** If accepted, the Architecture Team incorporates the changes into their offline working copy of the artefact.
+7. **New Version Publication:** The Architecture Team publishes the new version of the artefact (e.g., vX.Y+1) to the main branch in a new commit. The commit message should ideally summarize key changes and can reference Issue numbers (e.g., "Update Asset Identity Paper to v0.2, incorporating feedback from #123, #128. Addresses VTN prefix query.").
+8. **Close Issues:** Relevant Issues are closed, with a comment linking to the commit/new version where the feedback was addressed (e.g., "Addressed in v0.2 of Asset Identity Paper - see commit [commit hash]").
+
+
+
+
+
+
 ## Roles and responsibilities:
 
-FMAR Architecture Team: Owns the repository, triages issues, drafts/updates artefacts, manages PRs.
+FMAR Architecture Team: Owns the repository, triages issues, drafts/updates artefacts.
 
-Flexibility Team (Ontology): Might have a dedicated section/branch for ontology development, with PRs for changes.
+Flexibility Team (Ontology): Might have a dedicated section/branch for ontology development, close alignment with Architecture team.
 
-Industry Insights Design Group & Experts Group: Primarily use GitHub Issues to provide structured feedback on draft artefacts published by the Architecture Team. They can also be invited to review specific PRs if appropriate.
+Industry Insights Design Group & Experts Group: Primarily use GitHub Issues to provide structured feedback on draft artefacts published by the Architecture Team. They can also be invited to review specific artefacts being drafted 'offline' if appropriate.
 
 Wider Industry: Can view all public artefacts and raise Issues for questions or general feedback. 
 
