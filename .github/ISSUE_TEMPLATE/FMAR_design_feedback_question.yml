@@ -1,0 +1,65 @@
+name: FMAR Design Feedback / Question
+description: Provide feedback on an artefact, ask a question, or suggest a clarification.
+title: "[FEEDBACK/QUESTION] Short descriptive title"
+labels: ["type:feedback", "status:triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for taking the time to provide your input on the FMAR design! 
+        Please provide as much detail as possible.
+  - type: input
+    id: artefact-details
+    attributes:
+      label: Relevant Artefact(s) & Version(s)
+      description: "e.g., FMAR_Asset_Identity_Paper.md v0.1, Workshop 1.1 Slides. Please link to the specific file(s) or section(s) on GitHub if possible."
+      placeholder: "Artefact_Name_vX.Y.md, Section Z"
+    validations:
+      required: true
+  - type: dropdown
+    id: input-nature
+    attributes:
+      label: Nature of your Input
+      description: What type of input are you providing?
+      options:
+        - Feedback
+        - Question
+        - Clarification Request
+        - Typo/Error Suggestion
+    validations:
+      required: true
+  - type: textarea
+    id: detailed-description
+    attributes:
+      label: Detailed Description
+      description: "Please be as specific as possible. For feedback, explain the issue and your rationale. For questions, state them clearly."
+      placeholder: "Describe your feedback, question, or clarification needed..."
+    validations:
+      required: true
+  - type: textarea
+    id: proposed-change
+    attributes:
+      label: Proposed Change/Suggestion (Optional)
+      description: "If you have a suggestion for improvement or a proposed answer to your question, please include it here."
+      placeholder: "e.g., Suggest changing section X to reflect Y..."
+    validations:
+      required: false
+  - type: input
+    id: organisation-role
+    attributes:
+      label: Your Organisation/Role (Optional, for context)
+      description: "e.g., FSP - Small Aggregator, DSO - Network Planner, Tech Provider"
+      placeholder: "Your Organisation Name / Your Role"
+    validations:
+      required: false
+  - type: dropdown
+    id: impact-urgency
+    attributes:
+      label: Perceived Impact/Urgency (Optional)
+      description: How critical do you see this input?
+      options:
+        - High (e.g., Blocker for understanding/MVP)
+        - Medium (e.g., Important clarification needed)
+        - Low (e.g., Minor point, suggestion for future)
+    validations:
+      required: false
