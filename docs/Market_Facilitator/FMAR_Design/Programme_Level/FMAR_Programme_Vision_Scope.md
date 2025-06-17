@@ -92,3 +92,9 @@ Before Each Workshop Series/Theme: The FMAR Architecture Team drafts/updates rel
 During Workshops: Use these draft artefacts as the basis for discussion. Participants review, critique, and propose changes. The "Key Design Questions" guide this.
 
 After Workshops: The FMAR Architecture Team refines the artefacts based on industry feedback and decisions, publishing new versions to the Repository.
+
+**Phase 2 Delivery - Notes:**
+>at what point do we start to consider Phase 2 delivery model? Testing requirements for a set of Use Cases. What is in our architecture compliance framework?
+
+>When do we convene 'coaltion of the willing group e.g., testing sandpit'..? what's the comms plan for this? Who are the minimum necessary Actors to be involved?
+
