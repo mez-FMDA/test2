@@ -39,11 +39,11 @@ Ecosystem Use Case Catalogue (IEC 62559): Workshop #1 starts defining core asset
 
 User Case Diagrams (UML): Developed for each key journey explored in workshops.
 
-Business Process Models (BPMN 2.0): Detailed out for MVP processes after initial workshop agreement, and then for future phase processes.
+Business Process Models (BPMN 2.0): Detailed out for MVP processes after initial workshop agreement, and then for future phase processes. Undertaken in full as part of End-to-End workstream.
 
 Role/Actor Mapping: Initial roles discussed in Workshop #1 (FSP, SO for ID usage). This will be expanded significantly as SPUM, PSQM, GICM are detailed.
 
-Policy–Process–Data Traceability Matrix: This will be a living document, updated as FMAR flows are defined and mapped to regulatory obligations like DR NC, NIS2, GDPR.
+Policy–Process–Data Traceability Matrix: This will be a living document, updated as FMAR flows are defined and mapped to regulatory obligations like NIS2, GDPR.
 
 **Data Architecture:**
 
