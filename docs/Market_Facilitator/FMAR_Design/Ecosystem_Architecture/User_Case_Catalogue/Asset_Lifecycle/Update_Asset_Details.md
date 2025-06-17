@@ -103,7 +103,7 @@
 
 ## 10. Regulatory / Policy Alignment
 
-*   Ensures ongoing accuracy of the central asset register.
+*   Ensures ongoing accuracy of FMAR.
 *   Supports FMRs that may require FSPs to maintain up-to-date asset information.
 *   Changes to asset data must continue to respect consumer consent.
 
