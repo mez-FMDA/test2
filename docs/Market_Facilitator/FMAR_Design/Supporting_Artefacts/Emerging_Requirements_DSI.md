@@ -28,7 +28,7 @@ N.B: For simplicity, FSPs and SOs are the only Actors considered below when illu
 
 Ofgem has outlined their strategic intent for FMAR to be a use case of the DSI, with DSI being the foundational common data standardisation and sharing mechanism capable of enabling use of common data standards and wider IT architecture, common compliance tools and aspects of common registration of users, as part of FDI outcomes.  
 
-Elexon fully supports this intent, recognising that there is is a wealth of learnings about contamperaneous regulatory initiatives to FMAR in the European Union (e.g., ACER’s Flexibility Information System recommendation) which are defined with respect to the well-defined concept of [Common European Energy Data Spaces]([url](https://energy.ec.europa.eu/publications/common-european-energy-data-space_en)) as the cornerstone to interoperable data sharing.   
+Elexon fully supports this intent, recognising that there is is a wealth of learnings about contamperaneous regulatory initiatives to FMAR in the European Union (e.g., ACER’s Flexibility Information System recommendation) which are defined with respect to the well-defined concept of [Common European Energy Data Spaces](https://energy.ec.europa.eu/publications/common-european-energy-data-space_en) as the cornerstone to interoperable data sharing.   
 
 The DSI Specification document published in June 2024 provides a helpful overview of the components currently available (developed as part of the Pilot) vs., the components planned (for MVP, Live, and Public Beta), under the development of the Virtual Energy System programme.  
 
@@ -48,7 +48,7 @@ For further details on the latest FMAR requirements (currently only defined with
 |------------------|-----------|
 | DPN | The containerised software deployed by each FMAR data provider/consumer. |
 | DPN-DC-01: Metadata Repository (Pilot) | FSPs/SOs use this in their DPN to store local metadata about datasets they intend to share with FMAR (e.g., "My Portfolio of BESS Assets - Q1 2025"). This metadata must align with FMAR's required metadata standards (derived from FMAR Ontology). FMAR Hub's DPN would use this for its own published data products. |
-| DPN-DC-02: Tagging & Categorisation (MVP) | FSPs/SOs use this to apply FMAR-specific tags (e.g., assetTechnology:BESS, fmarModule:ARM, qualifiedSub-marketService:DynamicContainment) to their local datasets, aiding discovery and processing by FMAR Hub. |
+| DPN-DC-02: Tagging & Categorisation (MVP) | FSPs/SOs use this to apply FMAR-specific tags (e.g., assetTechnology:BESS, fmarModule:ARM, qualifiedSub-marketProduct:DynamicContainment) to their local datasets, aiding discovery and processing by FMAR Hub. |
 | DPN-DC-03: Data Quality Scan (Public Beta) | (Future): Could be used by FSPs/SOs to perform initial local data quality checks against FMAR-defined rules before sharing, improving overall data integrity. |
 | **DPN-DM-01: DPN Data Mapping Pipelines (Pilot)** | **CRITICAL. FSPs/SOs use this to transform their internal data formats into the FMAR Common Ontology compliant format required by ARM, SPUM, PSQM. FMAR Hub's DPN uses this to process incoming data or prepare outgoing data.** |
 | DPN-DM-02: DPN Ingest Connectors (Push) (Pilot) | Primary mechanism for FSPs/SOs to push their standardised FMAR data (asset registrations, updates) from their DPN to the FMAR Hub's DPN/API. |
