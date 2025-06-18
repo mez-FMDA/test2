@@ -17,7 +17,7 @@ flowchart LR
     I[Installer 🛠️]
     FSP[Flexibility Service Provider 🏢]
     SO[System Operator ⚙️]
-    M[Manufacturer  🏭]
+    M[Manufacturer - OEM Cloud 🏭]
     TP[Third Party 🤝]
     Agg[Aggregator 📈]
     MF[Market Facilitator 🏛️]
@@ -30,7 +30,7 @@ flowchart LR
     
     %% --- Define System Boundary and Use Cases within it ---
     subgraph "Flexibility Market Asset Registration System"
-        UC_RegUser((Register User?))
+        UC_RegUser((Register User))
         UC_DeregAsset((De-register Asset))
         UC_SwitchSP((Switch Service Provider))
         UC_RegAsset((Register Asset))
@@ -53,48 +53,53 @@ flowchart LR
     end
 
     %% --- Actor to Use Case Associations ---
-    AO ---> UC_RegUser
-    AO ---> UC_DeregAsset
-    AO ---> UC_SwitchSP
-    AO ---> UC_RegAsset
+    AO --- UC_DeregAsset
+    AO --- UC_SwitchSP
+    AO --- UC_RegAsset
     
-    I ---> UC_RegAsset
+    I --- UC_RegAsset
     
-    FSP ---> UC_RegAsset
-    FSP ---> UC_RegSPDetails
-    FSP ---> UC_QualifyMU
-    FSP ---> UC_ProvidePMUQ
+    FSP --- UC_RegAsset
+    FSP --- UC_RegSPDetails
+    FSP --- UC_QualifyMU
+    UC_ProvidePMUQ --- FSP
+    FSP --- UC_CreateGrouping
+    UC_ShareData --- FSP
+    UC_UpdateGrouping --- FSP
 
-    SO ---> UC_CreateProdReg
-    SO ---> UC_MaintainProdReg
-    SO ---> UC_ShareData
+    SO --- UC_CreateProdReg
+    SO --- UC_MaintainProdReg
+    UC_ProvidePMUQ --- SO
+    UC_ShareData --- SO
+    SO --- UC_QualifyMU
     
-    M ---> UC_VerifyAuth
-    
-    IMP ---> UC_ExportData
-    DSO ---> UC_ExportData
-    NESO ---> UC_ExportData
+    M --- UC_VerifyAuth
+   
+    IMP --- UC_RegAsset
+    DSO --- UC_RegAsset
+    NESO --- UC_RegAsset
 
-    TP ---> UC_ShareData
-    Agg ---> UC_ShareData
-    SS ---> UC_ShareData
-    Ofgem ---> UC_ShareData
-    MF ---> UC_ShareData
-    MF ---> UC_Analytics
+    UC_ShareData --- TP
+    UC_ShareData --- Agg
+    UC_ShareData --- SS
+    UC_ShareData --- NESO
+    UC_ShareData --- DSO
+    UC_ShareData --- IMP
+    UC_ShareData --- Ofgem
 
-    Public ---> UC_Analytics
+    Public --- UC_Analytics
+    Ofgem --- UC_Analytics
+    MF --- UC_Analytics
+
+    MF --- UC_MaintainCategories
 
     %% --- Include & Extend Relationships ---
     UC_RegAsset   -. "include" .-> UC_ValidateAsset
-    UC_RegAsset   -. "include" .-> UC_VerifyAuth
+    UC_ValidateAsset   -. "include" .-> UC_VerifyAuth
     UC_UpdateAssetDetails -. "extend" .-> UC_RegAsset
-    UC_UpdateSPDetails    -. "extend" .-> UC_RegAsset
     UC_RegSPDetails       -. "extend" .-> UC_UpdateSPDetails
     UC_UpdateGrouping     -. "extend" .-> UC_CreateGrouping
     UC_MaintainProdReg    -. "extend" .-> UC_CreateProdReg
+    UC_RegSPDetails -. "include" .-> UC_ValidateSPDetails
+    UC_MaintainCategories -. "extend" .-> UC_RegAsset
     
-    %% --- Simple Use Case to Use Case Flow ---
-    UC_ValidateSPDetails ---> UC_CreateGrouping
-    UC_ProvidePMUQ ---> UC_CreateGrouping
-    UC_MaintainCategories ---> UC_ShareData
-
