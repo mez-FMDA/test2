@@ -18,7 +18,9 @@ To clearly articulate an emerging view on potential FMAR dependencies and functi
 
 This ensures FMAR's design aligns with DSI capabilities and helps inform DSI development priorities to support FMAR as a key use case.
 
-Note this artefact has been produced in advance of any joint-architecture team meetings to clarify shared meaning of terms. An updated version of this artefact can be produced following this session.
+This artefact has been produced in advance of any joint-architecture team meetings to clarify shared meaning of terms. An updated version of this artefact can be produced following this session.
+
+N.B: For simplicity, FSPs and SOs are the only Actors considered below when illustrating potential dependencies. In practice, FMAR Hub will interface with a wider range of stakeholders who have deployed DPNs, to be defined in the Role/Actor mappings artefact.
 
 ## Content of the Artefact (Structured by DSI Component Groups):
 
@@ -33,13 +35,11 @@ The DSI Specification document published in June 2024 provides a helpful overvie
 This document outlines FMAR's initial, emerging needs from DSI, which will be refined through 2025 FMAR design workshops (as required by Ofgem) and as DSI itself evolves.  
 
 For further details on the latest FMAR requirements (currently only defined within the business/ecosystem architecture) please see the Programme overview and Use Case catalogue found on the MF repository.
-
-
+  
 ## Assumptions:
 
 - The FMAR Hub (operated by Elexon) will itself act as a sophisticated DSI participant, likely deploying its own instance of DPN-like functionalities or directly interfacing with DSM services for its centralised operations.
 - Flexibility Service Providers (FSPs) and System Operators (SOs) participating in FMAR data exchange will deploy their own DPNs to interact with the FMAR Hub and potentially each other (though FMAR aims to be the central point).
-- For simplicity, FSPs and SOs are the only Actors considered below when illustrating potential dependencies. In practice, FMAR Hub will interface with a wider range of stakeholders who have deployed DPNs, to be defined in the Role/Actor mappings artefact.
 - DPNs and DSM will align on foundational technical standards used by international data space connectors (as outlined [here](https://dssc.eu/space/BVE2/1071254873/Building+on+Top+of+Foundational+Technical+Standards)) to ensure interoperability and reduce transaction costs for inbound and outbound flexibility market participants. Where divergence occurs, rationale would be clearly outlined, and mapping support (within reason) would be provided.
 
 ## DPN Component Potential Dependencies
