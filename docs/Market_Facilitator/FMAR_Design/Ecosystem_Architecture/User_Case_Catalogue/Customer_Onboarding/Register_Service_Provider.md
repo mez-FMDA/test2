@@ -1,4 +1,4 @@
-# UC-002: Register and Maintain Flexibility Service Provider (FSP) with FMAR Hub
+# UC-002: Register Flexibility Service Provider (FSP) with FMAR Hub
 
 **Version:** v0.2
 
