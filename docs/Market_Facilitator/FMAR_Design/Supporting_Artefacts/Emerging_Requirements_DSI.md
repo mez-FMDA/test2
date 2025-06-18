@@ -103,7 +103,7 @@ For further details on the latest FMAR requirements (currently only defined with
 
 
 ## Open Issues
-- What is the timeline for the FMAR Common Ontology to be formally hosted and governed within DSM-SA-01? What support can NESO, NDTP or BSI provide as part of the standards development work required (e.g., tooling support, international engagement support, strategic leadership?
+- What is the timeline for the FMAR Common Ontology to be formally hosted and governed within DSM-SA-01? What support can NESO, NDTP or BSI provide as part of the standards development work required (e.g., tooling support, international engagement support, strategic leadership? What support can a consultancy provide?
 - How will FMAR's specific API requirements (e.g., for high-volume asset registration, real-time status queries) be prioritised within DSM-IN development?
 - What are the DSI's mechanisms for managing dependencies between use cases like FMAR and the DSI platform's own development lifecycle?
 
