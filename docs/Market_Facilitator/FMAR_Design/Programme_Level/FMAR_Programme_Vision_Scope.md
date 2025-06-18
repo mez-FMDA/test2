@@ -74,6 +74,7 @@ Service Blueprint (TBD): Evolves from high-level FMAR Hub in Workshop #1 to deta
 API Catalogue (TBD): Core APIs for ARM discussed in Workshop #1. Expands with SPUM, PSQM, GICM APIs.
 
 MVP Design Patterns (TBD): Architectural decisions made by the FMAR Architecture Team, informed by workshop outputs.
+>etags
 
 **Technology Architecture** 
 
