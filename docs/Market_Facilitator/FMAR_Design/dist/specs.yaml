@@ -1,0 +1,126 @@
+openapi: 3.0.4
+info:
+  title: Boundary Point Details API 1.0
+  description: |-
+    Salesforce shall provide an API which will pass the Organisation, Roles and Address data through to Azure
+    
+    The [Azure](https://swagger.io) system will need to follow the Salesforce authentication process to be able to access the API
+    
+    The timestamp request inputs shall always be provided in the yyyymmddHHMMSS format
+  termsOfService: https://swagger.io/terms/
+  contact:
+    email: joel.fernandes@elexon.co.uk
+  license:
+    name: Salesforce Cloud
+    url: https://www.apache.org/licenses/LICENSE-2.0.html
+  version: 1.0.0
+externalDocs:
+  description: Find out more about Salesforce
+  url: https://test.salesforce.com
+servers:
+  - url: https://test2.salesforce.com/services/apexrest/AzureIntegration
+tags:
+  - name: boundaryPoints
+    description: Everything about your Boundary Points
+    externalDocs:
+      description: Find out more
+      url: https://swagger.io
+paths:
+  /boundaryPoints:
+    post:
+      tags:
+        - boundaryPoints
+      summary: Get boundary point details by timestamp
+      description: Update an existing pet by Id.
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                dataType:
+                  type: string
+                  example: boundaryPointsurrl: 
+      responses:
+        200:
+          description: Success
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/fullResponse'
+        401:
+          description: User authentication failed
+          content: 
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: User not authenticated
+  /nextWorkingDay:
+    get:
+      summary: Find out the next available working day
+      parameters:
+        - in: query
+          name: nextWorkingDay
+          required: true
+          schema: 
+            type: string
+            example: today
+      responses:
+        200:
+          description: Success
+          content: 
+            application/json:
+              schema: 
+                type: object
+                properties:
+                  nextWorkingDay:
+                    type: string
+                    example: tomorrow
+                  twoWorkingDays:
+                    type: string
+                    example: 4 days from now
+                
+components: 
+  schemas:
+    boundaryPoint:
+      type: object
+      properties:
+        actionCode:
+          type: string
+          example: Change
+        pointID:
+          type: string
+          example: T__3242234
+        pointType:
+          type: string
+          example: Interconnector
+        effectiveFromDate:
+          type: string
+          example: 2025-05-19
+        effectiveToDate:
+          type: string
+          example: 2025-05-25
+    boundaryPoints:
+      type: object
+      properties:
+        participantId:
+          type: string
+          example: NGESO
+        boundaryPoints:
+          type: array
+          items:
+            $ref: '#/components/schemas/boundaryPoint'
+    fullResponse:
+      type: object
+      properties:
+        response:
+          type: array
+          items:
+            $ref: '#/components/schemas/boundaryPoints'
+        activeBoundaryPoints:
+          type: string
+          description: All boundary points that are active when the request was made
+          example: ["ActiveBoundaryPointId1, ActiveBoundaryPointId2, ActiveBoundaryPointId3, ... ActiveBoundaryPointIdn"]
