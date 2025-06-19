@@ -28,13 +28,13 @@ N.B: For simplicity, FSPs and SOs are the only Actors considered below when illu
 
 Ofgem has outlined their strategic intent for FMAR to be a use case of the DSI, with DSI being the foundational common data standardisation and sharing mechanism capable of enabling use of common data standards and wider IT architecture, common compliance tools and aspects of common registration of users, as part of FDI outcomes.  
 
-Elexon fully supports this intent, recognising that there is is a wealth of learnings about contamperaneous regulatory initiatives to FMAR in the European Union (e.g., ACER’s Flexibility Information System recommendation) which are defined with respect to the well-defined concept of [Common European Energy Data Spaces](https://energy.ec.europa.eu/publications/common-european-energy-data-space_en) as the cornerstone to interoperable data sharing.   
+Elexon fully supports this intent, recognising that there is is a wealth of learnings about contamperaneous regulatory initiatives to FMAR in the European Union (for instance ACER’s Flexibility Information System recommendation), which is defined with respect to the well-defined concept of [Common European Energy Data Spaces](https://energy.ec.europa.eu/publications/common-european-energy-data-space_en) as the cornerstone to interoperable flexibility data sharing.   
 
 The DSI Specification document published in June 2024 provides a helpful overview of the components currently available (developed as part of the Pilot) vs., the components planned (for MVP, Live, and Public Beta), under the development of the Virtual Energy System programme.  
 
 This document outlines FMAR's initial, emerging needs from DSI, which will be refined through 2025 FMAR design workshops (as required by Ofgem) and as DSI itself evolves.  
 
-For further details on the latest FMAR requirements (currently only defined within the business/ecosystem architecture) please see the Programme overview and Use Case catalogue found on the MF repository.
+For further details on the latest FMAR requirements (currently only defined within the ecosystem architecture) please see the Programme overview and Use Case catalogue found on the MF repository.
   
 ## Assumptions:
 
