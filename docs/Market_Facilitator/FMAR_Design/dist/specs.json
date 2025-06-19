@@ -1,552 +1,913 @@
-{
-  "swagger" : "2.0",
-  "info" : {
-    "description" : "This is an **example** API to demonstrate features of The API Factory.\n\n# Introduction\nThis specification is intended to to be a good starting point for describing\nhow users can interact with the various retrieval methods of your API. As\npart of Team API design guidelines we recommend informing the user about\nvarious aspects of your api such as:\n\n\n# Getting Started\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\nquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\nconsequat. Duis aute irure dolor in reprehenderit in voluptate velit esse\ncillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat\nnon proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n\n\n  ## **Using The API**\n  This API provides data in the following formats:\n    - API format XXXX                 # Describe your exposed API format\n    - API format XXXX                 # Describe your exposed API format\n\n  The following sections describe how to use these formats:\n\n\n  ## API Endpoint `/xxxx`:\n  The `/xxxx` Endpoint is available at the `/xxxx` endpoint. This endpoint can\n  provide information in the following formats by using the `outputformat`\n  query parameter.\n\n   - application/json               # Replace with your output format\n   - application/atom+xml           # Replace with your output format\n\n\n ## Extra Developer Documentation:\n  If you have more developer documentation or tutorials specific to helping\n  developers interact with this endpoint.\n  **url:** 'https://example.com/documentation/link'\n\n# Uptime & Planned Outages\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod\ntempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,\nquis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo\nconsequat.\n\n\n# Authentication & Rate Limits\nNo authentication is currently required to use the retrieval methods\npublished in this API. It is at the discretion of the XXXXX team whether the\nauthentication and rate limiting changes in the future.\n\nThere is also no current rate limits being enforced, however it is advised\nthat users keep their queries to ~2-3 calls per second to avoid overloading\nthe service.\n\n\n# Terms of Use, Copyright and Attribution\nPlease ensure you comply with the following policies prior to using any data\nwithin this API.\n\n- [Terms of Use](https://www.XXXX.vic.gov.au/terms-use)\n- [Privacy Policy](https://www.XXXX.vic.gov.au/privacy)\n- [Copyright and Attribution](https://www.XXXX.vic.gov.au/copyright-and-attribution)\n- [Department/Information Website](http://XXXX.vic.gov.au/digital)\n\nTo the maximum extent possible, the datasets provided via this site and their contents, to the extent they are protected by copyright, are provided under a [XXXX What type of Licence Agreement XXXX\neg: Creative Commons Attribution Version 4.0 (international licence)](https://creativecommons.org/licenses/by/4.0/).\n\n# Contact Us\nIf you have a suggestion please contact us at .....\n",
-    "contact" : {
-      "email" : "youremail@dpc.vic.gov.au",
-      "url" : "https://example.com/contact"
-    },
-    "version" : "1.4.0",
-    "title" : "Example.com"
-  },
-  "schemes" : [ "https" ],
-  "produces" : [ "application/json", "application/xml", "multipart/form-data", "application/x-www-form-urlencoded" ],
-  "consumes" : [ "application/json", "application/xml", "multipart/form-data", "text/html" ],
-  "tags" : [ {
-    "name" : "Echo",
-    "description" : "Example echo operations"
-  }, {
-    "name" : "User",
-    "description" : "Example operations about user"
-  } ],
-  "securityDefinitions" : {
-    "main_auth" : {
-      "type" : "oauth2",
-      "authorizationUrl" : "http://example.com/api/oauth/dialog",
-      "flow" : "implicit",
-      "scopes" : {
-        "read:users" : "read users info",
-        "write:users" : "modify or remove users"
-      }
-    },
-    "api_key" : {
-      "type" : "apiKey",
-      "name" : "api_key",
-      "in" : "header"
-    },
-    "basic_auth" : {
-      "type" : "basic"
-    }
-  },
-  "paths" : {
-    "/echo" : {
-      "post" : {
-        "tags" : [ "Echo" ],
-        "summary" : "Echo test",
-        "description" : "Receive the exact message you've sent\n<br />***You can use keep using `markdown` here to write out your description in more detail.***\n",
-        "operationId" : "echo",
-        "parameters" : [ {
-          "name" : "message",
-          "in" : "body",
-          "description" : "Echo payload",
-          "required" : true,
-          "schema" : {
-            "type" : "string",
-            "example" : "Hello world!"
-          }
-        } ],
-        "security" : [ {
-          "api_key" : [ ]
-        } ],
-        "responses" : {
-          "200" : {
-            "description" : "OK. <br /> The request was successfully processed.\n",
-            "examples" : {
-              "application/json" : "Hello world!"
-            },
-            "schema" : {
-              "type" : "string"
-            },
-            "headers" : {
-              "X-Rate-Limit" : {
-                "format" : "int32",
-                "description" : "calls per hour allowed by the user",
-                "type" : "integer"
-              },
-              "X-Expires-After" : {
-                "format" : "date-time",
-                "description" : "date in UTC when token expires",
-                "type" : "string"
-              }
-            }
-          },
-          "201" : {
-            "$ref" : "#/responses/201_error_response"
-          },
-          "202" : {
-            "$ref" : "#/responses/202_error_response"
-          },
-          "400" : {
-            "$ref" : "#/responses/400_error_response"
-          },
-          "401" : {
-            "$ref" : "#/responses/401_error_response"
-          },
-          "403" : {
-            "$ref" : "#/responses/403_error_response"
-          },
-          "404" : {
-            "$ref" : "#/responses/404_error_response"
-          },
-          "405" : {
-            "$ref" : "#/responses/405_error_response"
-          },
-          "415" : {
-            "$ref" : "#/responses/415_error_response"
-          },
-          "422" : {
-            "$ref" : "#/responses/422_error_response"
-          },
-          "500" : {
-            "$ref" : "#/responses/500_error_response"
-          }
-        }
-      }
-    },
-    "/users" : {
-      "get" : {
-        "tags" : [ "User" ],
-        "summary" : "Get a full list of users",
-        "description" : "Some description of the operation.\n<br />***You can use keep using `markdown` here to write out your description in more detail.***\n",
-        "operationId" : "getAllUsers",
-        "parameters" : [ {
-          "name" : "username",
-          "in" : "path",
-          "description" : "The name that needs to be fetched",
-          "required" : true,
-          "type" : "string"
-        }, {
-          "name" : "with_email",
-          "in" : "query",
-          "description" : "Filter users without email",
-          "type" : "boolean"
-        } ],
-        "security" : [ {
-          "main_auth" : [ "read:users" ]
-        }, {
-          "api_key" : [ ]
-        } ],
-        "produces" : [ "application/json" ],
-        "responses" : {
-          "200" : {
-            "description" : "OK. <br /> The request was successfully processed.\n",
-            "schema" : {
-              "$ref" : "#/definitions/UserCollectionResponse"
-            }
-          },
-          "400" : {
-            "$ref" : "#/responses/400_error_response"
-          },
-          "401" : {
-            "$ref" : "#/responses/401_error_response"
-          },
-          "403" : {
-            "$ref" : "#/responses/403_error_response"
-          },
-          "404" : {
-            "$ref" : "#/responses/404_error_response"
-          },
-          "405" : {
-            "$ref" : "#/responses/405_error_response"
-          },
-          "415" : {
-            "$ref" : "#/responses/415_error_response"
-          },
-          "500" : {
-            "$ref" : "#/responses/500_error_response"
-          }
-        }
-      }
-    },
-    "/users/{username}" : {
-      "parameters" : [ {
-        "name" : "pretty_print",
-        "in" : "query",
-        "description" : "Pretty print response",
-        "type" : "boolean"
-      } ],
-      "get" : {
-        "tags" : [ "User" ],
-        "summary" : "Get user by user name",
-        "description" : "Some description of the operation.\n<br />***You can use keep using `markdown` here to write out your description in more detail.***\n",
-        "operationId" : "getUserByName",
-        "parameters" : [ {
-          "name" : "username",
-          "in" : "path",
-          "description" : "The name that needs to be fetched",
-          "required" : true,
-          "type" : "string"
-        }, {
-          "name" : "with_email",
-          "in" : "query",
-          "description" : "Filter users without email",
-          "type" : "boolean"
-        } ],
-        "security" : [ {
-          "main_auth" : [ "read:users" ]
-        }, {
-          "api_key" : [ ]
-        } ],
-        "produces" : [ "application/json" ],
-        "responses" : {
-          "200" : {
-            "description" : "OK. <br /> The request was successfully processed.\n",
-            "schema" : {
-              "$ref" : "#/definitions/UserEmbeddedResponse"
-            }
-          },
-          "400" : {
-            "$ref" : "#/responses/400_error_response"
-          },
-          "401" : {
-            "$ref" : "#/responses/401_error_response"
-          },
-          "403" : {
-            "$ref" : "#/responses/403_error_response"
-          },
-          "404" : {
-            "$ref" : "#/responses/404_error_response"
-          },
-          "405" : {
-            "$ref" : "#/responses/405_error_response"
-          },
-          "415" : {
-            "$ref" : "#/responses/415_error_response"
-          },
-          "500" : {
-            "$ref" : "#/responses/500_error_response"
-          }
-        }
-      },
-      "put" : {
-        "tags" : [ "User" ],
-        "summary" : "Update the user",
-        "description" : "This can only be done by the logged in user.\n",
-        "operationId" : "updateUser",
-        "produces" : [ "application/json" ],
-        "parameters" : [ {
-          "name" : "username",
-          "in" : "path",
-          "description" : "The name that needs to be updated",
-          "required" : true,
-          "type" : "string"
-        }, {
-          "in" : "body",
-          "name" : "body",
-          "description" : "Updated user object",
-          "required" : true,
-          "schema" : {
-            "$ref" : "#/definitions/UserRequest"
-          }
-        } ],
-        "security" : [ {
-          "main_auth" : [ "write:users" ]
-        }, {
-          "api_key" : [ ]
-        } ],
-        "responses" : {
-          "200" : {
-            "$ref" : "#/definitions/UserResponse"
-          },
-          "202" : {
-            "$ref" : "#/definitions/UserResponse"
-          },
-          "204" : {
-            "$ref" : "#/responses/204_error_response"
-          },
-          "400" : {
-            "$ref" : "#/responses/400_error_response"
-          },
-          "401" : {
-            "$ref" : "#/responses/401_error_response"
-          },
-          "403" : {
-            "$ref" : "#/responses/403_error_response"
-          },
-          "404" : {
-            "$ref" : "#/responses/404_error_response"
-          },
-          "405" : {
-            "$ref" : "#/responses/405_error_response"
-          },
-          "415" : {
-            "$ref" : "#/responses/415_error_response"
-          },
-          "422" : {
-            "$ref" : "#/responses/422_error_response"
-          },
-          "500" : {
-            "$ref" : "#/responses/500_error_response"
-          }
-        }
-      },
-      "delete" : {
-        "tags" : [ "User" ],
-        "summary" : "Delete user",
-        "description" : "This can only be done by the logged in user.\n",
-        "operationId" : "deleteUser",
-        "produces" : [ "application/json", "application/xml" ],
-        "parameters" : [ {
-          "name" : "username",
-          "in" : "path",
-          "description" : "The name that needs to be deleted",
-          "required" : true,
-          "type" : "string"
-        } ],
-        "responses" : {
-          "200" : {
-            "$ref" : "#/responses/200_error_response"
-          },
-          "202" : {
-            "$ref" : "#/responses/202_error_response"
-          },
-          "204" : {
-            "$ref" : "#/responses/204_error_response"
-          },
-          "400" : {
-            "$ref" : "#/responses/400_error_response"
-          },
-          "401" : {
-            "$ref" : "#/responses/401_error_response"
-          },
-          "403" : {
-            "$ref" : "#/responses/403_error_response"
-          },
-          "404" : {
-            "$ref" : "#/responses/404_error_response"
-          },
-          "405" : {
-            "$ref" : "#/responses/405_error_response"
-          },
-          "415" : {
-            "$ref" : "#/responses/415_error_response"
-          },
-          "500" : {
-            "$ref" : "#/responses/500_error_response"
-          }
-        }
-      }
-    }
-  },
-  "definitions" : {
-    "UserCollectionResponse" : {
-      "description" : "The standard list response that should be used",
-      "properties" : {
-        "totalRecords" : {
-          "type" : "number",
-          "format" : "int32",
-          "example" : 50
-        },
-        "_links" : {
-          "type" : "array",
-          "items" : {
-            "$ref" : "#/definitions/HateoasResponse"
-          }
-        },
-        "_embedded" : {
-          "$ref" : "#/definitions/UserEmbeddedResponse"
-        }
-      }
-    },
-    "UserEmbeddedResponse" : {
-      "type" : "object",
-      "properties" : {
-        "count" : {
-          "type" : "number",
-          "format" : "int32",
-          "example" : 1
-        },
-        "users" : {
-          "type" : "array",
-          "items" : {
-            "$ref" : "#/definitions/UserResponse"
-          }
-        }
-      }
-    },
-    "HateoasResponse" : {
-      "type" : "object",
-      "properties" : {
-        "href" : {
-          "type" : "string",
-          "example" : "/users",
-          "description" : "The URL to the referenced resource"
-        },
-        "rel" : {
-          "type" : "string",
-          "example" : "self",
-          "description" : "The description of the relationship between the resources"
-        },
-        "method" : {
-          "type" : "string",
-          "example" : "GET",
-          "description" : "The HTTP method that should be used when referencing this resource",
-          "enum" : [ "GET", "POST", "PUT", "DELETE", "PATCH" ]
-        }
-      }
-    },
-    "Email" : {
-      "description" : "User email address",
-      "type" : "string",
-      "format" : "email",
-      "example" : "john.smith@example.com"
-    },
-    "UserRequest" : {
-      "type" : "object",
-      "properties" : {
-        "username" : {
-          "description" : "User supplied username",
-          "type" : "string",
-          "minLength" : 4,
-          "example" : "John78"
-        },
-        "firstName" : {
-          "description" : "User first name",
-          "type" : "string",
-          "minLength" : 1,
-          "example" : "John"
-        },
-        "lastName" : {
-          "description" : "User last name",
-          "type" : "string",
-          "minLength" : 1,
-          "example" : "Smith"
-        },
-        "email" : {
-          "$ref" : "#/definitions/Email"
-        }
-      }
-    },
-    "UserResponse" : {
-      "type" : "object",
-      "example" : {
-        "username" : "John78",
-        "firstName" : "John",
-        "lastName" : "Smith",
-        "email" : "john.smith78@gmail.com",
-        "_links" : [ {
-          "href" : "/users/John78",
-          "rel" : "self",
-          "method" : "GET"
-        }, {
-          "href" : "/users/John78",
-          "rel" : "updateUser",
-          "method" : "PUT"
-        }, {
-          "href" : "/users/John78",
-          "rel" : "deleteUser",
-          "method" : "DELETE"
-        } ]
-      },
-      "allOf" : [ {
-        "$ref" : "#/definitions/UserRequest"
-      }, {
-        "type" : "object",
-        "properties" : {
-          "_links" : {
-            "type" : "array",
-            "items" : {
-              "$ref" : "#/definitions/HateoasResponse"
-            }
-          }
-        }
-      } ]
-    }
-  },
-  "responses" : {
-    "200_error_response" : {
-      "description" : "OK.",
-      "examples" : {
-        "application/json" : "{\n  \"status\": \"200\",\n  \"description\": \"The request was successfully processed.\",\n  \"more_info\": \"\"\n}    \n"
-      }
-    },
-    "201_error_response" : {
-      "description" : "Created.",
-      "examples" : {
-        "application/json" : "{\n  \"status\": \"201\",\n  \"description\": \"The resource was created. The Response Location HTTP header should be returned to indicate where the newly created resource is accessible.\",\n  \"more_info\": \"\"\n} \n"
-      }
-    },
-    "202_error_response" : {
-      "description" : "Accepted.",
-      "examples" : {
-        "application/json" : "{\n  \"status\": \"202\",\n  \"description\": \"Used for asynchronous processing - The server has accepted the request but the result is not available yet. The Response Location HTTP header may be returned to indicate where the created resource will be accessible.\",\n  \"more_info\": \"\"\n} \n"
-      }
-    },
-    "204_error_response" : {
-      "description" : "No content.",
-      "examples" : {
-        "application/json" : "{\n  \"status\": \"204\",\n  \"description\": \"The server successfully processed the request and is not returning any content. \",\n  \"more_info\": \"\"\n} \n"
-      }
-    },
-    "400_error_response" : {
-      "description" : "Bad Request.",
-      "examples" : {
-        "application/json" : "{\n  \"status\": \"400\",\n  \"description\": \"The server cannot process the request.'The specified resource was not found.\",\n  \"more_info\": \"\"\n} \n"
-      }
-    },
-    "401_error_response" : {
-      "description" : "Unauthorised.",
-      "examples" : {
-        "application/json" : "{\n  \"status\": \"401\",\n  \"description\": \"The request could not be authenticated.\",\n  \"more_info\": \"\"\n}\n"
-      }
-    },
-    "403_error_response" : {
-      "description" : "Forbidden.",
-      "examples" : {
-        "application/json" : "{\n  \"status\": \"403\",\n  \"description\": \"The request was authenticated but is not authorised to access the resource.\",\n  \"more_info\": \"\"\n}\n"
-      }
-    },
-    "404_error_response" : {
-      "description" : "Not found.",
-      "examples" : {
-        "application/json" : "{\n  \"status\": \"404\",\n  \"description\": \"The resource was not found.\",\n  \"more_info\": \"\"\n}\n"
-      }
-    },
-    "405_error_response" : {
-      "description" : "Not Allowed.",
-      "examples" : {
-        "application/json" : "{\n  \"status\": \"405\",\n  \"description\": \"The method is not implemented for this resource. The response may include an Allow header containing a list of valid methods for the resource.\",\n  \"more_info\": \"\"\n}\n \n"
-      }
-    },
-    "408_error_response" : {
-      "description" : "Request Timeout.",
-      "examples" : {
-        "application/json" : "{\n  \"status\": \"408\",\n  \"description\": \"The request timed out before a response was received.\",\n  \"more_info\": \"\"\n}\n"
-      }
-    },
-    "415_error_response" : {
-      "description" : "Unsupported Media Type.",
-      "examples" : {
-        "application/json" : "{\n  \"status\": \"415\",\n  \"description\": \"This status code indicates that the server refuses to accept the request because the content type specified in the request is not supported by the server.\",\n  \"more_info\": \"\"\n}\n"
-      }
-    },
-    "422_error_response" : {
-      "description" : "Unprocessable Entity.",
-      "examples" : {
-        "application/json" : "{\n  \"status\": \"422\",\n  \"description\": \"This status code indicates that the server received the request but it did not fulfil the requirements of the back end. An example is a mandatory field was not provided in the payload.\",\n  \"more_info\": \"\"\n}\n"
-      }
-    },
-    "500_error_response" : {
-      "description" : "Internal Server Error.",
-      "examples" : {
-        "application/json" : "{\n  \"status\": \"500\",\n  \"description\": \"An internal server error. The response body may contain error messages.\",\n  \"more_info\": \"\"\n}\n \n"
-      }
-    },
-    "501_error_response" : {
-      "description" : "Method Not Implemented.",
-      "examples" : {
-        "application/json" : "{\n  \"status\": \"501\",\n  \"description\": \"It indicates that the request method is not supported by the server and cannot be handled for any resourceFor example, the server supports GET, POST, PUT, DELETE, and PATCH but not OPTIONS methods.\",\n  \"more_info\": \"\"\n}"
-      }
-    }
-  }
-}
+openapi: 3.0.4
+info:
+  title: Swagger Petstore - OpenAPI 3.0
+  description: |-
+    This is a sample Pet Store Server based on the OpenAPI 3.0 specification.  You can find out more about
+    Swagger at [https://swagger.io](https://swagger.io). In the third iteration of the pet store, we've switched to the design first approach!
+    You can now help us improve the API whether it's by making changes to the definition itself or to the code.
+    That way, with time, we can improve the API in general, and expose some of the new features in OAS3.
+
+    Some useful links:
+    - [The Pet Store repository](https://github.com/swagger-api/swagger-petstore)
+    - [The source API definition for the Pet Store](https://github.com/swagger-api/swagger-petstore/blob/master/src/main/resources/openapi.yaml)
+  termsOfService: https://swagger.io/terms/
+  contact:
+    email: apiteam@swagger.io
+  license:
+    name: Apache 2.0
+    url: https://www.apache.org/licenses/LICENSE-2.0.html
+  version: 1.0.12
+externalDocs:
+  description: Find out more about Swagger
+  url: https://swagger.io
+servers:
+  - url: https://petstore3.swagger.io/api/v3
+tags:
+  - name: pet
+    description: Everything about your Pets
+    externalDocs:
+      description: Find out more
+      url: https://swagger.io
+  - name: store
+    description: Access to Petstore orders
+    externalDocs:
+      description: Find out more about our store
+      url: https://swagger.io
+  - name: user
+    description: Operations about user
+paths:
+  /pet:
+    put:
+      tags:
+        - pet
+      summary: Update an existing pet.
+      description: Update an existing pet by Id.
+      operationId: updatePet
+      requestBody:
+        description: Update an existent pet in the store
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Pet'
+          application/xml:
+            schema:
+              $ref: '#/components/schemas/Pet'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Pet'
+        required: true
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Pet'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/Pet'
+        '400':
+          description: Invalid ID supplied
+        '404':
+          description: Pet not found
+        '422':
+          description: Validation exception
+        default:
+          description: Unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+      security:
+        - petstore_auth:
+            - write:pets
+            - read:pets
+    post:
+      tags:
+        - pet
+      summary: Add a new pet to the store.
+      description: Add a new pet to the store.
+      operationId: addPet
+      requestBody:
+        description: Create a new pet in the store
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Pet'
+          application/xml:
+            schema:
+              $ref: '#/components/schemas/Pet'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Pet'
+        required: true
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Pet'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/Pet'
+        '400':
+          description: Invalid input
+        '422':
+          description: Validation exception
+        default:
+          description: Unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+      security:
+        - petstore_auth:
+            - write:pets
+            - read:pets
+  /pet/findByStatus:
+    get:
+      tags:
+        - pet
+      summary: Finds Pets by status.
+      description: Multiple status values can be provided with comma separated strings.
+      operationId: findPetsByStatus
+      parameters:
+        - name: status
+          in: query
+          description: Status values that need to be considered for filter
+          required: false
+          explode: true
+          schema:
+            type: string
+            default: available
+            enum:
+              - available
+              - pending
+              - sold
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Pet'
+            application/xml:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Pet'
+        '400':
+          description: Invalid status value
+        default:
+          description: Unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+      security:
+        - petstore_auth:
+            - write:pets
+            - read:pets
+  /pet/findByTags:
+    get:
+      tags:
+        - pet
+      summary: Finds Pets by tags.
+      description: Multiple tags can be provided with comma separated strings. Use tag1, tag2, tag3 for testing.
+      operationId: findPetsByTags
+      parameters:
+        - name: tags
+          in: query
+          description: Tags to filter by
+          required: false
+          explode: true
+          schema:
+            type: array
+            items:
+              type: string
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Pet'
+            application/xml:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Pet'
+        '400':
+          description: Invalid tag value
+        default:
+          description: Unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+      security:
+        - petstore_auth:
+            - write:pets
+            - read:pets
+  /pet/{petId}:
+    get:
+      tags:
+        - pet
+      summary: Find pet by ID.
+      description: Returns a single pet.
+      operationId: getPetById
+      parameters:
+        - name: petId
+          in: path
+          description: ID of pet to return
+          required: true
+          schema:
+            type: integer
+            format: int64
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Pet'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/Pet'
+        '400':
+          description: Invalid ID supplied
+        '404':
+          description: Pet not found
+        default:
+          description: Unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+      security:
+        - api_key: []
+        - petstore_auth:
+            - write:pets
+            - read:pets
+    post:
+      tags:
+        - pet
+      summary: Updates a pet in the store with form data.
+      description: Updates a pet resource based on the form data.
+      operationId: updatePetWithForm
+      parameters:
+        - name: petId
+          in: path
+          description: ID of pet that needs to be updated
+          required: true
+          schema:
+            type: integer
+            format: int64
+        - name: name
+          in: query
+          description: Name of pet that needs to be updated
+          schema:
+            type: string
+        - name: status
+          in: query
+          description: Status of pet that needs to be updated
+          schema:
+            type: string
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Pet'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/Pet'
+        '400':
+          description: Invalid input
+        default:
+          description: Unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+      security:
+        - petstore_auth:
+            - write:pets
+            - read:pets
+    delete:
+      tags:
+        - pet
+      summary: Deletes a pet.
+      description: Delete a pet.
+      operationId: deletePet
+      parameters:
+        - name: api_key
+          in: header
+          description: ''
+          required: false
+          schema:
+            type: string
+        - name: petId
+          in: path
+          description: Pet id to delete
+          required: true
+          schema:
+            type: integer
+            format: int64
+      responses:
+        '200':
+          description: Pet deleted
+        '400':
+          description: Invalid pet value
+        default:
+          description: Unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+      security:
+        - petstore_auth:
+            - write:pets
+            - read:pets
+  /pet/{petId}/uploadImage:
+    post:
+      tags:
+        - pet
+      summary: Uploads an image.
+      description: Upload image of the pet.
+      operationId: uploadFile
+      parameters:
+        - name: petId
+          in: path
+          description: ID of pet to update
+          required: true
+          schema:
+            type: integer
+            format: int64
+        - name: additionalMetadata
+          in: query
+          description: Additional Metadata
+          required: false
+          schema:
+            type: string
+      requestBody:
+        content:
+          application/octet-stream:
+            schema:
+              type: string
+              format: binary
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ApiResponse'
+        '400':
+          description: No file uploaded
+        '404':
+          description: Pet not found
+        default:
+          description: Unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+      security:
+        - petstore_auth:
+            - write:pets
+            - read:pets
+  /store/inventory:
+    get:
+      tags:
+        - store
+      summary: Returns pet inventories by status.
+      description: Returns a map of status codes to quantities.
+      operationId: getInventory
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                type: object
+                additionalProperties:
+                  type: integer
+                  format: int32
+        default:
+          description: Unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+      security:
+        - api_key: []
+  /store/order:
+    post:
+      tags:
+        - store
+      summary: Place an order for a pet.
+      description: Place a new order in the store.
+      operationId: placeOrder
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Order'
+          application/xml:
+            schema:
+              $ref: '#/components/schemas/Order'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Order'
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Order'
+        '400':
+          description: Invalid input
+        '422':
+          description: Validation exception
+        default:
+          description: Unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+  /store/order/{orderId}:
+    get:
+      tags:
+        - store
+      summary: Find purchase order by ID.
+      description: For valid response try integer IDs with value <= 5 or > 10. Other values will generate exceptions.
+      operationId: getOrderById
+      parameters:
+        - name: orderId
+          in: path
+          description: ID of order that needs to be fetched
+          required: true
+          schema:
+            type: integer
+            format: int64
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Order'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/Order'
+        '400':
+          description: Invalid ID supplied
+        '404':
+          description: Order not found
+        default:
+          description: Unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+    delete:
+      tags:
+        - store
+      summary: Delete purchase order by identifier.
+      description: For valid response try integer IDs with value < 1000. Anything above 1000 or nonintegers will generate API errors.
+      operationId: deleteOrder
+      parameters:
+        - name: orderId
+          in: path
+          description: ID of the order that needs to be deleted
+          required: true
+          schema:
+            type: integer
+            format: int64
+      responses:
+        '200':
+          description: order deleted
+        '400':
+          description: Invalid ID supplied
+        '404':
+          description: Order not found
+        default:
+          description: Unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+  /user:
+    post:
+      tags:
+        - user
+      summary: Create user.
+      description: This can only be done by the logged in user.
+      operationId: createUser
+      requestBody:
+        description: Created user object
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/User'
+          application/xml:
+            schema:
+              $ref: '#/components/schemas/User'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/User'
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/User'
+        default:
+          description: Unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+  /user/createWithList:
+    post:
+      tags:
+        - user
+      summary: Creates list of users with given input array.
+      description: Creates list of users with given input array.
+      operationId: createUsersWithListInput
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: array
+              items:
+                $ref: '#/components/schemas/User'
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/User'
+        default:
+          description: Unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+  /user/login:
+    get:
+      tags:
+        - user
+      summary: Logs user into the system.
+      description: Log into the system.
+      operationId: loginUser
+      parameters:
+        - name: username
+          in: query
+          description: The user name for login
+          required: false
+          schema:
+            type: string
+        - name: password
+          in: query
+          description: The password for login in clear text
+          required: false
+          schema:
+            type: string
+      responses:
+        '200':
+          description: successful operation
+          headers:
+            X-Rate-Limit:
+              description: calls per hour allowed by the user
+              schema:
+                type: integer
+                format: int32
+            X-Expires-After:
+              description: date in UTC when token expires
+              schema:
+                type: string
+                format: date-time
+          content:
+            application/xml:
+              schema:
+                type: string
+            application/json:
+              schema:
+                type: string
+        '400':
+          description: Invalid username/password supplied
+        default:
+          description: Unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+  /user/logout:
+    get:
+      tags:
+        - user
+      summary: Logs out current logged in user session.
+      description: Log user out of the system.
+      operationId: logoutUser
+      parameters: []
+      responses:
+        '200':
+          description: successful operation
+        default:
+          description: Unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+  /user/{username}:
+    get:
+      tags:
+        - user
+      summary: Get user by user name.
+      description: Get user detail based on username.
+      operationId: getUserByName
+      parameters:
+        - name: username
+          in: path
+          description: The name that needs to be fetched. Use user1 for testing
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/User'
+        '400':
+          description: Invalid username supplied
+        '404':
+          description: User not found
+        default:
+          description: Unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+    put:
+      tags:
+        - user
+      summary: Update user resource.
+      description: This can only be done by the logged in user.
+      operationId: updateUser
+      parameters:
+        - name: username
+          in: path
+          description: name that need to be deleted
+          required: true
+          schema:
+            type: string
+      requestBody:
+        description: Update an existent user in the store
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/User'
+          application/xml:
+            schema:
+              $ref: '#/components/schemas/User'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/User'
+      responses:
+        '200':
+          description: successful operation
+        '400':
+          description: bad request
+        '404':
+          description: user not found
+        default:
+          description: Unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+    delete:
+      tags:
+        - user
+      summary: Delete user resource.
+      description: This can only be done by the logged in user.
+      operationId: deleteUser
+      parameters:
+        - name: username
+          in: path
+          description: The name that needs to be deleted
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: User deleted
+        '400':
+          description: Invalid username supplied
+        '404':
+          description: User not found
+        default:
+          description: Unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Error"
+components:
+  schemas:
+    Order:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+          example: 10
+        petId:
+          type: integer
+          format: int64
+          example: 198772
+        quantity:
+          type: integer
+          format: int32
+          example: 7
+        shipDate:
+          type: string
+          format: date-time
+        status:
+          type: string
+          description: Order Status
+          example: approved
+          enum:
+            - placed
+            - approved
+            - delivered
+        complete:
+          type: boolean
+      xml:
+        name: order
+    Category:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+          example: 1
+        name:
+          type: string
+          example: Dogs
+      xml:
+        name: category
+    User:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+          example: 10
+        username:
+          type: string
+          example: theUser
+        firstName:
+          type: string
+          example: John
+        lastName:
+          type: string
+          example: James
+        email:
+          type: string
+          example: john@email.com
+        password:
+          type: string
+          example: '12345'
+        phone:
+          type: string
+          example: '12345'
+        userStatus:
+          type: integer
+          description: User Status
+          format: int32
+          example: 1
+      xml:
+        name: user
+    Tag:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+        name:
+          type: string
+      xml:
+        name: tag
+    Pet:
+      required:
+        - name
+        - photoUrls
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+          example: 10
+        name:
+          type: string
+          example: doggie
+        category:
+          $ref: '#/components/schemas/Category'
+        photoUrls:
+          type: array
+          xml:
+            wrapped: true
+          items:
+            type: string
+            xml:
+              name: photoUrl
+        tags:
+          type: array
+          xml:
+            wrapped: true
+          items:
+            $ref: '#/components/schemas/Tag'
+        status:
+          type: string
+          description: pet status in the store
+          enum:
+            - available
+            - pending
+            - sold
+      xml:
+        name: pet
+    ApiResponse:
+      type: object
+      properties:
+        code:
+          type: integer
+          format: int32
+        type:
+          type: string
+        message:
+          type: string
+      xml:
+        name: '##default'
+    Error:
+      type: object
+      properties:
+        code:
+          type: string
+        message:
+          type: string
+      required:
+        - code
+        - message
+  requestBodies:
+    Pet:
+      description: Pet object that needs to be added to the store
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Pet'
+        application/xml:
+          schema:
+            $ref: '#/components/schemas/Pet'
+    UserArray:
+      description: List of user object
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              $ref: '#/components/schemas/User'
+  securitySchemes:
+    petstore_auth:
+      type: oauth2
+      flows:
+        implicit:
+          authorizationUrl: https://petstore3.swagger.io/oauth/authorize
+          scopes:
+            "write:pets": modify pets in your account
+            "read:pets": read your pets
+    api_key:
+      type: apiKey
+      name: api_key
+      in: header
