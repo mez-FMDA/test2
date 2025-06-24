@@ -1,4 +1,4 @@
-# Proof of Concept Collaboration tool
+# Proof of Concept Repository
 
 This repository contains artefacts from X different Market Faciliator Working Groups for industry collaboration and Y different FMAR design theme workshops. 
 
