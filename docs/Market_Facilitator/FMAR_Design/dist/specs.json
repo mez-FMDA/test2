@@ -2,11 +2,7 @@
     "swagger": "2.0",
     "info": {
         "title": "Boundary Point Details API 1.0",
-        "description": (
-            "Salesforce shall provide an API which will pass the Organisation, Roles and Address data through to Azure\n\n"
-            "The [Azure](https://swagger.io) system will need to follow the Salesforce authentication process to be able to access the API\n\n"
-            "The timestamp request inputs shall always be provided in the yyyymmddHHMMSS format"
-        ),
+        "description": "Salesforce shall provide an API which will pass the Organisation, Roles and Address data through to Azure\n\nThe [Azure](https://swagger.io) system will need to follow the Salesforce authentication process to be able to access the API\n\nThe timestamp request inputs shall always be provided in the yyyymmddHHMMSS format",
         "termsOfService": "https://swagger.io/terms/",
         "contact": {
             "email": "joel.fernandes@elexon.co.uk"
@@ -19,34 +15,33 @@
     },
     "host": "test2.salesforce.com",
     "basePath": "/services/apexrest/AzureIntegration",
-    "schemes": ["https"],
-    "externalDocs": {
-        "description": "Find out more about Salesforce",
-        "url": "https://test.salesforce.com"
-    },
+    "schemes": [
+        "https"
+    ],
     "tags": [
         {
             "name": "boundaryPoints",
-            "description": "Everything about your Boundary Points",
-            "externalDocs": {
-                "description": "Find out more",
-                "url": "https://swagger.io"
-            }
+            "description": "Everything about your Boundary Points"
         }
     ],
     "paths": {
         "/boundaryPoints": {
             "post": {
-                "tags": ["boundaryPoints"],
+                "tags": [
+                    "boundaryPoints"
+                ],
                 "summary": "Get boundary point details by timestamp",
-                "description": "Update an existing pet by Id.",
-                "consumes": ["application/json"],
-                "produces": ["application/json"],
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
                 "parameters": [
                     {
                         "in": "body",
                         "name": "body",
-                        "required": True,
+                        "required": true,
                         "schema": {
                             "type": "object",
                             "properties": {
@@ -83,14 +78,15 @@
         "/nextWorkingDay": {
             "get": {
                 "summary": "Find out the next available working day",
-                "produces": ["application/json"],
+                "produces": [
+                    "application/json"
+                ],
                 "parameters": [
                     {
                         "name": "nextWorkingDay",
                         "in": "query",
-                        "required": True,
-                        "type": "string",
-                        "example": "today"
+                        "required": true,
+                        "type": "string"
                     }
                 ],
                 "responses": {
@@ -118,20 +114,40 @@
         "boundaryPoint": {
             "type": "object",
             "properties": {
-                "actionCode": {"type": "string", "example": "Change"},
-                "pointID": {"type": "string", "example": "T__3242234"},
-                "pointType": {"type": "string", "example": "Interconnector"},
-                "effectiveFromDate": {"type": "string", "example": "2025-05-19"},
-                "effectiveToDate": {"type": "string", "example": "2025-05-25"}
+                "actionCode": {
+                    "type": "string",
+                    "example": "Change"
+                },
+                "pointID": {
+                    "type": "string",
+                    "example": "T__3242234"
+                },
+                "pointType": {
+                    "type": "string",
+                    "example": "Interconnector"
+                },
+                "effectiveFromDate": {
+                    "type": "string",
+                    "example": "2025-05-19"
+                },
+                "effectiveToDate": {
+                    "type": "string",
+                    "example": "2025-05-25"
+                }
             }
         },
         "boundaryPoints": {
             "type": "object",
             "properties": {
-                "participantId": {"type": "string", "example": "NGESO"},
+                "participantId": {
+                    "type": "string",
+                    "example": "NGESO"
+                },
                 "boundaryPoints": {
                     "type": "array",
-                    "items": {"$ref": "#/definitions/boundaryPoint"}
+                    "items": {
+                        "$ref": "#/definitions/boundaryPoint"
+                    }
                 }
             }
         },
@@ -140,12 +156,14 @@
             "properties": {
                 "response": {
                     "type": "array",
-                    "items": {"$ref": "#/definitions/boundaryPoints"}
+                    "items": {
+                        "$ref": "#/definitions/boundaryPoints"
+                    }
                 },
                 "activeBoundaryPoints": {
                     "type": "string",
                     "description": "All boundary points that are active when the request was made",
-                    "example": "[\"ActiveBoundaryPointId1, ActiveBoundaryPointId2, ActiveBoundaryPointId3, ... ActiveBoundaryPointIdn\"]"
+                    "example": "[\"ActiveBoundaryPointId1\", \"ActiveBoundaryPointId2\"]"
                 }
             }
         }
