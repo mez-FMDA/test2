@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Documents - Elexon Market Facilitator</title>
+    <link rel="stylesheet" href="../../styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1><i class="fas fa-bolt"></i> Elexon Market Facilitator</h1>
+                    <p>Flexibility Markets Collaboration Hub</p>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="../../index.html">Home</a></li>
+                        <li><a href="../fmar/overview.html">FMAR Design</a></li>
+                        <li><a href="../rules/vision.html">Rules Development</a></li>
+                        <li><a href="../collaboration/discussions.html">Collaboration</a></li>
+                        <li><a href="all-documents.html" class="active">Documentation</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Document Header -->
+    <section class="document-header">
+        <div class="container">
+            <h1>All Documents</h1>
+            <p>Comprehensive library of all development documents and resources</p>
+            <div class="document-meta">
+                <div class="meta-item">
+                    <i class="fas fa-calendar"></i>
+                    <span>Last Updated: March 2024</span>
+                </div>
+                <div class="meta-item">
+                    <i class="fas fa-file-alt"></i>
+                    <span>Total Documents: 45</span>
+                </div>
+                <div class="meta-item">
+                    <i class="fas fa-search"></i>
+                    <span>Search & Filter Available</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="document-content">
+        <div class="container">
+            <!-- Search and Filter -->
+            <div class="search-filter">
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Search documents..." />
+                    <button type="button" id="searchBtn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                <div class="filters">
+                    <select id="categoryFilter">
+                        <option value="">All Categories</option>
+                        <option value="fmar">FMAR Design</option>
+                        <option value="rules">Rules Development</option>
+                        <option value="ecosystem">Ecosystem Analysis</option>
+                        <option value="technical">Technical Specifications</option>
+                    </select>
+                    <select id="statusFilter">
+                        <option value="">All Statuses</option>
+                        <option value="draft">Draft</option>
+                        <option value="review">Under Review</option>
+                        <option value="approved">Approved</option>
+                        <option value="archived">Archived</option>
+                    </select>
+                    <select id="typeFilter">
+                        <option value="">All Types</option>
+                        <option value="specification">Specification</option>
+                        <option value="process">Process Document</option>
+                        <option value="analysis">Analysis</option>
+                        <option value="template">Template</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Document Categories -->
+            <div class="document-categories">
+                <h2>FMAR Design Documents</h2>
+                <div class="document-grid">
+                    <div class="document-item" data-category="fmar" data-status="draft" data-type="specification">
+                        <div class="doc-icon">
+                            <i class="fas fa-sitemap"></i>
+                        </div>
+                        <div class="doc-content">
+                            <h3>Use Case Catalogue v0.2</h3>
+                            <p>Comprehensive catalogue of use cases for FMAR ecosystem, including asset registration, service provider management, and product qualification.</p>
+                            <div class="doc-meta">
+                                <span class="doc-status draft">Draft</span>
+                                <span class="doc-date">March 2024</span>
+                                <span class="doc-type">Specification</span>
+                            </div>
+                        </div>
+                        <div class="doc-actions">
+                            <a href="../fmar/ecosystem/use-cases.html" class="btn btn-outline">View Document</a>
+                            <a href="https://github.com/elexon/market-facilitator/issues?q=label%3Ause-cases" class="btn btn-secondary" target="_blank">
+                                <i class="fab fa-github"></i> Issues
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="document-item" data-category="fmar" data-status="review" data-type="specification">
+                        <div class="doc-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div class="doc-content">
+                            <h3>Information Map v0.1</h3>
+                            <p>Data architecture information map defining core entities, relationships, and data flows for the FMAR system.</p>
+                            <div class="doc-meta">
+                                <span class="doc-status review">Under Review</span>
+                                <span class="doc-date">February 2024</span>
+                                <span class="doc-type">Specification</span>
+                            </div>
+                        </div>
+                        <div class="doc-actions">
+                            <a href="../fmar/data/information-map.html" class="btn btn-outline">View Document</a>
+                            <a href="https://github.com/elexon/market-facilitator/issues?q=label%3Ainformation-map" class="btn btn-secondary" target="_blank">
+                                <i class="fab fa-github"></i> Issues
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="document-item" data-category="fmar" data-status="draft" data-type="specification">
+                        <div class="doc-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <div class="doc-content">
+                            <h3>API Catalogue v0.1</h3>
+                            <p>Comprehensive API specification for FMAR services including endpoints, data models, and integration patterns.</p>
+                            <div class="doc-meta">
+                                <span class="doc-status draft">Draft</span>
+                                <span class="doc-date">March 2024</span>
+                                <span class="doc-type">Specification</span>
+                            </div>
+                        </div>
+                        <div class="doc-actions">
+                            <a href="../fmar/application/api-catalogue.html" class="btn btn-outline">View Document</a>
+                            <a href="https://github.com/elexon/market-facilitator/issues?q=label%3Aapi" class="btn btn-secondary" target="_blank">
+                                <i class="fab fa-github"></i> Issues
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <h2>Rules Development Documents</h2>
+                <div class="document-grid">
+                    <div class="document-item" data-category="rules" data-status="approved" data-type="specification">
+                        <div class="doc-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <div class="doc-content">
+                            <h3>Dispatch API Specification</h3>
+                            <p>Technical specification for the dispatch API including endpoints, data models, and operational procedures.</p>
+                            <div class="doc-meta">
+                                <span class="doc-status approved">Approved</span>
+                                <span class="doc-date">March 2024</span>
+                                <span class="doc-type">Specification</span>
+                            </div>
+                        </div>
+                        <div class="doc-actions">
+                            <a href="../rules/dispatch.html" class="btn btn-outline">View Document</a>
+                            <a href="https://github.com/elexon/market-facilitator/issues?q=label%3Adispatch" class="btn btn-secondary" target="_blank">
+                                <i class="fab fa-github"></i> Issues
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="document-item" data-category="rules" data-status="review" data-type="process">
+                        <div class="doc-icon">
+                            <i class="fas fa-route"></i>
+                        </div>
+                        <div class="doc-content">
+                            <h3>E2E Process Building Blocks</h3>
+                            <p>End-to-end process design for flexibility market operations with detailed building blocks and workflows.</p>
+                            <div class="doc-meta">
+                                <span class="doc-status review">Under Review</span>
+                                <span class="doc-date">February 2024</span>
+                                <span class="doc-type">Process Document</span>
+                            </div>
+                        </div>
+                        <div class="doc-actions">
+                            <a href="../rules/e2e-process.html" class="btn btn-outline">View Document</a>
+                            <a href="https://github.com/elexon/market-facilitator/issues?q=label%3Ae2e-process" class="btn btn-secondary" target="_blank">
+                                <i class="fab fa-github"></i> Issues
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="document-item" data-category="rules" data-status="draft" data-type="template">
+                        <div class="doc-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <div class="doc-content">
+                            <h3>Standard Agreement Template</h3>
+                            <p>Template for standard agreements between flexibility service providers and market operators.</p>
+                            <div class="doc-meta">
+                                <span class="doc-status draft">Draft</span>
+                                <span class="doc-date">January 2024</span>
+                                <span class="doc-type">Template</span>
+                            </div>
+                        </div>
+                        <div class="doc-actions">
+                            <a href="../rules/agreement.html" class="btn btn-outline">View Document</a>
+                            <a href="https://github.com/elexon/market-facilitator/issues?q=label%3Aagreement" class="btn btn-secondary" target="_blank">
+                                <i class="fab fa-github"></i> Issues
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <h2>Ecosystem Analysis Documents</h2>
+                <div class="document-grid">
+                    <div class="document-item" data-category="ecosystem" data-status="approved" data-type="analysis">
+                        <div class="doc-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="doc-content">
+                            <h3>CIM vs IES Cross-Sector Analysis</h3>
+                            <p>Comprehensive analysis comparing CIM and IES approaches for cross-sector energy system integration.</p>
+                            <div class="doc-meta">
+                                <span class="doc-status approved">Approved</span>
+                                <span class="doc-date">December 2023</span>
+                                <span class="doc-type">Analysis</span>
+                            </div>
+                        </div>
+                        <div class="doc-actions">
+                            <a href="../ecosystem-analysis.html" class="btn btn-outline">View Document</a>
+                            <a href="https://github.com/elexon/market-facilitator/issues?q=label%3Aecosystem" class="btn btn-secondary" target="_blank">
+                                <i class="fab fa-github"></i> Issues
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="document-item" data-category="ecosystem" data-status="approved" data-type="analysis">
+                        <div class="doc-icon">
+                            <i class="fas fa-microscope"></i>
+                        </div>
+                        <div class="doc-content">
+                            <h3>CIM XSD Files Research Analysis</h3>
+                            <p>Detailed research analysis of CIM XSD files and their integration potential with IES ontology and FDS extension.</p>
+                            <div class="doc-meta">
+                                <span class="doc-status approved">Approved</span>
+                                <span class="doc-date">November 2023</span>
+                                <span class="doc-type">Analysis</span>
+                            </div>
+                        </div>
+                        <div class="doc-actions">
+                            <a href="../research-analysis.html" class="btn btn-outline">View Document</a>
+                            <a href="https://github.com/elexon/market-facilitator/issues?q=label%3Aresearch" class="btn btn-secondary" target="_blank">
+                                <i class="fab fa-github"></i> Issues
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="document-item" data-category="ecosystem" data-status="approved" data-type="analysis">
+                        <div class="doc-icon">
+                            <i class="fas fa-table"></i>
+                        </div>
+                        <div class="doc-content">
+                            <h3>CIM to IES/FDS Mapping Tables</h3>
+                            <p>Detailed mapping tables between CIM concepts and IES/FDS concepts with confidence levels and implementation guidance.</p>
+                            <div class="doc-meta">
+                                <span class="doc-status approved">Approved</span>
+                                <span class="doc-date">October 2023</span>
+                                <span class="doc-type">Analysis</span>
+                            </div>
+                        </div>
+                        <div class="doc-actions">
+                            <a href="../mapping-tables.html" class="btn btn-outline">View Document</a>
+                            <a href="https://github.com/elexon/market-facilitator/issues?q=label%3Amapping" class="btn btn-secondary" target="_blank">
+                                <i class="fab fa-github"></i> Issues
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Document Statistics -->
+            <div class="document-stats">
+                <h2>Document Statistics</h2>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number">45</div>
+                        <div class="stat-label">Total Documents</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">12</div>
+                        <div class="stat-label">Draft Documents</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">8</div>
+                        <div class="stat-label">Under Review</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">25</div>
+                        <div class="stat-label">Approved Documents</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Collaboration Section -->
+            <div class="collaboration-section">
+                <h3><i class="fas fa-comments"></i> Contribute to Document Development</h3>
+                <p>Help improve our documents by providing feedback, suggestions, and technical input. Your expertise is valuable to creating high-quality specifications.</p>
+                <div class="collaboration-buttons">
+                    <a href="https://github.com/elexon/market-facilitator/issues/new" class="btn btn-primary" target="_blank">
+                        <i class="fab fa-github"></i> Create Issue
+                    </a>
+                    <a href="https://github.com/elexon/market-facilitator/discussions/new" class="btn btn-secondary" target="_blank">
+                        <i class="fas fa-comments"></i> Start Discussion
+                    </a>
+                    <a href="../collaboration/contact.html" class="btn btn-outline">
+                        <i class="fas fa-envelope"></i> Contact Team
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Elexon Market Facilitator</h3>
+                    <p>Enabling collaboration on GB flexibility markets development</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../../index.html">Home</a></li>
+                        <li><a href="../fmar/overview.html">FMAR Design</a></li>
+                        <li><a href="../rules/vision.html">Rules Development</a></li>
+                        <li><a href="../collaboration/discussions.html">Collaboration</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="https://www.elexon.co.uk" target="_blank">Elexon Main Site</a></li>
+                        <li><a href="https://github.com/elexon/market-facilitator" target="_blank">GitHub Repository</a></li>
+                        <li><a href="../collaboration/contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Elexon. All rights reserved. | <a href="../legal/privacy.html">Privacy Policy</a> | <a href="../legal/terms.html">Terms of Use</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../../scripts/main.js"></script>
+    <script src="../../scripts/search.js"></script>
+</body>
+</html>
