@@ -3,114 +3,169 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MF - Market Facilitator Pilot Collaboration Tool</title>
+    <title>Elexon Market Facilitator - Flexibility Markets Collaboration Hub</title>
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+    <!-- Header -->
     <header class="header">
-        <nav class="nav">
-            <div class="nav-brand">
-                <h1>MF</h1>
-                <span class="subtitle">Market Facilitator</span>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1><i class="fas fa-bolt"></i> Elexon Market Facilitator</h1>
+                    <p>Flexibility Markets Collaboration Hub</p>
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="#home" class="active">Home</a></li>
+                        <li><a href="pages/fmar/overview.html">FMAR Design</a></li>
+                        <li><a href="pages/rules/vision.html">Rules Development</a></li>
+                        <li><a href="pages/collaboration/discussions.html">Collaboration</a></li>
+                        <li><a href="pages/docs/all-documents.html">Documentation</a></li>
+                    </ul>
+                </nav>
             </div>
-            <ul class="nav-menu">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="pages/design.html">Design</a></li>
-                <li><a href="pages/rules.html">Rules</a></li>
-                <li><a href="pages/documents.html">Documents</a></li>
-                <li><a href="pages/about.html">About</a></li>
-            </ul>
-        </nav>
+        </div>
     </header>
 
-    <main class="main">
-        <section class="hero">
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
             <div class="hero-content">
-                <h1>Market Facilitator Pilot Collaboration Tool</h1>
-                <p>A collaborative platform for developing Flexibility Market Rules and Flexibility Market Asset Registration solution design.</p>
-                <div class="hero-actions">
-                    <a href="pages/design.html" class="btn btn-primary">Explore FMAR Design</a>
-                    <a href="pages/rules.html" class="btn btn-secondary">Collaborate on Rules</a>
+                <h1>Collaborating on GB Flexibility Markets</h1>
+                <p>Join industry stakeholders in developing the rules and systems that will power Great Britain's flexibility markets. Access design documents, provide feedback, and shape the future of energy flexibility.</p>
+                <div class="hero-buttons">
+                    <a href="pages/fmar/overview.html" class="btn btn-primary">
+                        <i class="fas fa-cogs"></i> FMAR Design
+                    </a>
+                    <a href="pages/rules/vision.html" class="btn btn-secondary">
+                        <i class="fas fa-gavel"></i> Rules Development
+                    </a>
+                    <a href="pages/collaboration/discussions.html" class="btn btn-outline">
+                        <i class="fas fa-comments"></i> Join Discussion
+                    </a>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="collaboration-cta">
-            <div class="container">
-                <h2><i class="fas fa-users"></i> Join the Discussion</h2>
-                <p>This is a collaborative tool. Engage with us and other market paricipants using discussions and raising changes.</p>
+    <!-- Work Programmes Section -->
+    <section class="work-programmes">
+        <div class="container">
+            <h2>Our Work Programmes</h2>
+            <div class="programme-grid">
+                <div class="programme-card">
+                    <div class="programme-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>FMAR Design</h3>
+                    <p>Flexibility Market Asset Registration solution design - developing the central registry for all flexible assets participating in GB flexibility markets.</p>
+                    <div class="programme-status">
+                        <span class="status-badge status-active">Active</span>
+                        <span class="workshop-phase">Workshop Series #2</span>
+                    </div>
+                    <a href="pages/fmar/overview.html" class="btn btn-outline">View Design Documents</a>
+                </div>
+                <div class="programme-card">
+                    <div class="programme-icon">
+                        <i class="fas fa-gavel"></i>
+                    </div>
+                    <h3>Rules Development</h3>
+                    <p>Flexibility Market Rules development - creating the regulatory framework and operational rules for GB flexibility markets.</p>
+                    <div class="programme-status">
+                        <span class="status-badge status-active">Active</span>
+                        <span class="workshop-phase">Monthly Working Groups</span>
+                    </div>
+                    <a href="pages/rules/vision.html" class="btn btn-outline">View Rules Documents</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Access Section -->
+    <section class="quick-access">
+        <div class="container">
+            <h2>Quick Access</h2>
+            <div class="quick-access-grid">
+                <div class="quick-access-card">
+                    <h3><i class="fas fa-file-alt"></i> Latest Documents</h3>
+                    <ul>
+                        <li><a href="pages/fmar/ecosystem/use-cases.html">Use Case Catalogue v0.2</a></li>
+                        <li><a href="pages/rules/dispatch.html">Dispatch API Specification</a></li>
+                        <li><a href="pages/fmar/data/information-map.html">Information Map v0.1</a></li>
+                        <li><a href="pages/rules/e2e-process.html">E2E Process Building Blocks</a></li>
+                    </ul>
+                </div>
+                <div class="quick-access-card">
+                    <h3><i class="fas fa-calendar-alt"></i> Upcoming Events</h3>
+                    <ul>
+                        <li><strong>FMAR Workshop #3:</strong> Data Architecture - 15th March</li>
+                        <li><strong>Rules Working Group:</strong> Dispatch Rules - 22nd March</li>
+                        <li><strong>Industry Consultation:</strong> API Standards - 29th March</li>
+                    </ul>
+                </div>
+                <div class="quick-access-card">
+                    <h3><i class="fas fa-comments"></i> Active Discussions</h3>
+                    <ul>
+                        <li><a href="pages/collaboration/discussions.html#asset-identity">Asset Identity Standards</a></li>
+                        <li><a href="pages/collaboration/discussions.html#api-design">API Design Patterns</a></li>
+                        <li><a href="pages/collaboration/discussions.html#data-exchange">Data Exchange Contracts</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collaboration CTA Section -->
+    <section class="collaboration-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Get Involved in the Development</h2>
+                <p>Your industry expertise is crucial to shaping GB's flexibility markets. Join the conversation and help us build solutions that work for everyone.</p>
                 <div class="cta-buttons">
-                    <a href="https://github.com/your-username/MF/issues" class="btn btn-outline" target="_blank">
-                        <i class="fas fa-exclamation-circle"></i> Raise Changes
+                    <a href="https://github.com/elexon/market-facilitator/issues" class="btn btn-primary" target="_blank">
+                        <i class="fab fa-github"></i> Raise an Issue
                     </a>
-                    <a href="https://github.com/your-username/MF/discussions" class="btn btn-outline" target="_blank">
-                        <i class="fas fa-comments"></i> Join Discussions
+                    <a href="https://github.com/elexon/market-facilitator/discussions" class="btn btn-secondary" target="_blank">
+                        <i class="fas fa-comments"></i> Join Discussion
+                    </a>
+                    <a href="pages/collaboration/workshops.html" class="btn btn-outline">
+                        <i class="fas fa-users"></i> Workshop Materials
                     </a>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="content-sections">
-            <div class="container">
-                <div class="section-grid">
-                    <div class="section-card">
-                        <div class="card-icon">
-                            <i class="fas fa-palette"></i>
-                        </div>
-                        <h3>Design Framework</h3>
-                        <p>Explore the design principles and architectural patterns for market frameworks.</p>
-                        <a href="pages/design.html" class="card-link">View Design Documents <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                    
-                    <div class="section-card">
-                        <div class="card-icon">
-                            <i class="fas fa-gavel"></i>
-                        </div>
-                        <h3>Rules Development</h3>
-                        <p>Review and contribute to regulatory rules and market operation guidelines.</p>
-                        <a href="pages/rules.html" class="card-link">View Rules <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                    
-                    <div class="section-card">
-                        <div class="card-icon">
-                            <i class="fas fa-file-alt"></i>
-                        </div>
-                        <h3>Documentation</h3>
-                        <p>Access comprehensive documentation and reference materials.</p>
-                        <a href="pages/documents.html" class="card-link">Browse Documents <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
+    <!-- Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h4>Market Facilitator</h4>
-                    <p>Collaborative development of market frameworks and regulatory rules.</p>
+                    <h3>Elexon Market Facilitator</h3>
+                    <p>Enabling collaboration on GB flexibility markets development</p>
                 </div>
                 <div class="footer-section">
                     <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="pages/design.html">Design</a></li>
-                        <li><a href="pages/rules.html">Rules</a></li>
-                        <li><a href="pages/documents.html">Documents</a></li>
+                        <li><a href="pages/fmar/overview.html">FMAR Design</a></li>
+                        <li><a href="pages/rules/vision.html">Rules Development</a></li>
+                        <li><a href="pages/docs/all-documents.html">All Documents</a></li>
+                        <li><a href="pages/collaboration/discussions.html">Collaboration</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Collaborate</h4>
+                    <h4>Resources</h4>
                     <ul>
-                        <li><a href="https://github.com/your-username/MF/issues" target="_blank">Issues</a></li>
-                        <li><a href="https://github.com/your-username/MF/discussions" target="_blank">Discussions</a></li>
-                        <li><a href="https://github.com/your-username/MF" target="_blank">Repository</a></li>
+                        <li><a href="https://www.elexon.co.uk" target="_blank">Elexon Main Site</a></li>
+                        <li><a href="https://github.com/elexon/market-facilitator" target="_blank">GitHub Repository</a></li>
+                        <li><a href="pages/collaboration/contact.html">Contact Us</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Market Framework. Built with ❤️ for collaboration.</p>
+                <p>&copy; 2024 Elexon. All rights reserved. | <a href="pages/legal/privacy.html">Privacy Policy</a> | <a href="pages/legal/terms.html">Terms of Use</a></p>
             </div>
         </div>
     </footer>
