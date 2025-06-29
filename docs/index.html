@@ -6,6 +6,8 @@
     <title>Elexon Market Facilitator - Flexibility Markets Development</title>
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Giscus CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/giscus@latest/dist/giscus.css">
 </head>
 <body>
     <!-- Header -->
@@ -242,6 +244,9 @@
                             <button class="btn btn-small" onclick="toggleWGMaterials('dispatch')">
                                 <i class="fas fa-download"></i> WG Materials
                             </button>
+                            <button class="btn btn-small" onclick="toggleDiscussions('dispatch')">
+                                <i class="fas fa-comments"></i> Discuss
+                            </button>
                         </div>
                         <div class="wg-materials" id="dispatch-materials" style="display: none;">
                             <h4>Working Group Materials</h4>
@@ -250,6 +255,10 @@
                                 <a href="#" class="material-item">WG #11 - February 2024</a>
                                 <a href="#" class="material-item">WG #10 - January 2024</a>
                             </div>
+                        </div>
+                        <div class="discussions-section" id="dispatch-discussions" style="display: none;">
+                            <h4>Discussions</h4>
+                            <div class="giscus-container" data-rule="dispatch"></div>
                         </div>
                     </div>
 
@@ -264,6 +273,9 @@
                             <button class="btn btn-small" onclick="toggleWGMaterials('e2e')">
                                 <i class="fas fa-download"></i> WG Materials
                             </button>
+                            <button class="btn btn-small" onclick="toggleDiscussions('e2e')">
+                                <i class="fas fa-comments"></i> Discuss
+                            </button>
                         </div>
                         <div class="wg-materials" id="e2e-materials" style="display: none;">
                             <h4>Working Group Materials</h4>
@@ -271,6 +283,10 @@
                                 <a href="#" class="material-item">WG #11 - February 2024</a>
                                 <a href="#" class="material-item">WG #10 - January 2024</a>
                             </div>
+                        </div>
+                        <div class="discussions-section" id="e2e-discussions" style="display: none;">
+                            <h4>Discussions</h4>
+                            <div class="giscus-container" data-rule="e2e"></div>
                         </div>
                     </div>
 
@@ -285,12 +301,19 @@
                             <button class="btn btn-small" onclick="toggleWGMaterials('prequal')">
                                 <i class="fas fa-download"></i> WG Materials
                             </button>
+                            <button class="btn btn-small" onclick="toggleDiscussions('prequal')">
+                                <i class="fas fa-comments"></i> Discuss
+                            </button>
                         </div>
                         <div class="wg-materials" id="prequal-materials" style="display: none;">
                             <h4>Working Group Materials</h4>
                             <div class="material-list">
                                 <a href="#" class="material-item">WG #10 - January 2024</a>
                             </div>
+                        </div>
+                        <div class="discussions-section" id="prequal-discussions" style="display: none;">
+                            <h4>Discussions</h4>
+                            <div class="giscus-container" data-rule="prequal"></div>
                         </div>
                     </div>
 
@@ -305,12 +328,19 @@
                             <button class="btn btn-small" onclick="toggleWGMaterials('agreement')">
                                 <i class="fas fa-download"></i> WG Materials
                             </button>
+                            <button class="btn btn-small" onclick="toggleDiscussions('agreement')">
+                                <i class="fas fa-comments"></i> Discuss
+                            </button>
                         </div>
                         <div class="wg-materials" id="agreement-materials" style="display: none;">
                             <h4>Working Group Materials</h4>
                             <div class="material-list">
                                 <a href="#" class="material-item">WG #9 - December 2023</a>
                             </div>
+                        </div>
+                        <div class="discussions-section" id="agreement-discussions" style="display: none;">
+                            <h4>Discussions</h4>
+                            <div class="giscus-container" data-rule="agreement"></div>
                         </div>
                     </div>
 
@@ -325,12 +355,19 @@
                             <button class="btn btn-small" onclick="toggleWGMaterials('coordination')">
                                 <i class="fas fa-download"></i> WG Materials
                             </button>
+                            <button class="btn btn-small" onclick="toggleDiscussions('coordination')">
+                                <i class="fas fa-comments"></i> Discuss
+                            </button>
                         </div>
                         <div class="wg-materials" id="coordination-materials" style="display: none;">
                             <h4>Working Group Materials</h4>
                             <div class="material-list">
                                 <a href="#" class="material-item">WG #8 - November 2023</a>
                             </div>
+                        </div>
+                        <div class="discussions-section" id="coordination-discussions" style="display: none;">
+                            <h4>Discussions</h4>
+                            <div class="giscus-container" data-rule="coordination"></div>
                         </div>
                     </div>
 
@@ -345,12 +382,19 @@
                             <button class="btn btn-small" onclick="toggleWGMaterials('integration')">
                                 <i class="fas fa-download"></i> WG Materials
                             </button>
+                            <button class="btn btn-small" onclick="toggleDiscussions('integration')">
+                                <i class="fas fa-comments"></i> Discuss
+                            </button>
                         </div>
                         <div class="wg-materials" id="integration-materials" style="display: none;">
                             <h4>Working Group Materials</h4>
                             <div class="material-list">
                                 <a href="#" class="material-item">WG #7 - October 2023</a>
                             </div>
+                        </div>
+                        <div class="discussions-section" id="integration-discussions" style="display: none;">
+                            <h4>Discussions</h4>
+                            <div class="giscus-container" data-rule="integration"></div>
                         </div>
                     </div>
 
@@ -365,12 +409,19 @@
                             <button class="btn btn-small" onclick="toggleWGMaterials('security')">
                                 <i class="fas fa-download"></i> WG Materials
                             </button>
+                            <button class="btn btn-small" onclick="toggleDiscussions('security')">
+                                <i class="fas fa-comments"></i> Discuss
+                            </button>
                         </div>
                         <div class="wg-materials" id="security-materials" style="display: none;">
                             <h4>Working Group Materials</h4>
                             <div class="material-list">
                                 <a href="#" class="material-item">Coming Soon</a>
                             </div>
+                        </div>
+                        <div class="discussions-section" id="security-discussions" style="display: none;">
+                            <h4>Discussions</h4>
+                            <div class="giscus-container" data-rule="security"></div>
                         </div>
                     </div>
 
@@ -385,12 +436,19 @@
                             <button class="btn btn-small" onclick="toggleWGMaterials('performance')">
                                 <i class="fas fa-download"></i> WG Materials
                             </button>
+                            <button class="btn btn-small" onclick="toggleDiscussions('performance')">
+                                <i class="fas fa-comments"></i> Discuss
+                            </button>
                         </div>
                         <div class="wg-materials" id="performance-materials" style="display: none;">
                             <h4>Working Group Materials</h4>
                             <div class="material-list">
                                 <a href="#" class="material-item">Coming Soon</a>
                             </div>
+                        </div>
+                        <div class="discussions-section" id="performance-discussions" style="display: none;">
+                            <h4>Discussions</h4>
+                            <div class="giscus-container" data-rule="performance"></div>
                         </div>
                     </div>
                 </div>
@@ -404,19 +462,44 @@
                 </div>
 
                 <div class="collaboration-grid">
-                    <div class="collab-card">
-                        <h3><i class="fab fa-github"></i> GitHub Integration</h3>
-                        <p>Access issues, discussions, and contribute directly</p>
-                        <div class="collab-links">
-                            <a href="https://github.com/elexon/market-facilitator/issues" class="btn btn-primary" target="_blank">
-                                <i class="fas fa-exclamation-circle"></i> Issues
+                    <!-- GitHub Issues Widget -->
+                    <div class="collab-card github-widget">
+                        <h3><i class="fab fa-github"></i> Active Issues</h3>
+                        <p>Track and contribute to ongoing discussions</p>
+                        <div class="github-issues-widget" id="github-issues">
+                            <div class="loading-spinner">
+                                <i class="fas fa-spinner fa-spin"></i>
+                                <span>Loading issues...</span>
+                            </div>
+                        </div>
+                        <div class="widget-actions">
+                            <a href="https://github.com/elexon/market-facilitator/issues/new" class="btn btn-primary" target="_blank">
+                                <i class="fas fa-plus"></i> Create Issue
                             </a>
-                            <a href="https://github.com/elexon/market-facilitator/discussions" class="btn btn-secondary" target="_blank">
-                                <i class="fas fa-comments"></i> Discussions
+                            <a href="https://github.com/elexon/market-facilitator/issues" class="btn btn-outline" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> View All
                             </a>
                         </div>
                     </div>
 
+                    <!-- GitHub Projects Widget -->
+                    <div class="collab-card github-widget">
+                        <h3><i class="fas fa-project-diagram"></i> Project Progress</h3>
+                        <p>Track milestones and project status</p>
+                        <div class="github-projects-widget" id="github-projects">
+                            <div class="loading-spinner">
+                                <i class="fas fa-spinner fa-spin"></i>
+                                <span>Loading projects...</span>
+                            </div>
+                        </div>
+                        <div class="widget-actions">
+                            <a href="https://github.com/elexon/market-facilitator/projects" class="btn btn-primary" target="_blank">
+                                <i class="fas fa-external-link-alt"></i> View Projects
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Working Groups -->
                     <div class="collab-card">
                         <h3><i class="fas fa-users"></i> Working Groups</h3>
                         <p>Join monthly working group sessions</p>
@@ -429,12 +512,12 @@
                         <a href="#" class="btn btn-outline">Register Interest</a>
                     </div>
 
+                    <!-- General Discussions -->
                     <div class="collab-card">
-                        <h3><i class="fas fa-file-alt"></i> Document Feedback</h3>
-                        <p>Provide feedback on specific documents</p>
-                        <div class="feedback-options">
-                            <a href="#" class="btn btn-small">Review Documents</a>
-                            <a href="#" class="btn btn-small">Submit Feedback</a>
+                        <h3><i class="fas fa-comments"></i> General Discussions</h3>
+                        <p>Community discussions and feedback</p>
+                        <div class="discussions-section">
+                            <div class="giscus-container" id="general-discussions"></div>
                         </div>
                     </div>
                 </div>
@@ -474,6 +557,8 @@
         </div>
     </footer>
 
+    <!-- Giscus Script -->
+    <script src="https://unpkg.com/giscus@latest/dist/giscus.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>
