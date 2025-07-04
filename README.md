@@ -20,7 +20,7 @@ We actively encourage participation from all industry stakeholders. Your experti
 
 *   **To Review Artefacts:** All published design documents can be found within the repository's directory structure. We recommend starting with the `00-Programme-Level` and `01-Ecosystem-Architecture` folders.
 *   **To Provide Feedback or Ask Questions:** The primary method for providing input is by raising a question in **[GitHub Discussions]**(https://github.com/mez-FMDA/MF.github.io/discussions/categories/general-discussion) or by creating a **[GitHub Issue](https://github.com/elexon/fmar-design-artefacts/issues)**. Please use the available templates to ensure your feedback is structured and can be effectively triaged by our team.
-*   **To Track Progress:** You can "Watch" this repository to receive notifications on new Issues, discussions, and artefact updates. Progress on key design themes is also tracked on our **[FMAR Design Project Board](link-to-your-github-project-board)**.
+*   **To Track Progress:** You can "Watch" this repository to receive notifications on new Issues, discussions, and artefact updates. Progress on key design themes is also tracked on our **[FMAR Design Project Board]**(link-to-your-github-project-board)**.
 
 **Please Note:** Only authorized members of the FMAR Architecture Team can commit changes and merge pull requests to the main branches of this repository to ensure quality and control. All industry feedback provided via Issues will be reviewed, and if accepted, incorporated into subsequent versions of the artefacts by the team.
 
