@@ -82,7 +82,7 @@ Use the table of contents below to navigate through the different architectural 
         * [Use Case Diagram (EBIX Modelling in E2E Workstream)](#use-case-diagrams)
     * [User Case Catalogue](#user-case-catalogue)
         * [Role Actor Mappings](FMAR_Design/Ecosystem_Architecture/User_Case_Catalogue/Role_Actor_Mappings.md)
-        * [Use Case Catalogue (in scope for go-live](FMAR_Design/Ecosystem_Architecture/User_Case_Catalogue/Use_case_catalogue)
+        * [Use Case Catalogue (in scope for go-live](https://github.com/mez-FMDA/Market-Facilitator-FMAR/tree/main/docs/Market_Facilitator/FMAR_Design/Ecosystem_Architecture/User_Case_Catalogue)
         * [Use Case Descriptions](#user-case-catalogue)
         * [List of Actor-Role Mapping](#user-case-catalogue)
         * [Use Case Catalogue (future vision)](#user-case-catalogue)
