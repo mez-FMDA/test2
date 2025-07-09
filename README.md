@@ -7,11 +7,11 @@
 
 We actively encourage participation from all industry stakeholders. Your expertise is crucial to our success.
 
-*   **To Review Artefacts:** All published design documentation can be found within the repository's directory structure. We recommend starting with the `00-Programme-Level` and `01-Ecosystem-Architecture` folders to read the detailed descriptions of the core user journeys and functionalities FMAR will support.
+*   **To Review Artefacts:** All published design documentation can be indexed in the table of contents below. We recommend starting with the `00-Programme-Level` and `01-Ecosystem-Architecture` folders to read the latest understanding of the descriptions of the core user journeys and functionalities FMAR will support.
 
-Use the table of contents below to navigate through the different architectural domains and artefacts.
+The table of contents below is structured by way of the different architectural domains and artefacts that will be in scope of Elexon's High Level Design consultation in Winter 2025/2026.
 
-# FMAR Design Documentation
+## FMAR Design Documentation
 
 This repository contains the design documentation for the FMAR project. Use the table of contents below to navigate through the different architectural domains and artefacts.
 
