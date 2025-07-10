@@ -23,10 +23,8 @@ Our design process is guided by a long-term strategic vision for FMAR as as a pu
 * `Business process models for sub-markets in scope TO BE PLACEHOLDER.md`: Business Process Modelling Notation to describe the TO BE Registration Process for Flexibility Markets in scope
 * `Use case diagram (as part of EBIX modelling in E2E workstream)_PLACEHOLDER.md`: Placeholder for use case diagrams developed.
 * `Role_Actor_Mappings.md`: Document outlining role and actor mappings.
-* `Use_case_catalogue`: Existing use case catalogue.
+* `Use_case_catalogue`: Existing use case catalogue in scope vs out of scope.
 * `All Use-case descriptions (highlighting which are in MVP scope)_PLACEHOLDER.md`: Placeholder for all use-case descriptions, with MVP scope highlighted.
-* `List of actor-role mapping_PLACEHOLDER.md`: Placeholder for a detailed list of actor-role mappings.
-* `Use case catalogue_PLACEHOLDER.md`: Placeholder for an additional use case catalogue.
 * `Policy-process-data traceability matrix (links to standards information base)_PLACEHOLDER.md`: Placeholder for the policy-process-data traceability matrix, with links to the standards information base.
 
 ### Data Architecture
