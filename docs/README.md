@@ -19,16 +19,9 @@ Our design process is guided by a long-term strategic vision for FMAR as as a pu
 
 ### Ecosystem Architecture
 
-#### Business Process Modelling
-
-* `BPMN business process models (as part of E2E workstream)_PLACEHOLDER.md`: Placeholder for BPMN business process models developed as part of the E2E workstream.
-
-#### Use Case Diagrams
-
+* `Business process models for sub-markets in scope AS IS PLACEHOLDER.md`: Business Process Modelling Notation to describe the AS IS Registration Process for Flexibility Markets in scope
+* `Business process models for sub-markets in scope TO BE PLACEHOLDER.md`: Business Process Modelling Notation to describe the TO BE Registration Process for Flexibility Markets in scope
 * `Use case diagram (as part of EBIX modelling in E2E workstream)_PLACEHOLDER.md`: Placeholder for use case diagrams developed.
-
-#### User Case Catalogue
-
 * `Role_Actor_Mappings.md`: Document outlining role and actor mappings.
 * `Use_case_catalogue`: Existing use case catalogue.
 * `All Use-case descriptions (highlighting which are in MVP scope)_PLACEHOLDER.md`: Placeholder for all use-case descriptions, with MVP scope highlighted.
