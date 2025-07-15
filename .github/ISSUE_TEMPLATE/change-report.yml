@@ -1,8 +1,8 @@
 name: Raise an issue with a Flexibility Market Rule
 description: Log an issue with an existing Flexibility Market Rule.
 title: "Flexibility Market Rule Issue: [Title of Issue]"
-labels: [Flexibility Market Rule/Issue]
-projects: Flexibility Market Rules
+labels: [Flexibility Market Rule Issue]
+projects: FMR Lifecycle
 assignees: []
 body:
   - type: input
