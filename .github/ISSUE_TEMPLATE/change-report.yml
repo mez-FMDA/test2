@@ -1,4 +1,4 @@
-name: FMR Change Request
+name: FMR Raise an Issue
 description: Propose a change, clarification, or withdrawal of a Flexibility Market Rule.
 title: "FMR-XXX | Change request: [Short Description]"
 labels: [change/draft]
