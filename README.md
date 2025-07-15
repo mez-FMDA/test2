@@ -46,7 +46,7 @@ We will be running a series of thematic design workshops to collaboratively defi
 
 All engagement in this repository is governed by our **[Contribution Guidelines and Code of Conduct](./CONTRIBUTING.md)**. We are committed to fostering an open, respectful, and collaborative environment.
 
-## Licensing and security policy
+## Licensing & security policy
 
 Documentation (docs and docs-dev) is licensed under the CC-BY-4.0 License. Attribution should be made to Elexon Ltd.
 
