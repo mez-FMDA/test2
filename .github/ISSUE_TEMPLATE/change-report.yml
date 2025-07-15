@@ -1,15 +1,25 @@
 name: Raise an issue with a Flexibility Market Rule
 description: Log an issue with an existing Flexibility Market Rule.
 title: "FMR-XXX | Change request: [Short Description]"
-labels: [change/draft]
+labels: [Flexibility Market Rule/Issue]
+projects: Flexibility Market Rules
 assignees: []
 body:
+  - type: input
+    id: rule_name
+    attributes:
+      label: Rule Name
+      description: Name of the rule you want to amend (e.g. Standard Agreement).
+      placeholder: 
+    validations:
+      required: true
+
   - type: input
     id: rule_id
     attributes:
       label: Rule ID
-      description: ID of the rule you want to amend (e.g. FMR-007).
-      placeholder: FMR-007
+      description: ID of the rule you want to amend, leave blank if unkown.
+      placeholder: e.g. MF-FMR-002
     validations:
       required: true
 
@@ -18,41 +28,37 @@ body:
     attributes:
       label: Proposing Organisation or Individual
       description: Who is proposing this change?
-      placeholder: e.g. DSO X or John Smith (NESO)
-    validations:
-      required: true
-
-  - type: dropdown
-    id: change_type
-    attributes:
-      label: Change Type
-      description: What kind of change are you proposing?
-      options:
-        - Amendment
-        - Clarification
-        - Withdrawal
+      placeholder: e.g. DSO X or FSP B
     validations:
       required: true
 
   - type: textarea
-    id: description
+    id: Issue
     attributes:
-      label: Description of Change
-      description: Describe the problem or improvement and what change is being proposed.
+      label: Description of the Issue
+      description: Describe the problem to be addressed.
       placeholder: |
-        The current rule does not allow for partial dispatch reversals.
-        We propose adding a clause that enables multi-stage activation rollback.
+        The clauses on data protection differ across organisations
     validations:
       required: true
 
   - type: textarea
-    id: impact_scope
+    id: Impact
     attributes:
-      label: Affected Processes, Sub-Markets or Stakeholders
-      description: Where does this change apply? Which actors or workflows will be impacted?
+      label: Description of the Impact
+      description: What is the impact of the issue?
       placeholder: |
-        Affects: DNO Sustain market, Validation stage
-        Stakeholders: Platform integrators, DSO ops teams
+        Additional cost scrutinizing all the requirements and implementating the various obligations
+    validations:
+      required: false
+      
+  - type: textarea
+    id: Solution
+    attributes:
+      label: Description of potential Solutions
+      description: How could we solve the issue?
+      placeholder: |
+        Develop aligned requirements in the DSO service terms
     validations:
       required: false
 
@@ -61,6 +67,6 @@ body:
     attributes:
       label: Supporting Documents or Links
       description: Add links to draft wording, diagrams, or prior discussions.
-      placeholder: https://example.com/fmr-007-change-draft
+      placeholder: 
     validations:
       required: false
