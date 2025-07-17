@@ -29,11 +29,17 @@ flowchart LR
     SS[Settlement System 🧾]
     
     %% --- Define System Boundary and Use Cases within it ---
-    subgraph "Service Provider User Module"
-        UC_RegUser((Register User))
-        UC_RegSPDetails((Register Service Provider details))
-        UC_UpdateSPDetails((Update Service Provider Details))
-        UC_ValidateSPDetails((Validate Service Provider Details))
+    subgraph "GICM Module"
+        UC_RegUpdateConnectionLimit((Register or Update Connection Limit))
+    end
+
+    subgraph "Pre-Qualification Service Module"
+        UC_QualifyMU((Qualify Market Unit))
+        UC_ProvidePMUQ((Provide Potential Market Unit Qualifications))
+        UC_CreateProdReg((Create Product Register))
+        UC_MaintainProdReg((Maintain Product Register)) 
+        UC_CreateGrouping((Create Asset Grouping / Market Units))
+        UC_UpdateGrouping((Update Asset Grouping))
     end
 
     subgraph "Service Provider User Module"
@@ -52,18 +58,14 @@ flowchart LR
         UC_UpdateAssetDetails((Update Asset Details))
     end
 
-    subgraph "Pre-Qualification Service Module"
-        UC_QualifyMU((Qualify Market Unit))
-        UC_ProvidePMUQ((Provide Potential Market Unit Qualifications))
-        UC_CreateProdReg((Create Product Register))
-        UC_MaintainProdReg((Maintain Product Register)) 
-        UC_CreateGrouping((Create Asset Grouping / Market Units))
-        UC_UpdateGrouping((Update Asset Grouping))
+    subgraph "Service Provider User Module"
+        UC_RegUser((Register User))
+        UC_RegSPDetails((Register Service Provider details))
+        UC_UpdateSPDetails((Update Service Provider Details))
+        UC_ValidateSPDetails((Validate Service Provider Details))
     end
 
-    subgraph "GICM Module"
-        UC_RegUpdateConnectionLimit((Register or Update Connection Limit))
-    end    
+  
     
     %% --- Actor to Use Case Associations ---
     AO --- UC_DeregAsset
