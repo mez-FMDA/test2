@@ -44,4 +44,25 @@ Out-of-scope modules:
 - 🔶 PSQM = Product & Service Qualification Management
 - 🔶 GICM = Grid Integration & Constraint Management
 
+| UC ID    | Use Case Name                               | Delivered By Module(s)                |
+|----------|---------------------------------------------|-------------------------------------|
+| UC-01.1  | Register User                               | SPUM                                |
+| UC-01.2  | Register Service Provider                   | SPUM                                |
+| UC-01.3  | Update / De-register Service Provider       | SPUM                                |
+| UC-02.1  | Maintain Asset Categories                   | ARM (Admin Function)                 |
+| UC-02.2  | Register Asset                              | ARM (supported by SPUM)              |
+| UC-02.3  | Validate Asset                              | ARM                                 |
+| UC-02.4  | Update Asset Details                        | ARM (supported by SPUM)              |
+| UC-02.5  | De-register Asset (from Market Unit)        | PSQM (supported by ARM)              |
+| UC-02.6  | Export Asset Data                           | ARM                                 |
+| UC-03.1  | Create / Update Market Unit                 | 🔶 PSQM (supported by ARM, SPUM)    |
+| UC-03.2  | Qualify Market Unit                         | 🔶 PSQM                             |
+| UC-03.3  | Switch Market Unit to New Service Provider  | 🔶 PSQM (supported by SPUM)          |
+| UC-03.4  | Update Market Unit                          | 🔶 PSQM (supported by ARM)           |
+| UC-04.1  | Create / Maintain Product Register          | PSQM (Admin Function)                |
+| UC-05.1  | Discover Potential Product Eligibility      | PSQM                               |
+| UC-06.1  | Share Asset Register Data                   | All Modules (API Layer)              |
+| UC-06.2  | Register / Update Connection Limit          | 🔶 GICM (supported by ARM)           |
+| UC-07.1  | Provide Reporting & Insights                | All Modules (Reporting Layer)        |
+
 ---
