@@ -29,11 +29,11 @@ flowchart LR
     SS[Settlement System 🧾]
     
     %% --- Define System Boundary and Use Cases within it ---
-    subgraph "GICM Module"
+    subgraph "Gird Integration & Constraint Management"
         UC_RegUpdateConnectionLimit((Register or Update Connection Limit))
     end
 
-    subgraph "Pre-Qualification Service Module"
+    subgraph "Product & Service Qualification Management"
         UC_QualifyMU((Qualify Market Unit))
         UC_ProvidePMUQ((Provide Potential Market Unit Qualifications))
         UC_CreateProdReg((Create Product Register))
@@ -42,12 +42,12 @@ flowchart LR
         UC_UpdateGrouping((Update Asset Grouping))
     end
 
-    subgraph "Service Provider User Module"
+    subgraph "ARM & SPUM"
         UC_DeregAsset((De-register Asset))
         UC_SwitchSP((Switch Service Provider))
     end
 
-    subgraph "Asset Registration Module"
+    subgraph "Asset Registration & Maintenance"
         UC_RegAsset((Register Asset))
         UC_MaintainCategories((Maintain Asset Categories))
         UC_ShareData((Share Asset Register Data))
@@ -58,7 +58,7 @@ flowchart LR
         UC_UpdateAssetDetails((Update Asset Details))
     end
 
-    subgraph "Service Provider User Module"
+    subgraph "Service Provider & User Management"
         UC_RegUser((Register User))
         UC_RegSPDetails((Register Service Provider details))
         UC_UpdateSPDetails((Update Service Provider Details))
