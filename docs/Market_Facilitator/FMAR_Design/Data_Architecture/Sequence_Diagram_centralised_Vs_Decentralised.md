@@ -24,18 +24,27 @@ A centralized data architecture is a system where all data is stored and managed
 ### Data Storage for Centralised Architecture
 ```mermaid
 sequenceDiagram
-    participant Alice
-    participant Bob
-    Alice->>Bob: Hello Bob, how are you?
-    Bob-->>Alice: Fine thanks.
+    participant FSP
+    participant Data Provider
+    participant FMAR
+    participant Data Consumer
+    FSP->>Data Provider: Register Asset
+    Data Provider->>FMAR: Store Asset Data
+    FMAR->>FMAR: Dedupe check
+    FMAR->> Data Provider: Send UID
+    Data Provider->>FSP: Confirm Registration
+    FMAR->> Data Consumer: Send UID
 
 ```
 
 ### Data Retrieval for Centralised Architecture
 ```mermaid
 sequenceDiagram
-    participant Alice
-    participant Bob
+    participant FSP
+    participant Data Provider
+    participant FMAR
+    participant Data Consumer
+    
     Alice->>Bob: Hello Bob, how are you?
     Bob-->>Alice: Fine thanks.
 
