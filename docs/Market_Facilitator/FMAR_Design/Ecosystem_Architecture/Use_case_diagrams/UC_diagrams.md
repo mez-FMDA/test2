@@ -29,30 +29,42 @@ flowchart LR
     SS[Settlement System 🧾]
     
     %% --- Define System Boundary and Use Cases within it ---
-    subgraph "Flexibility Market Asset Registration System"
-        UC_RegUser((Register User)) // SPUM
-        UC_DeregAsset((De-register Asset)) // ARM and SPUM
-        UC_SwitchSP((Switch Service Provider)) // ARM and SPUM
-        UC_RegAsset((Register Asset)) // ARM 
-        UC_RegSPDetails((Register Service Provider details)) // SPUM
-        UC_QualifyMU((Qualify Market Unit)) // PQSM
-        UC_ProvidePMUQ((Provide Potential Market Unit Qualifications)) // PQSM 
-        UC_CreateProdReg((Create Product Register)) // PQSM
-        UC_MaintainProdReg((Maintain Product Register)) // PQSM 
-        UC_ExportData((Export Asset Data)) // ARM 
-        UC_VerifyAuth((Verify Asset Authenticity)) // ARM 
-        UC_ValidateAsset((Validate Asset)) // ARM 
-        UC_UpdateAssetDetails((Update Asset Details)) // ARM 
-        UC_UpdateSPDetails((Update Service Provider Details)) // SPUM
-        UC_CreateGrouping((Create Asset Grouping / Market Units)) // PQSM 
-        UC_UpdateGrouping((Update Asset Grouping)) // PQSM
-        UC_ValidateSPDetails((Validate Service Provider Details)) // SPUM
-        UC_MaintainCategories((Maintain Asset Categories)) // ARM 
-        UC_ShareData((Share Asset Register Data)) // ARM 
-        UC_Analytics((Provide Analytics)) // ARM
-        UC_RegUpdateConnectionLimit((Register or Update Connection Limit)) // GICM
+    subgraph "Service Provider User Module"
+        UC_RegUser((Register User))
+        UC_RegSPDetails((Register Service Provider details))
+        UC_UpdateSPDetails((Update Service Provider Details))
+        UC_ValidateSPDetails((Validate Service Provider Details))
     end
 
+    subgraph "Service Provider User Module"
+        UC_DeregAsset((De-register Asset))
+        UC_SwitchSP((Switch Service Provider))
+    end
+
+    subgraph "Asset Registration Module"
+        UC_RegAsset((Register Asset))
+        UC_MaintainCategories((Maintain Asset Categories))
+        UC_ShareData((Share Asset Register Data))
+        UC_ExportData((Export Asset Data))
+        UC_Analytics((Provide Analytics))
+        UC_VerifyAuth((Verify Asset Authenticity))
+        UC_ValidateAsset((Validate Asset))
+        UC_UpdateAssetDetails((Update Asset Details))
+    end
+
+    subgraph "Pre-Qualification Service Module"
+        UC_QualifyMU((Qualify Market Unit))
+        UC_ProvidePMUQ((Provide Potential Market Unit Qualifications))
+        UC_CreateProdReg((Create Product Register))
+        UC_MaintainProdReg((Maintain Product Register)) 
+        UC_CreateGrouping((Create Asset Grouping / Market Units))
+        UC_UpdateGrouping((Update Asset Grouping))
+    end
+
+    subgraph "GICM Module"
+        UC_RegUpdateConnectionLimit((Register or Update Connection Limit))
+    end    
+    
     %% --- Actor to Use Case Associations ---
     AO --- UC_DeregAsset
     AO --- UC_SwitchSP
