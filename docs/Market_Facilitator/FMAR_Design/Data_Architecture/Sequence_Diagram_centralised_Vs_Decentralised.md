@@ -45,11 +45,10 @@ sequenceDiagram
     participant FMAR
     participant Data Consumer
     
-    Alice->>Bob: Hello Bob, how are you?
-    Bob-->>Alice: Fine thanks.
+    Data Consumer->>FMAR: Request Asset Data
+    FMAR-->>Data Consumer: Send Asset Data
 
 ```
-
 
 ## Federated Data Architecture
 A federated data architecture is a system design where multiple independent data sources or systems are integrated to function as a single, unified entity without centralizing the data or control. It allows for accessing and analyzing data from various sources in real-time without physically moving or replicating the data. This approach maintains the autonomy of individual data sources while enabling data sharing and collaboration. 
@@ -57,17 +56,32 @@ A federated data architecture is a system design where multiple independent data
 ### Data Storage for Federated Architecture
 ```mermaid
 sequenceDiagram
-    participant Alice
-    participant Bob
-    Alice->>Bob: Hello Bob, how are you?
-    Bob-->>Alice: Fine thanks.
+    participant FSP
+    participant Data Provider
+    participant FMAR
+    participant Data Consumer
+    FSP->>Data Provider: Register Asset
+    Data Provider->>FMAR: Check Asset Data
+    FMAR->>FMAR: Dedupe check
+    FMAR->> Data Provider: Send UID
+    Data Provider->>FSP: Confirm Registration
+    FMAR->> Data Consumer: Send UID
 
 ```
 
 ### Data Retrieval for Federated Architecture
 ```mermaid
 sequenceDiagram
-    participant Alice
-    participant Bob
-    Alice->>Bob: Hello Bob, how are you?
-    Bob-->>Alice: Fine thanks.
+    participant FSP
+    participant Data Provider
+    participant FMAR
+    participant Data Consumer
+    Data Consumer->>FMAR: Request Asset Data
+    FMAR->>FMAR: Check data source
+    FMAR->> Data Consumer: Share data source
+    Data Consumer->> Data Provider: Request Asset Data
+    Data Provider->> Data Consumer: Share Asset Data
+```
+
+
+
