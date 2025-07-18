@@ -22,7 +22,7 @@ It is designed to operate through modular components and may leverage a federate
 | UC-03.3  | 🔶 | Market Unit Registration         | Switch Market Unit to New Service Provider | Reassign the FSP responsible for a Market Unit, ensuring ecosystem integrity. |
 | UC-03.4  | 🔶 | Market Unit Registration         | Update Market Unit                         | Update the composition of a Market Unit by adding or removing assets. |
 | UC-04.1  |    | Product Registration             | Create / Maintain Product Register         | (Admin) Maintain the central catalogue of all flexibility products. |
-| UC-05.1  |    | Market Opportunity Data          | Discover Potential Product Eligibility     | Allow FSPs to check which products their Market Units may be eligible for. |
+| UC-05.1  | 🔶 | Market Opportunity Data          | Discover Potential Product Eligibility     | Allow FSPs to check which products their Market Units may be eligible for. |
 | UC-06.1  |    | Data Sharing                     | Share Asset Register Data                  | Provide authorised stakeholders with a consolidated view of asset data via APIs. |
 | UC-06.2  | 🔶 | Data Sharing                     | Register / Update Connection Limit         | Manage and share non-firm connection limit data associated with assets. |
 | UC-07.1  |    | Reporting                        | Provide Reporting & Insights               | Enable Ofgem and market facilitators to generate reports and insights from consolidated data. |
@@ -60,7 +60,7 @@ Out-of-scope modules:
 | UC-03.3  | Switch Market Unit to New Service Provider  | 🔶 PSQM (supported by SPUM)          |
 | UC-03.4  | Update Market Unit                          | 🔶 PSQM (supported by ARM)           |
 | UC-04.1  | Create / Maintain Product Register          | PSQM (Admin Function)                |
-| UC-05.1  | Discover Potential Product Eligibility      | PSQM                               |
+| UC-05.1  | Discover Potential Product Eligibility      | 🔶 PSQM                               |
 | UC-06.1  | Share Asset Register Data                   | All Modules (API Layer)              |
 | UC-06.2  | Register / Update Connection Limit          | 🔶 GICM (supported by ARM)           |
 | UC-07.1  | Provide Reporting & Insights                | All Modules (Reporting Layer)        |
