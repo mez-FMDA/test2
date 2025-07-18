@@ -18,14 +18,14 @@ It is designed to operate through modular components and may leverage a federate
 | UC-02.5  |    | Asset Registration & Maintenance | De-register Asset (from Market Unit)      | Remove an asset from its associated market grouping. |
 | UC-02.6  |    | Asset Registration & Maintenance | Export Asset Data                         | Allow authorised parties to securely export asset data they manage. |
 | UC-03.1  | 🔶 | Market Unit Registration         | Create / Update Market Unit                | Define and manage groupings of registered assets (Market Units or SPUs/SPGs). |
-| UC-03.2  | 🔶 | Market Unit Registration         | Qualify Market Unit                        | Manage pre-qualification of Market Units for specific flexibility products. |
+| UC-03.2  | 🔶 | Market Unit Registration         | Update Market Unit Qualification status    | Manage pre-qualification status of Market Units for specific flexibility products. |
 | UC-03.3  | 🔶 | Market Unit Registration         | Switch Market Unit to New Service Provider | Reassign the FSP responsible for a Market Unit, ensuring ecosystem integrity. |
 | UC-03.4  | 🔶 | Market Unit Registration         | Update Market Unit                         | Update the composition of a Market Unit by adding or removing assets. |
 | UC-04.1  |    | Product Registration             | Create / Maintain Product Register         | (Admin) Maintain the central catalogue of all flexibility products. |
 | UC-05.1  | 🔶 | Market Opportunity Data          | Discover Potential Product Eligibility     | Allow FSPs to check which products their Market Units may be eligible for. |
 | UC-06.1  |    | Data Sharing                     | Share Asset Register Data                  | Provide authorised stakeholders with a consolidated view of asset data via APIs. |
 | UC-06.2  | 🔶 | Data Sharing                     | Register / Update Connection Limit         | Manage and share non-firm connection limit data associated with assets. |
-| UC-07.1  |    | Reporting                        | Provide Reporting & Insights               | Enable Ofgem and market facilitators to generate reports and insights from consolidated data. |
+| UC-07.1  |    | Reporting                        | Provide Reporting & Insights               | Enable Ofgem and market facilitator to generate reports and insights from consolidated data. |
 
 ---
 
