@@ -1,0 +1,5 @@
+Notes:
+>Sequence Diagrams: For more complex use cases (like Qualify Market Unit), a simple sequence diagram could be included as a visual aid in the repository, showing the interactions between Actors and FMAR Modules.
+>Non-Functional Requirements (NFRs): A separate section or document in the repository could detail the NFRs (e.g., performance, scalability, availability) for each use case. For example, "Register Asset" needs to support a high volume of transactions, while "Register Service Provider" has a much lower volume.
+>Edge Cases / Exceptions: While the snappy format is good, a "Key Considerations" or "Exceptions" field for each use case is valuable to capture complexities. I've added a "Key Considerations" field to the examples above.
+>Data Attributes: While the use case itself doesn't list every data field, a link to the relevant part of the FMAR Common Ontology or data model for that use case would be extremely useful for developers. For example, in UC-02.02 Register Asset, you could link to the "Core Asset" entity in your data model.
