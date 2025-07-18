@@ -70,3 +70,21 @@ Out-of-scope modules:
 | UC-09.01 | Onboard & Manage Third-Party Platforms       | SPUM                                |
 | UC-10.01 | Consumer Consent Interface & Verification    | ARM (Interface)                     |
 | UC-11.01 | Audit Trail Access & Reporting                | All Modules (Logging/Audit Layer)    |
+
+
+## FMAR Actors
+
+The following table lists the primary actors who interact with the FMAR system across the defined use cases. Actors can be human users or external systems.
+
+| Actor                                      | Description                                                                                                                                                | Key Use Case Interactions                                                                                                     |
+| :----------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------- |
+| **Flexibility Service Provider (FSP)**     | A commercial entity that aggregates and manages flexible assets to offer services to the market. The primary user of FMAR for managing their portfolio.        | Registering/updating their company, users, and assets. Creating and qualifying Market Units. Accessing their own data.          |
+| **System Operator (SO)**                   | Includes Distribution System Operators (DSOs) and the National Energy System Operator (NESO). They operate the grid and procure flexibility services.        | Accessing asset and qualification data for planning and procurement. Recording qualification outcomes. Managing connection limits. |
+| **Asset Owner**                            | The legal owner of a flexible asset (e.g., a commercial site or a residential consumer). Typically interacts with FMAR via their chosen FSP.                   | Granting consent (via external solution). Potentially a direct user for viewing their own asset data.                             |
+| **FMAR Administrator**                     | Elexon personnel responsible for the administration, governance, and maintenance of the FMAR Hub.                                                              | Maintaining asset categories and the product catalogue. Managing user disputes and system governance.                         |
+| **Independent Market Platform (IMP)**      | Third-party software platforms that provide market access and other services to FSPs. A key system-level actor.                                                | Onboarding as a platform (UC-09.01), then acting on behalf of FSPs to perform various FMAR functions via API.                  |
+| **Installer**                              | An entity responsible for the physical installation of flexible assets. May be an early data provider for asset registration.                                  | Potential actor in the initial "Register Asset" use case, providing technical data at the point of installation.                |
+| **Ofgem / Regulatory Body**                | The regulator of the GB energy market.                                                                                                                     | Primary consumer of anonymised, aggregated data from the "Provide Analytics" use case for market monitoring and policy making.    |
+| **Consumer Consent Solution**              | A critical external system that manages consumer consent. Interacts with FMAR programmatically.                                                              | Provides consent status verification to FMAR and notifies FMAR of consent revocations.                                        |
+
+---
