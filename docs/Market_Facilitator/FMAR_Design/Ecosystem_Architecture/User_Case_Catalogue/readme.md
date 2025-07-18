@@ -1,31 +1,34 @@
-# FMAR Use Case Catalogue
+# FMAR Use Case Catalogue: Complete Summary
 
-This document outlines the core use cases for the Flexibility Market Asset Register (FMAR).  
+This document outlines the core use cases for the Flexibility Market Asset Register (FMAR).
 
-FMAR supports registration, qualification, and data sharing for flexible assets participating in GB flexibility markets.  
+FMAR supports registration, qualification, and data sharing for flexible assets participating in GB flexibility markets.
 
 It is designed to operate through modular components and may leverage a federated architecture via the Data Sharing Infrastructure (DSI).
 
-| UC ID    | 🔶 | Use Case Grouping              | Use Case Name                               | Description |
-|----------|----|--------------------------------|---------------------------------------------|-------------|
-| UC-01.1  |    | Customer Onboarding            | Register User                               | Support the registration of user identities (individuals, organisations) within the ecosystem, managed through a central trust framework. |
-| UC-01.2  |    | Customer Onboarding            | Register Service Provider                   | Onboard a Flexibility Service Provider (FSP) as a recognised commercial entity, creating an authoritative identity record. |
-| UC-01.3  |    | Customer Onboarding            | Update / De-register Service Provider       | Manage the lifecycle of an FSP’s core entity data and status. |
-| UC-02.1  |    | Asset Registration & Maintenance | Maintain Asset Categories                 | (Admin) Define and manage standard categories and associated schemas for flexible assets. |
-| UC-02.2  |    | Asset Registration & Maintenance | Register Asset                            | Submit asset data to create a unique asset ID in the register. |
-| UC-02.3  |    | Asset Registration & Maintenance | Validate Asset                            | Ensure asset data is authentic and conforms to the common ontology. |
-| UC-02.4  |    | Asset Registration & Maintenance | Update Asset Details                      | Make changes to an asset’s data, with updates accessible to authorised parties. |
-| UC-02.5  |    | Asset Registration & Maintenance | De-register Asset (from Market Unit)      | Remove an asset from its associated market grouping. |
-| UC-02.6  |    | Asset Registration & Maintenance | Export Asset Data                         | Allow authorised parties to securely export asset data they manage. |
-| UC-03.1  | 🔶 | Market Unit Registration         | Create / Update Market Unit                | Define and manage groupings of registered assets (Market Units or SPUs/SPGs). |
-| UC-03.2  | 🔶 | Market Unit Registration         | Update Market Unit Qualification status    | Manage pre-qualification status of Market Units for specific flexibility products. |
-| UC-03.3  | 🔶 | Market Unit Registration         | Switch Market Unit to New Service Provider | Reassign the FSP responsible for a Market Unit, ensuring ecosystem integrity. |
-| UC-03.4  | 🔶 | Market Unit Registration         | Update Market Unit                         | Update the composition of a Market Unit by adding or removing assets. |
-| UC-04.1  |    | Product Registration             | Create / Maintain Product Register         | (Admin) Maintain the central catalogue of all flexibility products. |
-| UC-05.1  | 🔶 | Market Opportunity Data          | Discover Potential Product Eligibility     | Allow FSPs to check which products their Market Units may be eligible for. |
-| UC-06.1  |    | Data Sharing                     | Share Asset Register Data                  | Provide authorised stakeholders with a consolidated view of asset data via APIs. |
-| UC-06.2  | 🔶 | Data Sharing                     | Register / Update Connection Limit         | Manage and share non-firm connection limit data associated with assets. |
-| UC-07.1  |    | Reporting                        | Provide Reporting & Insights               | Enable Ofgem and market facilitator to generate reports and insights from consolidated data. |
+| UC ID    | Use Case Grouping                  | Use Case Name                                  | Description                                                                                                                   | 🔶 |
+|----------|----------------------------------|-----------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|----|
+| UC-01.01 | Customer Onboarding / Offboarding | Register User                                 | Support the registration of user identities (individuals, organisations) within the FMAR ecosystem, managed via a central trust framework. |    |
+| UC-01.02 | Customer Onboarding / Offboarding | Register Service Provider                     | Onboard a Flexibility Service Provider (FSP) as a recognized commercial entity, creating an authoritative identity record accessible through the FMAR Hub. |    |
+| UC-01.03 | Customer Onboarding / Offboarding | Update/De-register Service Provider           | Manage the lifecycle of an FSP's core entity data and status within the FMAR ecosystem.                                        |    |
+| UC-02.01 | Asset Registration & Maintenance  | Maintain Asset Categories                      | (Admin) Define and manage the standard categories and associated schemas for flexible assets recognizable within the FMAR ecosystem. |    |
+| UC-02.02 | Asset Registration & Maintenance  | Register Asset                                | The primary process for an FSP/user (identified in SPUM) to submit asset data, resulting in the assignment of a unique, resolvable FMAR ID for that asset in ARM. |    |
+| UC-02.03 | Asset Registration & Maintenance  | Validate Asset                                | Ensure submitted asset data is authentic and conforms to the FMAR Common Ontology, potentially by cross-referencing with federated, trusted external data sources via DSI. |    |
+| UC-02.04 | Asset Registration & Maintenance  | Update Asset Details                          | Modify the attributes of a registered asset, including its link to an FSP (from SPUM), ensuring the updated view is propagated. |    |
+| UC-02.05 | Asset Registration & Maintenance  | Export Asset Data                            | Allow an authorised entity to securely extract its managed asset data from the ecosystem via a standardised interface.        |    |
+| UC-03.01 | Market Unit Registration & Maintenance | Create Market Unit                           | Enables an FSP to logically group one or more of its registered assets to form a new "Market Unit" (equivalent to an SPU/SPG).  | 🔶 |
+| UC-03.02 | Market Unit Registration & Maintenance | Record Market Unit Qualification Status     | Manages the workflow for an FSP to request qualification and for an SO to authoritatively record the outcome of their external assessment process within FMAR. | 🔶 |
+| UC-03.03 | Market Unit Registration & Maintenance | Switch Market Unit to a new Service Provider | Manage the change of the FSP (from SPUM) responsible for a Market Unit (in PSQM), ensuring the update is reflected consistently. | 🔶 |
+| UC-03.04 | Market Unit Registration & Maintenance | Update Market Unit Composition               | Enables an FSP to modify the composition of an existing Market Unit by adding or removing constituent assets, potentially triggering re-assessment. | 🔶 |
+| UC-04.01 | Product Registration & Maintenance | Create Product Register + Maintain            | (Admin) Create and maintain the central, authoritative catalogue of all flexibility products, made accessible through the FMAR Hub. |    |
+| UC-05.01 | Market Opportunity Data          | Provide potential Market Unit Qualifications | Enable FSPs to discover which products their Market Units may be eligible for, leveraging a centrally managed Table of Equivalences within PSQM. | 🔶 |
+| UC-06.01 | Data Sharing                     | Share FMAR System Details                     | The core function of providing authorized stakeholders with a unified view of data via standardised FMAR Hub APIs, drawing from all modules as needed. |    |
+| UC-06.02 | Data Sharing                     | Register/update Connection Limit              | A specific use case where a connection limit is associated with an asset (in ARM) and managed/disseminated via GICM.            | 🔶 |
+| UC-07.01 | Reporting                        | Provide Analytics                             | Enable Ofgem and the Market Facilitator to generate reports and analytics based on a consolidated view of the data within the FMAR ecosystem. |    |
+| UC-08.01 | Governance & Assurance           | Dispute Resolution & Data Correction          | A formal process for authorised parties to raise and manage the resolution of data disputes within FMAR.                        |    |
+| UC-09.01 | Platform & System Integration    | Onboard & Manage Third-Party Platforms         | Register and manage the identities and access rights of Independent Market Platforms (IMPs) or other software vendors that interact with FMAR. |    |
+| UC-10.01 | Platform & System Integration    | Consumer Consent Interface & Verification      | Detail the specific API interactions between FMAR and the national Consumer Consent solution to manage and verify consent status. |    |
+| UC-11.01 | Governance & Assurance           | Audit Trail Access & Reporting                  | Enable authorized parties to access a detailed, immutable audit trail of all changes made to a record within FMAR.             |    |
 
 ---
 
@@ -46,23 +49,24 @@ Out-of-scope modules:
 
 | UC ID    | Use Case Name                               | Delivered By Module(s)                |
 |----------|---------------------------------------------|-------------------------------------|
-| UC-01.1  | Register User                               | SPUM                                |
-| UC-01.2  | Register Service Provider                   | SPUM                                |
-| UC-01.3  | Update / De-register Service Provider       | SPUM                                |
-| UC-02.1  | Maintain Asset Categories                   | ARM (Admin Function)                 |
-| UC-02.2  | Register Asset                              | ARM (supported by SPUM)              |
-| UC-02.3  | Validate Asset                              | ARM                                 |
-| UC-02.4  | Update Asset Details                        | ARM (supported by SPUM)              |
-| UC-02.5  | De-register Asset (from Market Unit)        | PSQM (supported by ARM)              |
-| UC-02.6  | Export Asset Data                           | ARM                                 |
-| UC-03.1  | Create / Update Market Unit                 | 🔶 PSQM (supported by ARM, SPUM)    |
-| UC-03.2  | Qualify Market Unit                         | 🔶 PSQM                             |
-| UC-03.3  | Switch Market Unit to New Service Provider  | 🔶 PSQM (supported by SPUM)          |
-| UC-03.4  | Update Market Unit                          | 🔶 PSQM (supported by ARM)           |
-| UC-04.1  | Create / Maintain Product Register          | PSQM (Admin Function)                |
-| UC-05.1  | Discover Potential Product Eligibility      | 🔶 PSQM                               |
-| UC-06.1  | Share Asset Register Data                   | All Modules (API Layer)              |
-| UC-06.2  | Register / Update Connection Limit          | 🔶 GICM (supported by ARM)           |
-| UC-07.1  | Provide Reporting & Insights                | All Modules (Reporting Layer)        |
-
----
+| UC-01.01 | Register User                               | SPUM                                |
+| UC-01.02 | Register Service Provider                   | SPUM                                |
+| UC-01.03 | Update / De-register Service Provider       | SPUM                                |
+| UC-02.01 | Maintain Asset Categories                   | ARM (Admin Function)                 |
+| UC-02.02 | Register Asset                              | ARM (supported by SPUM)              |
+| UC-02.03 | Validate Asset                              | ARM                                 |
+| UC-02.04 | Update Asset Details                        | ARM (supported by SPUM)              |
+| UC-02.05 | Export Asset Data                           | ARM                                 |
+| UC-03.01 | Create Market Unit                          | 🔶 PSQM (supported by ARM, SPUM)    |
+| UC-03.02 | Record Market Unit Qualification Status    | 🔶 PSQM                             |
+| UC-03.03 | Switch Market Unit to New Service Provider  | 🔶 PSQM (supported by SPUM)          |
+| UC-03.04 | Update Market Unit Composition              | 🔶 PSQM (supported by ARM)           |
+| UC-04.01 | Create / Maintain Product Register          | PSQM (Admin Function)                |
+| UC-05.01 | Provide Potential Market Unit Qualifications| 🔶 PSQM                             |
+| UC-06.01 | Share FMAR System Details                    | All Modules (API Layer)              |
+| UC-06.02 | Register / Update Connection Limit          | 🔶 GICM (supported by ARM)           |
+| UC-07.01 | Provide Analytics                            | All Modules (Reporting Layer)        |
+| UC-08.01 | Dispute Resolution & Data Correction         | All Modules (Governance Layer)       |
+| UC-09.01 | Onboard & Manage Third-Party Platforms       | SPUM                                |
+| UC-10.01 | Consumer Consent Interface & Verification    | ARM (Interface)                     |
+| UC-11.01 | Audit Trail Access & Reporting                | All Modules (Logging/Audit Layer)    |
