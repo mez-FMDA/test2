@@ -1,0 +1,13 @@
+# Use Case UC-02.04: Update Asset Details  
+**Primary Module:** ARM (supported by SPUM)  
+
+| Element          | Description                                                                                                                            |
+|------------------|----------------------------------------------------------------------------------------------------------------------------------------|
+| Description      | Enables an authorised user to modify the attributes of an already registered asset.                                                   |
+| Goal             | To maintain the accuracy of the asset "Single Source of Truth" over its lifecycle.                                                     |
+| Actors           | FSP, Asset Owner.                                                                                                                      |
+| Preconditions    | • The asset exists in ARM. <br> • The user is authorised via SPUM to manage the asset.                                                |
+| Process Summary  | 1. User submits updated data for an asset via the FMAR API, referencing its FMAR Asset ID. <br> 2. ARM validates the new data. <br> 3. The asset record is updated, with previous versions retained for audit purposes (versioning). <br> 4. If the FSP is changed, the link to SPUM is updated. |
+| Postconditions   | • The asset's record in ARM reflects the latest information. <br> • The update is versioned and auditable.                            |
+| Dependencies     | • Changes might trigger a re-assessment in PSQM or GICM.                                                                               |
+| Key Considerations | • Material changes (e.g., capacity) must trigger notifications to relevant parties.                                                    |
