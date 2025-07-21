@@ -9,14 +9,14 @@ It is designed to operate through modular components and may leverage a federate
 | UC ID    | Use Case Grouping                  | Use Case Name                                  | Description                                                                                                                   | 🔶 |
 |----------|----------------------------------|-----------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|----|
 | UC-01.01 | Customer Onboarding / Offboarding | Register User                                 | Support the registration of user identities (individuals, organisations) within the FMAR ecosystem, managed via a central trust framework. |    |
-| UC-01.02 | Customer Onboarding / Offboarding | Register Service Provider                     | Onboard a Flexibility Service Provider (FSP) as a recognized commercial entity, creating an authoritative identity record accessible through the FMAR Hub. |    |
+| UC-01.02 | Customer Onboarding / Offboarding | Register Service Provider                     | Onboard a Flexibility Service Provider (FSP) as a recognised commercial entity, creating an authoritative identity record accessible through the FMAR Hub. |    |
 | UC-01.03 | Customer Onboarding / Offboarding | Update/De-register Service Provider           | Manage the lifecycle of an FSP's core entity data and status within the FMAR ecosystem.                                        |    |
-| UC-02.01 | Asset Registration & Maintenance  | Maintain Asset Categories                      | (Admin) Define and manage the standard categories and associated schemas for flexible assets recognizable within the FMAR ecosystem. |    |
+| UC-02.01 | Asset Registration & Maintenance  | Maintain Asset Categories                      | (Admin) Define and manage the standard categories and associated schemas for flexible assets recognisable within the FMAR ecosystem. |    |
 | UC-02.02 | Asset Registration & Maintenance  | Register Asset                                | The primary process for an FSP/user (identified in SPUM) to submit asset data, resulting in the assignment of a unique, resolvable FMAR ID for that asset in ARM. |    |
 | UC-02.03 | Asset Registration & Maintenance  | Validate Asset                                | Ensure submitted asset data is authentic and conforms to the FMAR Common Ontology, potentially by cross-referencing with federated, trusted external data sources via DSI. |    |
 | UC-02.04 | Asset Registration & Maintenance  | Update Asset Details                          | Modify the attributes of a registered asset, including its link to an FSP (from SPUM), ensuring the updated view is propagated. |    |
 | UC-02.05 | Asset Registration & Maintenance  | Export Asset Data                            | Allow an authorised entity to securely extract its managed asset data from the ecosystem via a standardised interface.        |    |
-| UC-03.01 | Market Unit Registration & Maintenance | Create Market Unit                           | Enables an FSP to logically group one or more of its registered assets to form a new "Market Unit" (equivalent to an SPU/SPG).  | 🔶 |
+| UC-03.01 | Market Unit Registration & Maintenance | Create Market Unit                           | Enables an FSP to logically group one or more of its registered assets to form a new "Market Unit" (equivalent to an SPU or SPG).  | 🔶 |
 | UC-03.02 | Market Unit Registration & Maintenance | Record Market Unit Qualification Status     | Manages the workflow for an FSP to request qualification and for an SO to authoritatively record the outcome of their external assessment process within FMAR. | 🔶 |
 | UC-03.03 | Market Unit Registration & Maintenance | Switch Market Unit to a new Service Provider | Manage the change of the FSP (from SPUM) responsible for a Market Unit (in PSQM), ensuring the update is reflected consistently. | 🔶 |
 | UC-03.04 | Market Unit Registration & Maintenance | Update Market Unit Composition               | Enables an FSP to modify the composition of an existing Market Unit by adding or removing constituent assets, potentially triggering re-assessment. | 🔶 |
@@ -86,5 +86,20 @@ The following table lists the primary actors who interact with the FMAR system a
 | **Installer**                              | An entity responsible for the physical installation of flexible assets. May be an early data provider for asset registration.                                  | Potential actor in the initial "Register Asset" use case, providing technical data at the point of installation.                |
 | **Ofgem / Regulatory Body**                | The regulator of the GB energy market.                                                                                                                     | Primary consumer of anonymised, aggregated data from the "Provide Analytics" use case for market monitoring and policy making.    |
 | **Consumer Consent Solution**              | A critical external system that manages consumer consent. Interacts with FMAR programmatically.                                                              | Provides consent status verification to FMAR and notifies FMAR of consent revocations.                                        |
+
+
+## Quick Definitions
+
+• An 'Asset' (or in the European case a Controllable Unit (CU)) is defined as a single power-generating module and/or demand unit.
+
+• A Service Providing Unit (SPU) refers to one or more controllable units connected to a single
+connection point, as defined by the service provider.
+
+• A Service Providing Group (SPG) is an aggregation of CUs or SPUs connected to more than one
+connection point within the same scheduling area, also defined by the service provider
+
+<img width="969" height="440" alt="image" src="https://github.com/user-attachments/assets/b858a238-da34-4b64-95e5-b3890c1714ed" />
+
+Image source: https://magnusenergy.com/wp-content/uploads/2025/06/NC-DR-Brief-FINAL.pdf
 
 ---
