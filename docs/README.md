@@ -12,39 +12,4 @@ Our design process is guided by a long-term strategic vision for FMAR as as a pu
 
 ## 2. Overview of Artefacts in This Repository
 
-### Programme Level
-
-* `FMAR Common Glossary & Ontology Principles`: A shared programme artefact providing key terms used by FMAR and the Flexibility Market Rules Repository to ensure a shared understanding
-* `FMAR Vision and Scope`: An overview of the vision and scope of FMAR and an overview of it's relationship to Flexibility Market Rules
-
-### Ecosystem Architecture
-
-* `Business process models for sub-markets in scope AS IS PLACEHOLDER.md`: Business Process Modelling Notation to describe the AS IS Registration Process for Flexibility Markets in scope
-* `Business process models for sub-markets in scope TO BE PLACEHOLDER.md`: Business Process Modelling Notation to describe the TO BE Registration Process for Flexibility Markets in scope
-* `Use case diagram (as part of EBIX modelling in E2E workstream)_PLACEHOLDER.md`: Placeholder for use case diagrams developed.
-* `Role_Actor_Mappings.md`: Document outlining role and actor mappings.
-* `Use_case_catalogue`: Existing use case catalogue in scope vs out of scope.
-* `All Use-case descriptions (highlighting which are in MVP scope)_PLACEHOLDER.md`: Placeholder for all use-case descriptions, with MVP scope highlighted.
-* `Policy-process-data traceability matrix (links to standards information base)_PLACEHOLDER.md`: Placeholder for the policy-process-data traceability matrix, with links to the standards information base.
-
-### Data Architecture
-
-* `Information_Map.md`: Document detailing the information map.
-* `Data exchange contracts_PLACEHOLDER.md`: Placeholder for data exchange contracts.
-* `Data lineage diagrams_PLACEHOLDER.md`: Placeholder for data lineage diagrams.
-* `Data sharing matrix_PLACEHOLDER.md`: Placeholder for the data sharing matrix.
-* `Metadata specification_PLACEHOLDER.md`: Placeholder for the metadata specification.
-
-### Application Architecture
-
-* `API_catalogue.md`: Details of the Application Programming Interface catalogue.
-* `Service blueprint_PLACEHOLDER.md`: Placeholder for the service blueprint.
-* `MVP design patterns_PLACEHOLDER.md`: Placeholder for MVP design patterns.
-* `Component diagrams_PLACEHOLDER.md`: Placeholder for component diagrams.
-* `Application-layer security model_PLACEHOLDER.md`: Placeholder for the application-layer security model.
-
-### Supporting Artefacts
-
-* `Emerging Requirements from DSI`: Placeholder for documentation on emerging requirements.
-* `Emerging Requirements from GB Profile Dispatch API`: Placeholder for documentation on emerging requirements.
-* `Emerging Requirements from Consumer Consent Solution`: Placeholder for documentation on emerging requirements.
+Being finalised...
