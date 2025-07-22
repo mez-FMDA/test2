@@ -6,47 +6,53 @@ FMAR supports registration, qualification, and data sharing for flexible assets 
 
 It is designed to operate through modular components and may leverage a federated architecture via the Data Sharing Infrastructure (DSI).
 
-| UC ID    | Use Case Grouping                  | Use Case Name                                  | Description                                                                                                                   | 🔶 |
-|----------|----------------------------------|-----------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|----|
-| UC-01.01 | Customer Onboarding / Offboarding | Register User                                 | Support the registration of user identities (individuals, organisations) within the FMAR ecosystem, managed via a central trust framework. |    |
-| UC-01.02 | Customer Onboarding / Offboarding | Register Organisation                    | Onboard a Flexibility Service Provider (FSP) as a recognised commercial entity, creating an authoritative identity record accessible through the FMAR Hub. |    |
-| UC-01.03 | Customer Onboarding / Offboarding | Update and De-register Organisation           | Manage the lifecycle of an FSP's core entity data and status within the FMAR ecosystem.                                        |    |
-| UC-02.01 | Asset Registration & Maintenance  | Maintain Asset Categories                      | (Admin) Define and manage the standard categories and associated schemas for flexible assets recognisable within the FMAR ecosystem. |    |
-| UC-02.02 | Asset Registration & Maintenance  | Register and Validate Asset                                | The primary process for an FSP/user (identified in SPUM) to submit asset data, ensure submitted asset data is authentic and conforms to the FMAR Common Ontology, potentially by cross-referencing with federated, trusted external data sources via DSI, resulting in the assignment of a unique, resolvable FMAR ID for that asset in ARM. |    |
-| UC-02.04 | Asset Registration & Maintenance  | Update Asset Details                          | Modify the attributes of a registered asset, including its link to an FSP (from SPUM), ensuring the updated view is propagated. |    |
-| UC-02.05 | Asset Registration & Maintenance  | Export Asset Data                            | Allow an authorised entity to securely extract its managed asset data from the ecosystem via a standardised interface.        |    |
-| UC-03.01 | Market Unit Registration & Maintenance | Create Market Unit                           | Enables an FSP to logically group one or more of its registered assets to form a new "Market Unit" (equivalent to an SPU or SPG).  | 🔶 |
-| UC-03.02 | Market Unit Registration & Maintenance | Record Market Unit Qualification Status     | Manages the workflow for an FSP to request qualification and for an SO to authoritatively record the outcome of their external assessment process within FMAR. | 🔶 |
-| UC-03.03 | Market Unit Registration & Maintenance | Switch Market Unit to a new Service Provider | Manage the change of the FSP (from SPUM) responsible for a Market Unit (in PSQM), ensuring the update is reflected consistently. | 🔶 |
-| UC-03.04 | Market Unit Registration & Maintenance | Update Market Unit Composition               | Enables an FSP to modify the composition of an existing Market Unit by adding or removing constituent assets, potentially triggering re-assessment. | 🔶 |
-| UC-04.01 | Product Registration & Maintenance | Create Product Register + Maintain            | (Admin) Create and maintain the central, authoritative catalogue of all flexibility products, made accessible through the FMAR Hub. |    |
-| UC-05.01 | Market Opportunity Data          | Provide potential Market Unit Qualifications | Enable FSPs to discover which products their Market Units may be eligible for, leveraging a centrally managed Table of Equivalences within PSQM. | 🔶 |
-| UC-06.01 | Data Sharing                     | Share FMAR System Details                     | The core function of providing authorized stakeholders with a unified view of data via standardised FMAR Hub APIs, drawing from all modules as needed. |    |
-| UC-06.02 | Data Sharing                     | Register/update Connection Limit              | A specific use case where a connection limit is associated with an asset (in ARM) and managed/disseminated via GICM.            | 🔶 |
-| UC-07.01 | Reporting                        | Provide Analytics                             | Enable Ofgem and the Market Facilitator to generate reports and analytics based on a consolidated view of the data within the FMAR ecosystem. |    |
-| UC-08.01 | Governance & Assurance           | Dispute Resolution & Data Correction          | A formal process for authorised parties to raise and manage the resolution of data disputes within FMAR.                        |    |
-| UC-09.01 | Platform & System Integration    | Onboard & Manage Third-Party Platforms         | Register and manage the identities and access rights of Independent Market Platforms (IMPs) or other software vendors that interact with FMAR. |    |
-| UC-10.01 | Platform & System Integration    | Consumer Consent Interface & Verification      | Detail the specific API interactions between FMAR and the national Consumer Consent solution to manage and verify consent status. |    |
-| UC-11.01 | Governance & Assurance           | Audit Trail Access & Reporting                  | Enable authorized parties to access a detailed, immutable audit trail of all changes made to a record within FMAR.             |    |
-
----
-
 ### Module Key
 
-- **SPUM** – Service Provider & User Management  
-- **ARM** – Asset Registration & Maintenance  
-- **PSQM** – Product & Service Qualification Management  
-- **GICM** – Grid Integration & Constraint Management  
+- **SPUM** – Service Provider & User Module  
+- **ARM** – Asset Registration Module  
+- **PSQM** – Product & Service Qualification Module  
+- **GICM** – Grid Integration & Constraints Module  
 - **API Layer** – Federated data access layer for authorised consumers  
 - **Reporting Layer** – Common reporting interface drawing from all modules
 
 **🔶 = Expected to be out of scope for go-live. May be prioritised depending on stakeholder workshop outcomes.**
+| UC ID    | Use Case Grouping                      | Use Case Name                                          | Description                                                                                                                                              | 🔶 |
+|----------|----------------------------------------|--------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------|----|
+| UC-01.01 | Customer Onboarding / Offboarding      | Register User                                          | Support the registration of user identities (individuals, organisations) within the FMAR ecosystem, managed via a central trust framework.              |    |
+| UC-01.02 | Customer Onboarding / Offboarding      | Register Organisation                                  | Onboard a Flexibility Service Provider (FSP) as a recognised commercial entity, creating an authoritative identity record accessible through FMAR.      |    |
+| UC-01.03 | Customer Onboarding / Offboarding      | Update Organisation                                    | Manage the lifecycle of an FSP's core entity data and status within the FMAR ecosystem.                                                                  |    |
+| UC-01.04 | Customer Onboarding / Offboarding      | De-register Organisation                               | The formal, auditable process for an organisation to be de-registered from FMAR.                                                                         |    |
+| UC-02.01 | Asset Registration & Maintenance       | Maintain Asset Categories                              | (Admin) Define and manage the standard categories and associated schemas for flexible assets recognisable within the FMAR ecosystem.                    |    |
+| UC-02.02 | Asset Registration & Maintenance       | Register and Validate Asset                            | The primary process for an FSP or user to submit asset data, ensure it is authentic and conforms to FMAR ontology, resulting in a unique FMAR ID.       |    |
+| UC-02.03 | Asset Registration & Maintenance       | De-register Asset                                      | The formal process for removing an asset from FMAR, ensuring auditability and traceability.                                                              |    |
+| UC-02.04 | Asset Registration & Maintenance       | Update Asset Details                                   | Modify the attributes of a registered asset, including its link to an FSP, ensuring the updated view is propagated.                                     |    |
+| UC-02.05 | Asset Registration & Maintenance       | Export Asset Data                                      | Allow an authorised entity to securely extract its managed asset data from FMAR via a standardised interface.                                           |    |
+| UC-02.06 | Asset Registration & Maintenance       | Manage Connection Limit                                | Manage the connection limits of assets via the Grid Interaction & Constraints Module (GICM), ensuring safe operational thresholds.                      | 🔶 |
+| UC-03.01 | Market Unit Registration & Maintenance | Create Market Unit                                     | Enable an FSP to group one or more of its registered assets into a new Market Unit (e.g., SPU or SPG).                                                  | 🔶 |
+| UC-03.03 | Market Unit Registration & Maintenance | Reassign Market Unit to New Service Provider           | Manage the change of the FSP responsible for a Market Unit, ensuring the update is reflected consistently.                                               | 🔶 |
+| UC-03.04 | Market Unit Registration & Maintenance | Update Market Unit Composition                         | Modify the composition of a Market Unit by adding or removing assets, potentially triggering re-qualification.                                          | 🔶 |
+| UC-03.05 | Market Unit Registration & Maintenance | Process Owner-Initiated Asset Switch Between FSPs      | Handle the process of transferring consumer-owned assets between FSPs, initiated and authorised by the consumer.                                         |    |
+| UC-03.06 | Market Unit Registration & Maintenance | De-register Market Unit                                | The formal, auditable process for removing a Market Unit from FMAR.                                                                                      | 🔶 |
+| UC-04.01 | Product & Qualification Management     | Create and Maintain Product Catalogue                  | (Admin) Create and maintain the central catalogue of all flexibility products accessible through the FMAR Hub.                                          |    |
+| UC-04.02 | Product & Qualification Management     | Record Market Unit Qualification Status                | Manage the workflow for FSPs to apply for qualification, and for SOs to record outcomes of external assessments in FMAR.                                | 🔶 |
+| UC-04.03 | Product & Qualification Management     | Discover Market Opportunities                          | Enable FSPs to identify applicable products for their Market Units via CMZ or a Table of Equivalences managed in PSQM.                                  | 🔶 |
+| UC-05.01 | System-Wide Functions & Integrations   | Share FMAR System Details                              | Provide authorised stakeholders with access to unified data views via FMAR Hub APIs, integrating all modules.                                            |    |
+| UC-05.02 | System-Wide Functions & Integrations   | Provide Analytics                                      | Enable Ofgem and the Market Facilitator to generate consolidated reports and insights from FMAR data.                                                   |    |
+| UC-05.03 | System-Wide Functions & Integrations   | Dispute Resolution & Data Correction                   | A formal process for managing data disputes and corrections raised by authorised parties.                                                                |    |
+| UC-05.04 | System-Wide Functions & Integrations   | Onboard & Manage Third-Party Platforms                 | Register and manage access rights for Independent Market Platforms (IMPs) and other software providers integrating with FMAR.                           |    |
+| UC-05.05 | System-Wide Functions & Integrations   | Consumer Consent Interface & Verification              | Define API interactions between FMAR and the national Consumer Consent solution to manage and verify user permissions.                                  |    |
+| UC-05.06 | System-Wide Functions & Integrations   | Audit Trail Access & Reporting                         | Allow authorised parties to access a secure, immutable audit trail of changes across FMAR modules.                                                      |    |
+
+
+---
+
+
 
 Out-of-scope modules:
 - 🔶 PSQM = Product & Service Qualification Management
 - 🔶 GICM = Grid Integration & Constraint Management
 
-| UC ID    | Use Case Name                               | Delivered By Module(s)                |
+| UC ID    | Use Case Name (>needs updating)                              | Delivered By Module(s)                |
 |----------|---------------------------------------------|-------------------------------------|
 | UC-01.01 | Register User                               | SPUM                                |
 | UC-01.02 | Register Service Provider                   | SPUM                                |
@@ -81,15 +87,15 @@ The following table lists the primary actors who interact with the FMAR system a
 | **System Operator (SO)**                   | Includes Distribution System Operators (DSOs) and the National Energy System Operator (NESO). They operate the grid and procure flexibility services.        | Accessing asset and qualification data for planning and procurement. Recording qualification outcomes. Managing connection limits. |
 | **Asset Owner**                            | The legal owner of a flexible asset (e.g., a commercial site or a residential consumer). Typically interacts with FMAR via their chosen FSP.                   | Granting consent (via external solution). Potentially a direct user for viewing their own asset data.                             |
 | **FMAR Administrator**                     | Elexon personnel responsible for the administration, governance, and maintenance of the FMAR Hub.                                                              | Maintaining asset categories and the product catalogue. Managing user disputes and system governance.                         |
-| **Independent Market Platform (IMP)**      | Third-party software platforms that provide market access and other services to FSPs. A key system-level actor.                                                | Onboarding as a platform (UC-09.01), then acting on behalf of FSPs to perform various FMAR functions via API.                  |
+| **Third-Party Platform**      | Third-party software platforms that provide market access and other services to FSPs. A key system-level actor.                                                | Onboarding as a platform (UC-09.01), then acting on behalf of FSPs to perform various FMAR functions via API.                  |
 | **Installer**                              | An entity responsible for the physical installation of flexible assets. May be an early data provider for asset registration.                                  | Potential actor in the initial "Register Asset" use case, providing technical data at the point of installation.                |
 | **Ofgem / Regulatory Body**                | The regulator of the GB energy market.                                                                                                                     | Primary consumer of anonymised, aggregated data from the "Provide Analytics" use case for market monitoring and policy making.    |
 | **Consumer Consent Solution**              | A critical external system that manages consumer consent. Interacts with FMAR programmatically.                                                              | Provides consent status verification to FMAR and notifies FMAR of consent revocations.                                        |
 
 
-## Quick Definitions
+## Quick Definitions > needs updating
 
-• An 'Asset' (or in the European case a Controllable Unit (CU)) is defined as a single power-generating module and/or demand unit.
+• An 'Asset' (or in the European case a Controllable Unit (CU)) is defined as a single power-generating module and/or demand unit (i.e., an ESA) with a unique relationship to an Accounting Point.
 
 • A Service Providing Unit (SPU) refers to one or more controllable units connected to a single
 connection point, as defined by the service provider.
