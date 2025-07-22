@@ -1,6 +1,6 @@
 # FMAR Use Case Catalogue: Complete Summary
 
-This document outlines the core use cases for the Flexibility Market Asset Register (FMAR).
+This document outlines the core use cases for the Flexibility Market Asset Registration (FMAR) solution.
 
 FMAR supports registration, qualification, and data sharing for flexible assets participating in GB flexibility markets.
 
