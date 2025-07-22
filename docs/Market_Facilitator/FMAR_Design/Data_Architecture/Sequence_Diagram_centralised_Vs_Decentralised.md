@@ -78,9 +78,9 @@ sequenceDiagram
     participant Data Consumer
     Data Consumer->>FMAR: Request Asset Data
     FMAR->>FMAR: Check data source
-    FMAR->> Data Consumer: Share data source
-    Data Consumer->> Data Provider: Request Asset Data
-    Data Provider->> Data Consumer: Share Asset Data
+    FMAR->> Data Provider: Request Asset Data
+    Data Provider->> FMAR: Share Asset Data
+    FMAR->> Data Consumer: Share Asset source
 ```
 
 
