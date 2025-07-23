@@ -131,5 +131,5 @@ Note: An alternative method of polling can be applied to reduce the dependency o
 | **Integration effort**  | High initial, low ongoing                          | High initial, potentially high ongoing sync overhead          |Low initial, high ongoing sync overhead  |
 
 
- Keeping the cost (including future integration costs), timelines and scope in mind, the architecture team proposes a **centralised implementation**
+ Keeping the cost (including future integration costs), simplification of governance and timelines in mind, the architecture team proposes a **centralised implementation**
 
