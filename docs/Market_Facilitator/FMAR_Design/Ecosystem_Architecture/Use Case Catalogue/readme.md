@@ -52,13 +52,6 @@ Out-of-scope modules:
 - 🔶 PSQM = Product & Service Qualification Management
 - 🔶 GICM = Grid Integration & Constraint Management
 
-You are absolutely right. My apologies for introducing inconsistencies in the grouping names. Consistency is key, and the purpose you've outlined—to show why all modules need to be considered holistically from the start—is a critical message for the design workshops.
-
-Let's stick to the structure you established in your master list and simply provide a clean, updated table that maps the definitive use case names to their delivering modules. This will powerfully illustrate the interconnectedness of the system.
-
----
-
-Here is the updated table, using your master list's grouping structure and names, to clearly demonstrate how the modules are linked across the entire FMAR vision.
 
 ### **FMAR Use Case to Module Mapping**
 
