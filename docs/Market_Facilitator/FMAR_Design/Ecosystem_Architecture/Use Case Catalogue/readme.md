@@ -1,6 +1,5 @@
 # FMAR Use Case Catalogue: Complete Summary
 
-## Changelog
 
 | Version | Date       | Changes                      | Author   |
 |---------|------------|------------------------------|----------|
