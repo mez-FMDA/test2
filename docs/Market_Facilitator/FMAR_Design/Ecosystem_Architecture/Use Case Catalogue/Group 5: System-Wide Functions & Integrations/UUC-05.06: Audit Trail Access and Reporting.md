@@ -1,5 +1,5 @@
 
-# Use Case UC-11.01: Audit Trail Access and Reporting
+# Use Case UC-05.06: Audit Trail Access and Reporting
 **Primary Module:** All Modules (Logging/Audit Layer)
 
 | Element             | Description                                                                                                                                                                                                                          |
