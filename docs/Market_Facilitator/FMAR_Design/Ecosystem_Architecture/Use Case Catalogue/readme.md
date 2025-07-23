@@ -1,5 +1,8 @@
 # FMAR Use Case Catalogue: Complete Summary
 
+last_updated: "23-07-2025"
+status: "Draft"
+
 This document outlines the core use cases for the Flexibility Market Asset Registration (FMAR) solution.
 
 FMAR supports registration, qualification, and data sharing for flexible assets participating in GB flexibility markets.
@@ -93,8 +96,8 @@ The following table lists the primary actors who interact with the FMAR system a
 | **System Operator (SO)**                   | Includes Distribution System Operators (DSOs) and the National Energy System Operator (NESO). They operate the grid and procure flexibility services.        | Accessing asset and qualification data for planning and procurement. Recording qualification outcomes. Managing connection limits. |
 | **Asset Owner**                            | The legal owner of a flexible asset (e.g., a commercial site or a residential consumer). Typically interacts with FMAR via their chosen FSP.                   | Granting consent (via external solution). Potentially a direct user for viewing their own asset data.                             |
 | **FMAR Administrator**                     | Elexon personnel responsible for the administration, governance, and maintenance of the FMAR Hub.                                                              | Maintaining asset categories and the product catalogue. Managing user disputes and system governance.                         |
-| **Third-Party Platform**      | Third-party software platforms that provide market access and other services to FSPs. A key system-level actor.                                                | Onboarding as a platform (UC-09.01), then acting on behalf of FSPs to perform various FMAR functions via API.                  |
-| **Installer**                              | An entity responsible for the physical installation of flexible assets. May be an early data provider for asset registration.                                  | Potential actor in the initial "Register Asset" use case, providing technical data at the point of installation.                |
+| **Third-Party Platform**      | Third-party software platforms that provide market access and other services to FSPs and SOs. A key system-level actor.                                                | Onboarding as a platform (UC-09.01), then acting on behalf of FSPs to perform various FMAR functions via API.                  |
+| **Installer**                              | An entity responsible for the physical installation of flexible assets. May be an early data provider for asset registration.                                  | Potential actor in the initial "Register Asset" use case, providing technical data at the point of installation, depending on policy context.                |
 | **Ofgem / Regulatory Body**                | The regulator of the GB energy market.                                                                                                                     | Primary consumer of anonymised, aggregated data from the "Provide Analytics" use case for market monitoring and policy making.    |
 | **Consumer Consent Solution**              | A critical external system that manages consumer consent. Interacts with FMAR programmatically.                                                              | Provides consent status verification to FMAR and notifies FMAR of consent revocations.                                        |
 | **External Data Source**              | An automated system that acts as a trusted source of truth for specific data points used in validation.                                                              | Register and Validate Asset use case depends on this actor. Explicitly naming it reinforces the system's reliance on external integrations for data quality and clarifies that FMAR won't master all data itself                                        |
