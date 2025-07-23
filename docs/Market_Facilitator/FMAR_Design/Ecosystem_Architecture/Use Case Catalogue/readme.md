@@ -11,7 +11,7 @@ It is designed to operate through modular components and may leverage a federate
 - **SPUM** – Service Provider & User Module  
 - **ARM** – Asset Registration Module  
 - **PSQM** – Product & Service Qualification Module  
-- **GICM** – Grid Integration & Constraints Module  
+- **GICM** – Grid Interaction & Constraints Module  
 - **API Layer** – Federated data access layer for authorised consumers  
 - **Reporting Layer** – Common reporting interface drawing from all modules
 
