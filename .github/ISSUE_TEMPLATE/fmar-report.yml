@@ -1,5 +1,5 @@
 name: Propose a design change or a new requirement to the FMAR design
-description: FMAR Design Change or New Requirement Proposal.
+description: Formally propose a change to an artefact or a new requirement to the FMAR design.
 title: '[Design Change/New Requirement]: A brief title for your proposal'
 labels: ['design', 'requirement', 'triage-needed']
 assignees: []
