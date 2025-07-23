@@ -99,19 +99,3 @@ The following table lists the primary actors who interact with the FMAR system a
 | **Consumer Consent Solution**              | A critical external system that manages consumer consent. Interacts with FMAR programmatically.                                                              | Provides consent status verification to FMAR and notifies FMAR of consent revocations.                                        |
 | **External Data Source**              | An automated system that acts as a trusted source of truth for specific data points used in validation.                                                              | Register and Validate Asset use case depends on this actor. Explicitly naming it reinforces the system's reliance on external integrations for data quality and clarifies that FMAR won't master all data itself                                        |
 
-
-## Quick Definitions > needs updating
-
-• An 'Asset' (or in the European case a Controllable Unit (CU)) is defined as a single power-generating module and/or demand unit (i.e., an ESA) with a unique relationship to an Accounting Point.
-
-• A Service Providing Unit (SPU) refers to one or more controllable units connected to a single
-connection point, as defined by the service provider.
-
-• A Service Providing Group (SPG) is an aggregation of CUs or SPUs connected to more than one
-connection point within the same scheduling area, also defined by the service provider
-
-<img width="969" height="440" alt="image" src="https://github.com/user-attachments/assets/b858a238-da34-4b64-95e5-b3890c1714ed" />
-
-Image source: https://magnusenergy.com/wp-content/uploads/2025/06/NC-DR-Brief-FINAL.pdf
-
----
