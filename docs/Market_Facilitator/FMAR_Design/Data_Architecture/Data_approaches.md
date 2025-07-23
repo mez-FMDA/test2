@@ -128,7 +128,7 @@ Note: An alternative method of polling can be applied to reduce the dependency o
 | **Governance**          | Simplified data management, easy enforcement of policies, consistent data quality, ensure compliance with regulation                          |       Simplified data management, easy enforcement of policies, consistent data quality, ensure compliance with regulation  |Enforcing consistent data governance policies across multiple, independent systems can be difficult. Without strong coordination, different teams may use different data standards and formats, leading to inconsistencies.  |
 | **Infrastructure**          | Simplified and has a single set of tools              |  Minor complexity as the number of platforms increase       | Major complexity as the number of nodes increase|
 | **Point of Failure**          | FMAR hub could potentially be a single point of failure            |   FMAR hub could potentially be a single point of failure along with the chance of a data-point failure      | Risks reduced by using polling if FMAR hub is inactive|
-| **Integration effort**  | High initial, low ongoing                          | High initial, potentially high ongoing sync overhead          |Low initial, high ongoing sync overhead  |
+| **Integration effort**  | High initial, low ongoing                          | High initial, potentially high ongoing sync overhead          |High initial, high ongoing sync overhead  |
 
 
  Keeping the cost (including future integration costs), simplification of governance and timelines in mind, the architecture team proposes a **centralised implementation**
