@@ -1,7 +1,7 @@
 # FMAR Use Case Catalogue: Complete Summary
 
-last_updated: "23-07-2025"
-status: "Draft"
+**last updated**: 23-07-2025
+**status**: Draft
 
 This document outlines the core use cases for the Flexibility Market Asset Registration (FMAR) solution.
 
