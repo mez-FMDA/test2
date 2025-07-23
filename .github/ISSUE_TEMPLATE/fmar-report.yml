@@ -1,0 +1,53 @@
+---
+name: FMAR Design Change or New Requirement Proposal
+title: '[Design Change/New Requirement]: A brief title for your proposal'
+labels: 'design, requirement, triage-needed'
+assignees: ''
+
+---
+
+### **Thank You for Contributing to FMAR!**
+This template will help you structure your proposal for a design change or a new requirement. Please fill out the sections below to the best of your ability. Your detailed input is crucial for building a robust and effective FMAR system.
+
+---
+
+### **1. Submitter Details**
+*   **Submitted by:** 
+*   **Organisation:** 
+
+---
+
+### **2. Problem Statement / Opportunity**
+*(Describe the problem this proposal solves or the opportunity it creates. Please use the "As a [persona], I want/need to [do something], so that [I can achieve a benefit]" format if possible.)*
+
+---
+
+### **3. Proposed Solution / Change**
+*(Briefly describe your proposed solution or change at a high level. What would be different if this were implemented?)*
+
+---
+
+### **4. Self-Scoring Matrix**
+**Instructions:** Please complete the following matrix. The purpose of this matrix is to help build a strong, evidence-based case for your proposal and to assist the FMAR Architecture Team in efficiently assessing its priority and impact. For each criterion, provide a score from **1 (Low)** to **3 (High)** and a brief justification.
+
+| Criterion | Scoring Guide | Self-Score (1-3) | Justification & Evidence |
+| :--- | :--- | :--- | :--- |
+| **Strategic Alignment**<br>_How well does this support FMAR's core objectives?_ | **1 (Low):** A 'nice-to-have' feature, peripheral to core FMAR goals.<br>**2 (Medium):** Supports a core objective in a significant way.<br>**3 (High):** Directly enables or is essential for achieving a primary FMAR objective (e.g., simplifying registration, maximizing participation, improving network visibility). |  | *[Explain which FMAR objective(s) this change supports and how. Link to relevant policy documents or workshop decisions if applicable.]* |
+| **Industry Value & Impact**<br>_What is the scale of the benefit, and who is positively impacted?_ | **1 (Low):** Benefits a niche use case or a very small number of participants.<br>**2 (Medium):** Provides significant value to a specific actor group (e.g., all FSPs, all DSOs).<br>**3 (High):** Provides significant, cross-cutting value to the entire flexibility ecosystem (FSPs, SOs, Consumers, etc.). |  | *[Describe the benefit (e.g., cost reduction, faster processing, new capability, risk mitigation) and identify which actor groups are affected. Provide evidence such as quantitative estimates or feedback from affected parties if possible.]* |
+| **Urgency & Dependencies**<br>_How time-critical is this change?_ | **1 (Low):** Can be implemented in a future phase with minimal impact or rework.<br>**2 (Medium):** Needed to support an upcoming market change or prevent significant technical debt if not addressed soon.<br>**3 (High):** Is a direct blocker for the FMAR MVP, a parallel critical initiative (e.g., Dispatch API v1, DSI MVP), or addresses a major, immediate operational pain point. |  | *[Explain why this change is needed now. List any other projects, regulations, or FMAR use cases that are dependent on this change being implemented.]* |
+| **Implementation Clarity & Simplicity**<br>_How well-defined and straightforward is the proposed change?_ | **1 (Low):** Highly complex or purely conceptual; requires significant research, discovery, and likely impacts multiple FMAR modules in complex ways.<br>**2 (Medium):** Moderately complex; affects a single module or a well-defined interface, with a generally understood solution path.<br>**3 (High):** Simple and well-understood change with a clear implementation path and minimal cross-cutting impact. |  | *[Briefly outline the proposed solution at a high level. Is it a small change to an API, a new data field, or a major new business process? Is the "how" well understood?]* |
+| **Standardization & Interoperability**<br>_Does this promote common standards or create bespoke logic?_ | **1 (Low):** Introduces a bespoke or proprietary approach where a standard alternative exists.<br>**2 (Medium):** Is neutral or specific to FMAR's internal logic but does not hinder wider interoperability.<br>**3 (High):** Actively aligns FMAR with a recognized national/international standard (e.g., ebIX, CIM, OpenADR) or significantly simplifies data exchange for all participants. |  | *[Explain how this change aligns with or deviates from existing standards. Reference any relevant standards documents (e.g., ebIX model, ACER DR NC, DSI specs) or best practices.]* |
+| **Total Score** | **Sum of scores above (out of 15)** |  |  |
+
+---
+
+### **5. Supporting Evidence**
+*(Please provide links to any documents, diagrams, data, or other resources that support the justifications provided above.)*
+
+*   
+*   
+
+---
+
+### **6. Additional Context (Optional)**
+*(Is there anything else the FMAR Architecture Team should know when reviewing this proposal?)*
