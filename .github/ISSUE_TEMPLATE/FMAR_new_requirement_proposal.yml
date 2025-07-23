@@ -1,4 +1,4 @@
-name: FMAR New Requirement / Change Proposal
+name: Propose a change to FMAR design or raise a new requirement
 description: Propose a new requirement for FMAR or a significant change to existing design.
 title: "[PROPOSAL] Short descriptive title of the proposal"
 labels: ["type:proposal", "status:triage"]
