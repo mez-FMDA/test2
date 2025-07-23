@@ -52,31 +52,44 @@ Out-of-scope modules:
 - 🔶 PSQM = Product & Service Qualification Management
 - 🔶 GICM = Grid Integration & Constraint Management
 
-| UC ID    | Use Case Name (>needs updating)                              | Delivered By Module(s)                |
-|----------|---------------------------------------------|-------------------------------------|
-| UC-01.01 | Register User                               | SPUM                                |
-| UC-01.02 | Register Service Provider                   | SPUM                                |
-| UC-01.03 | Update / De-register Service Provider       | SPUM                                |
-| UC-02.01 | Maintain Asset Categories                   | ARM (Admin Function)                 |
-| UC-02.02 | Register Asset                              | ARM (supported by SPUM)              |
-| UC-02.03 | Validate Asset                              | ARM                                 |
-| UC-02.04 | Update Asset Details                        | ARM (supported by SPUM)              |
-| UC-02.05 | Export Asset Data                           | ARM                                 |
-| UC-03.01 | Create Market Unit                          | 🔶 PSQM (supported by ARM, SPUM)    |
-| UC-03.02 | Record Market Unit Qualification Status    | 🔶 PSQM                             |
-| UC-03.03 | Switch Market Unit to New Service Provider  | 🔶 PSQM (supported by SPUM)          |
-| UC-03.04 | Update Market Unit Composition              | 🔶 PSQM (supported by ARM)           |
-| UC-04.01 | Create / Maintain Product Register          | PSQM (Admin Function)                |
-| UC-05.01 | Provide Potential Market Unit Qualifications| 🔶 PSQM                             |
-| UC-06.01 | Share FMAR System Details                    | All Modules (API Layer)              |
-| UC-06.02 | Register / Update Connection Limit          | 🔶 GICM (supported by ARM)           |
-| UC-07.01 | Provide Analytics                            | All Modules (Reporting Layer)        |
-| UC-08.01 | Dispute Resolution & Data Correction         | All Modules (Governance Layer)       |
-| UC-09.01 | Onboard & Manage Third-Party Platforms       | SPUM                                |
-| UC-10.01 | Consumer Consent Interface & Verification    | ARM (Interface)                     |
-| UC-11.01 | Audit Trail Access & Reporting                | All Modules (Logging/Audit Layer)    |
+You are absolutely right. My apologies for introducing inconsistencies in the grouping names. Consistency is key, and the purpose you've outlined—to show why all modules need to be considered holistically from the start—is a critical message for the design workshops.
 
+Let's stick to the structure you established in your master list and simply provide a clean, updated table that maps the definitive use case names to their delivering modules. This will powerfully illustrate the interconnectedness of the system.
 
+---
+
+Here is the updated table, using your master list's grouping structure and names, to clearly demonstrate how the modules are linked across the entire FMAR vision.
+
+### **FMAR Use Case to Module Mapping**
+
+This table outlines the full scope of defined use cases for the FMAR programme and maps them to the logical data module(s) responsible for their delivery. This illustrates the interconnected nature of the FMAR Hub and supports the need for a holistic design approach, even though capabilities will be delivered in phased releases.
+
+| UC ID      | Use Case Grouping                        | Use Case Name                                    | Delivered By Module(s)                |
+| :--------- | :--------------------------------------- | :----------------------------------------------- | :---------------------------------- |
+| `UC-01.01` | **Customer Onboarding / Offboarding**    | Register User                                    | `SPUM`                              |
+| `UC-01.02` | Customer Onboarding / Offboarding        | Register Organisation                            | `SPUM`                              |
+| `UC-01.03` | Customer Onboarding / Offboarding        | Update Organisation                              | `SPUM`                              |
+| `UC-01.04` | Customer Onboarding / Offboarding        | De-register Organisation                         | `SPUM`                              |
+| `UC-02.01` | **Asset Registration & Maintenance**     | Maintain Asset Categories                        | `ARM` (Admin Function)              |
+| `UC-02.02` | Asset Registration & Maintenance         | Register and Validate Asset                      | `ARM`, `SPUM`                       |
+| `UC-02.03` | Asset Registration & Maintenance         | De-register Asset                                | `ARM`, `PSQM`                       |
+| `UC-02.04` | Asset Registration & Maintenance         | Update Asset Details                             | `ARM`, `SPUM`                       |
+| `UC-02.05` | Asset Registration & Maintenance         | Export Asset Data                                | `ARM`                               |
+| `UC-02.06` | Asset Registration & Maintenance         | Manage Connection Limit                          | `GICM`, `ARM`                       |
+| `UC-03.01` | **Market Unit Registration & Maintenance** | Create Market Unit                               | `PSQM`, `ARM`, `SPUM`                 |
+| `UC-03.03` | Market Unit Registration & Maintenance   | Reassign Market Unit to New Service Provider     | `PSQM`, `SPUM`                      |
+| `UC-03.04` | Market Unit Registration & Maintenance   | Update Market Unit Composition                   | `PSQM`, `ARM`                       |
+| `UC-03.05` | Market Unit Registration & Maintenance   | Process Owner-Initiated Asset Switch Between FSPs  | `ARM`, `SPUM`, `PSQM` (Orchestration) |
+| `UC-03.06` | Market Unit Registration & Maintenance   | De-register Market Unit                          | `PSQM`                              |
+| `UC-04.01` | **Product & Qualification Management**   | Create and Maintain Product Catalogue            | `PSQM` (Admin Function)             |
+| `UC-04.02` | Product & Qualification Management       | Record Market Unit Qualification Status          | `PSQM`                              |
+| `UC-04.03` | Product & Qualification Management       | Discover Market Opportunities                    | `PSQM`, `ARM`                       |
+| `UC-05.01` | **System-Wide Functions & Integrations** | Share FMAR System Details                        | All Modules (API Layer)             |
+| `UC-05.02` | System-Wide Functions & Integrations     | Provide Analytics                                | All Modules (Reporting Layer)       |
+| `UC-05.03` | System-Wide Functions & Integrations     | Dispute Resolution & Data Correction             | All Modules (Governance Layer)      |
+| `UC-05.04` | System-Wide Functions & Integrations     | Onboard & Manage Third-Party Platforms           | `SPUM`                              |
+| `UC-05.05` | System-Wide Functions & Integrations     | Consumer Consent Interface & Verification        | `ARM` (Interface)                   |
+| `UC-05.06` | System-Wide Functions & Integrations     | Audit Trail Access & Reporting                   | All Modules (Logging/Audit Layer)   |
 ## FMAR Actors
 
 The following table lists the primary actors who interact with the FMAR system across the defined use cases. Actors can be human users or external systems.
@@ -91,6 +104,7 @@ The following table lists the primary actors who interact with the FMAR system a
 | **Installer**                              | An entity responsible for the physical installation of flexible assets. May be an early data provider for asset registration.                                  | Potential actor in the initial "Register Asset" use case, providing technical data at the point of installation.                |
 | **Ofgem / Regulatory Body**                | The regulator of the GB energy market.                                                                                                                     | Primary consumer of anonymised, aggregated data from the "Provide Analytics" use case for market monitoring and policy making.    |
 | **Consumer Consent Solution**              | A critical external system that manages consumer consent. Interacts with FMAR programmatically.                                                              | Provides consent status verification to FMAR and notifies FMAR of consent revocations.                                        |
+| **External Data Source**              | An automated system that acts as a trusted source of truth for specific data points used in validation.                                                              | Register and Validate Asset use case depends on this actor. Explicitly naming it reinforces the system's reliance on external integrations for data quality and clarifies that FMAR won't master all data itself                                        |
 
 
 ## Quick Definitions > needs updating
