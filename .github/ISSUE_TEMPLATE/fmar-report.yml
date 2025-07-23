@@ -10,20 +10,23 @@ body:
       value: |
         ### **Thank You for Contributing to FMAR!**
         This template will help you structure your proposal for a design change or a new requirement. Please fill out the sections below to the best of your ability.
+
+  - type: input
     id: submitted_by
     attributes:
-      label: Submitted by
+      label: 1. Submitted by
       placeholder: Full name or GitHub handle
     validations:
       required: true
 
   - type: input
-    id: organisation
+    id: proposer
     attributes:
-      label: Organisation
-      placeholder: Name of organisation (if applicable)
+      label: Proposing Organisation or Individual
+      description: Who is proposing this change?
+      placeholder: e.g. DSO X or FSP B
     validations:
-      required: false
+      required: true
 
   - type: textarea
     id: problem_statement
@@ -46,7 +49,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        ### 4. [Self-Scoring Matrix](https://github.com/Mez-Elexon/Market-Facilitator-FMAR/blob/main/docs/Market_Facilitator/FMAR_Design/Programme_Level/self-scoring-matrix.md) 
+        ### 4. [Self-Scoring Matrix](https://github.com/Mez-Elexon/Market-Facilitator-FMAR/blob/main/docs/Market_Facilitator/FMAR_Design/Programme_Level/self-scoring-matrix.md)  
         Please score each criterion from **1 (Low)** to **3 (High)** and justify your score. This helps prioritise and assess your proposal.
 
   - type: textarea
@@ -83,14 +86,12 @@ body:
         Please list any FMAR artefacts that would need to be updated if this proposal is implemented.
         For example: Use Case IDs, Data Product Definitions, Interface Specs, Ontologies, or Workshop Outputs.
       placeholder: |
-        * UC-02.01: Register Asset
-        * Interface Spec: Asset Registration API v1.2
-        * Data Product: asset-metadata-core
+        * UC-02.01: Register Asset  
+        * Interface Spec: Asset Registration API v1.2  
+        * Data Product: asset-metadata-core  
         * Ontology concept: fmar:ControllableUnit
     validations:
       required: false
-
-
 
   - type: textarea
     id: additional_context
