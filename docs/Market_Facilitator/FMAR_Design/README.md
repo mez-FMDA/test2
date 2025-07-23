@@ -53,7 +53,7 @@ Documentation (docs and docs-dev) is licensed under the CC-BY-4.0 License. Attri
 
 Elexon takes security and privacy of our software products and services seriously. We appreciate your efforts to responsibly disclose your findings, and will make every effort to acknowledge your contributions.
 
-If you believe you have found a security vulnerability or privacy concern in any of our systems, please send an e-mail to MF@elexon.co.uk . Please do not report security vulnerabilities through open channels such as GitHub issues or pull requests.
+If you believe you have found a security vulnerability or privacy concern in any of our systems, please send an e-mail to MF@elexon.co.uk . Please do not report security vulnerabilities through open channels such as GitHub issues.
 
 ---
 
