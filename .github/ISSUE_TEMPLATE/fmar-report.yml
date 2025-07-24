@@ -1,5 +1,5 @@
-name: Propose a design change or a new requirement to the FMAR design
-description: Log a proposal to change or add a requirement to the FMAR design.
+name: Propose a Design Change or New Requirement to the FMAR Design
+description: Submit a proposal to change or add a requirement to the FMAR design.
 title: "[Design Change/New Requirement]: [Title of Proposal]"
 labels: ['design', 'requirement', 'triage-needed']
 projects: FMR Lifecycle
@@ -19,7 +19,9 @@ body:
     id: problem_statement
     attributes:
       label: Description of the Problem or Opportunity
-      description: What problem does this solve, or what opportunity does it create? Use the format: "As a [persona], I want to [do something], so that [outcome/benefit]".
+      description: >
+        What problem does this solve, or what opportunity does it create?  
+        Use the format: "As a [persona], I want to [do something], so that [outcome/benefit]."
       placeholder: |
         As a FSP, I want to register my assets with one interface, so that I reduce overhead and can participate sooner.
     validations:
@@ -64,7 +66,7 @@ body:
     attributes:
       label: Impacted FMAR Artefacts
       description: |
-        Which FMAR artefacts would need updating if this change was accepted?
+        Which FMAR artefacts would need updating if this change is accepted?  
         e.g. Use Case IDs, Data Models, APIs, Ontology Concepts, Workshop Notes
       placeholder: |
         * UC-02.01: Register Asset  
@@ -80,7 +82,7 @@ body:
       label: Supporting Documents or Links
       description: Add links to draft wording, diagrams, data, or prior discussions.
       placeholder: |
-        * https://example.com/use-case-doc
+        * https://example.com/use-case-doc  
         * https://github.com/fmar/api/discussions/23
     validations:
       required: false
