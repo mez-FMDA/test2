@@ -42,22 +42,107 @@ body:
         Please score your proposal using [this scoring guide](https://github.com/Mez-Elexon/Market-Facilitator-FMAR/blob/main/docs/Market_Facilitator/FMAR_Design/Programme_Level/self-scoring-matrix.md).  
         This helps the FMAR Architecture Team assess strategic fit, urgency, and value.
 
-  - type: textarea
-    id: scoring_matrix
+  - type: markdown
     attributes:
-      label: Self-Scoring Matrix (use table format)
       value: |
-        | Criterion | Self-Score (1-3) | Justification & Evidence |
-        | --- | --- | --- |
-        | **Strategic Alignment** |  |  |
-        | **Industry Value & Impact** |  |  |
-        | **Urgency & Dependencies** |  |  |
-        | **Implementation Clarity & Simplicity** |  |  |
-        | **Standardisation & Interoperability** |  |  |
-        | **Total Score (out of 15)** |  |  |
-      render: markdown
+        ### Self-Scoring Matrix  
+        Please complete the following using [this guide](https://github.com/Mez-Elexon/Market-Facilitator-FMAR/blob/main/docs/Market_Facilitator/FMAR_Design/Programme_Level/self-scoring-matrix.md)
+
+  - type: dropdown
+    id: strategic_alignment_score
+    attributes:
+      label: Strategic Alignment (Score 1–3)
+      options:
+        - "1"
+        - "2"
+        - "3"
     validations:
-      required: false
+      required: true
+
+  - type: textarea
+    id: strategic_alignment_justification
+    attributes:
+      label: Justification – Strategic Alignment
+      placeholder: Explain your reasoning for the score.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: industry_value_score
+    attributes:
+      label: Industry Value & Impact (Score 1–3)
+      options:
+        - "1"
+        - "2"
+        - "3"
+    validations:
+      required: true
+
+  - type: textarea
+    id: industry_value_justification
+    attributes:
+      label: Justification – Industry Value & Impact
+      placeholder: Explain your reasoning for the score.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: urgency_score
+    attributes:
+      label: Urgency & Dependencies (Score 1–3)
+      options:
+        - "1"
+        - "2"
+        - "3"
+    validations:
+      required: true
+
+  - type: textarea
+    id: urgency_justification
+    attributes:
+      label: Justification – Urgency & Dependencies
+      placeholder: Explain your reasoning for the score.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: implementation_score
+    attributes:
+      label: Implementation Clarity & Simplicity (Score 1–3)
+      options:
+        - "1"
+        - "2"
+        - "3"
+    validations:
+      required: true
+
+  - type: textarea
+    id: implementation_justification
+    attributes:
+      label: Justification – Implementation Clarity & Simplicity
+      placeholder: Explain your reasoning for the score.
+    validations:
+      required: true
+
+  - type: dropdown
+    id: interoperability_score
+    attributes:
+      label: Standardisation & Interoperability (Score 1–3)
+      options:
+        - "1"
+        - "2"
+        - "3"
+    validations:
+      required: true
+
+  - type: textarea
+    id: interoperability_justification
+    attributes:
+      label: Justification – Standardisation & Interoperability
+      placeholder: Explain your reasoning for the score.
+    validations:
+      required: true
+
 
   - type: textarea
     id: impacted_artefacts
