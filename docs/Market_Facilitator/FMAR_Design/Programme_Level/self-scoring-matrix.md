@@ -40,7 +40,7 @@ Please provide a **score from 1 (Low) to 3 (High)** for each category, along wit
 |-------|-------------|
 | **1 (Low)** | Can be implemented in a future phase with minimal impact or rework. |
 | **2 (Medium)** | Needed to support an upcoming market change or prevent significant technical debt if not addressed soon. |
-| **3 (High)** | Is a direct blocker for the FMAR MVP, a critical external dependency (e.g., Dispatch API v1), or addresses an immediate operational risk. |
+| **3 (High)** | Is a direct blocker for the FMAR go-live, a critical external dependency (e.g., Dispatch API v1), or addresses an immediate operational risk. |
 
 ---
 
