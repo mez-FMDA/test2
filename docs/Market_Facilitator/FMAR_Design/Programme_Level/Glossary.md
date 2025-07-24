@@ -46,6 +46,16 @@
 
 ## Quick Definitions > needs updating
 
+
+**ARM:** To be the definitive, central registry for all flexible assets participating, or intending to participate, in GB flexibility markets. It is the Single Source of Truth for asset-specific data.
+
+**SPUM:** To be the central registry for all entities (Flexibility Service Providers, System Operators, Asset Owners, etc.) that interact with the FMAR Hub. It manages their identity, roles, general market standing (where applicable), and user accounts. 
+
+**PSQM:** To manage the qualification and verification status of specific Service Providing Units (SPUs - single asset or co-located assets at one connection point) or Service Providing Groups (SPGs - aggregated assets across multiple connection points) for defined GB flexibility products and services.
+
+**GICM:** To manage and disseminate information about the grid-related operational status of SPUs/SPGs, including their grid prequalification status and any temporary operational limits imposed by System Operators due to network conditions.
+
+
 • An 'Asset' (or in the European case a Controllable Unit (CU)) is defined as a single power-generating module and/or demand unit (i.e., an ESA) with a unique relationship to an Accounting Point.
 
 • A Service Providing Unit (SPU) refers to one or more controllable units connected to a single
