@@ -24,7 +24,6 @@ body:
       description: >
         What problem does this solve, or what opportunity does it create?  
         Use the format: "As a [persona], I want to [do something], so that [outcome/benefit]."
-      placeholder: |
     validations:
       required: true
 
@@ -33,7 +32,6 @@ body:
     attributes:
       label: Description of the Proposed Change or Requirement
       description: What is your high-level proposal? What would be different if this were implemented?
-      placeholder: |
     validations:
       required: true
 
