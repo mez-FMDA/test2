@@ -49,7 +49,7 @@ All engagement in this repository is governed by our **[Contribution Guidelines 
 
 ## Licensing & security policy
 
-Documentation (docs and docs-dev) is licensed under the CC-BY-4.0 License. Attribution should be made to Elexon Ltd.
+Documentation (docs) is licensed under the CC-BY-4.0 License. Attribution should be made to Elexon Ltd.
 
 Elexon takes security and privacy of our software products and services seriously. We appreciate your efforts to responsibly disclose your findings, and will make every effort to acknowledge your contributions.
 
