@@ -1,50 +1,16 @@
-# FMAR Design Artefacts Repository
+# Market Facilitator Repository
 
-**Welcome to the official design artefact repository for the Flexibility Market Asset Registration (FMAR) Programme, managed by Elexon as the GB Market Facilitator.**
+**Welcome to the official Github repository for the Market Facilitator managed by Elexon.**
 
+This repository supports Elexon's role as the Market Facilitator for the GB flexibility market. It provides a collaborative, version-controlled space for developing the Flexibility Market Asset Registration (FMAR) design artefacts and our Flexibility Market Rules. GitHub is used to manage the evolution of these materials, capture and triage feedback from stakeholders and workshops, maintain traceability of changes, and enable structured, transparent engagement across the industry.
 
-## Contributing
+| Section                                                                                                                    | Description                                                                                    |
+| -------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| [FMAR Design Artefacts](https://github.com/elexon-data/Market-Facilitator/tree/main/docs/Market_Facilitator/FMAR_Design)   | Design documents and specifications for the Flexibility Market Asset Registration programme.   |
+| [Rules Development](https://github.com/elexon-data/Market-Facilitator/tree/main/docs/Market_Facilitator/Rules_Development) | Working drafts and change history of Flexibility Market Rules (FMRs) under active development. |
 
-We actively encourage participation from all industry stakeholders. Your expertise is crucial to our success.
+For further details about the FMAR Programme and Elexon's role as Market Facilitator, please visit the official [website](https://www.elexon.co.uk/what-we-do/about-our-services/market-facilitator-for-distributed-flexibility/).
 
-*   **To Review Artefacts:** All published design documentation can be indexed in the table of contents below. We recommend starting with the `00-Programme-Level` and `01-Ecosystem-Architecture` folders to read the latest understanding of the descriptions of the core user journeys and functionalities FMAR will support.
-
-*   **To Provide Feedback or Raise a Change:** The primary method for providing feedback is by commenting on the appropriate thread in **[GitHub Discussions](https://github.com/mez-FMDA/MF.github.io/discussions/categories/general-discussion)**. This can then be formalised as Change to be raised via a **[GitHub Issue](https://github.com/mez-FMDA/MF.github.io/issues)**. Please use the available templates to ensure your feedback uses the correct structured issue template and can be effectively triaged by our team. If you are unsure whether to provide feedback or raise a change, please refer to our **[Contribution Guidelines and Code of Conduct](./CONTRIBUTING.md)**.  
-
-*   **To Track Progress:** You can "Watch" this repository to receive notifications on new Issues, discussions, and artefact updates. Progress on key design themes is also tracked on our **[FMAR Design Project Board](https://github.com/users/mez-FMDA/projects/7/views/2)**.
-
-The table of contents below is structured by way of the different architectural domains and artefacts that will be in scope of Elexon's High Level Design consultation in Winter 2025/2026.
-
-## FMAR Design Documentation
-
-This repository contains the design documentation for the FMAR project. Use the table of contents below to navigate through the different architectural domains and artefacts.
-
-## Table of Contents
-
-* [Programme Level](https://github.com/mez-FMDA/Market-Facilitator-FMAR/tree/main/docs/Market_Facilitator/FMAR_Design/Programme_Level)
-* [Ecosystem Architecture](https://github.com/mez-FMDA/Market-Facilitator-FMAR/tree/main/docs/Market_Facilitator/FMAR_Design/Ecosystem_Architecture)
-* [Data Architecture](https://github.com/mez-FMDA/Market-Facilitator-FMAR/tree/main/docs/Market_Facilitator/FMAR_Design/Data_Architecture)
-* [Application Architecture](https://github.com/mez-FMDA/Market-Facilitator-FMAR/tree/main/docs/Market_Facilitator/FMAR_Design/Application_Architecture)
-* [Supporting Artefacts](https://github.com/mez-FMDA/Market-Facilitator-FMAR/tree/main/docs/Market_Facilitator/FMAR_Design/Supporting_Artefacts)
-
-**Please Note:** Only authorized members of the FMAR Architecture Team can commit changes and merge pull requests to the main branches of this repository to ensure quality and control. All industry feedback provided via Issues will be reviewed, and if accepted, incorporated into subsequent versions of the artefacts by the team. For more detail on our Architectural Team workflow, please refer to our overview on the programme page.
-
----
-
-## Upcoming Workshops & Engagement
-
-We will be running a series of thematic design workshops to collaboratively define the FMAR system. Artefacts in this repository will serve as pre-reading and will be updated based on workshop outcomes.
-
-*   **Next Workshop:** 
-*   **Date:** *[Insert Date]*
-*   **Registration & Details:** *[https://www.elexon.co.uk/what-we-do/about-our-services/market-facilitator-for-distributed-flexibility/]*
-*   **[View the full Workshop Series Roadmap](./Workshops/README.md)**
-
----
-
-## Contribution & Code of Conduct
-
-All engagement in this repository is governed by our **[Contribution Guidelines and Code of Conduct](./CONTRIBUTING.md)**. We are committed to fostering an open, respectful, and collaborative environment.
 
 ## Licensing & security policy
 
