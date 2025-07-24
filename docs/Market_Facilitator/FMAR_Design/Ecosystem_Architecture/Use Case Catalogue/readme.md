@@ -9,9 +9,9 @@
 
 This document outlines the core use cases for the Flexibility Market Asset Registration (FMAR) solution.
 
-FMAR supports registration, qualification, and data sharing for flexible assets participating in GB flexibility markets.
+FMAR could support asset registration, unit qualification and data sharing for flexible assets participating in GB flexibility markets.
 
-It is designed to operate through modular components and may leverage a federated architecture via the Data Sharing Infrastructure (DSI).
+It is designed to operate through modular components and may leverage a federated architecture via the Data Sharing Infrastructure (DSI). These modules are logical groups of xyz and would have a unified API and reporting layer to support role-based access control on a non-discriminatory basis, underpinned by a common data standard and a shared ontology.
 
 ### Module Key
 
