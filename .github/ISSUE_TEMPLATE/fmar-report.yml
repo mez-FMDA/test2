@@ -23,7 +23,6 @@ body:
         What problem does this solve, or what opportunity does it create?  
         Use the format: "As a [persona], I want to [do something], so that [outcome/benefit]."
       placeholder: |
-        As a FSP, I want to register my assets with one interface, so that I reduce overhead and can participate sooner.
     validations:
       required: true
 
@@ -33,7 +32,6 @@ body:
       label: Description of the Proposed Change or Requirement
       description: What is your high-level proposal? What would be different if this were implemented?
       placeholder: |
-        Introduce a standardised asset registration endpoint across FMAR modules.
     validations:
       required: true
 
@@ -67,12 +65,9 @@ body:
       label: Impacted FMAR Artefacts
       description: |
         Which FMAR artefacts would need updating if this change is accepted?  
-        e.g. Use Case IDs, Data Models, APIs, Ontology Concepts, Workshop Notes
+        e.g. Use Case IDs
       placeholder: |
-        * UC-02.01: Register Asset  
-        * Data Product: asset-metadata-core  
-        * API Spec: Asset Interface v1.2  
-        * Ontology: fmar:ControllableUnit
+        * UC-02.01: Register and Validate Asset  
     validations:
       required: false
 
@@ -83,7 +78,7 @@ body:
       description: Add links to draft wording, diagrams, data, or prior discussions.
       placeholder: |
         * https://example.com/use-case-doc  
-        * https://github.com/fmar/api/discussions/23
+        * https://github.com/elexon-data/Market-Facilitator/discussions
     validations:
       required: false
 
