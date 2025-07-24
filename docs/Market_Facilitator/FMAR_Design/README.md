@@ -11,7 +11,7 @@ We actively encourage participation from all industry stakeholders. Your experti
 
 *   **To Provide Feedback or Raise a Change:** The primary method for providing feedback is by commenting on the appropriate thread in **[GitHub Discussions](https://github.com/mez-FMDA/MF.github.io/discussions/categories/general-discussion)**. This can then be formalised as Change to be raised via a **[GitHub Issue](https://github.com/mez-FMDA/MF.github.io/issues)**. Please use the available templates to ensure your feedback uses the correct structured issue template and can be effectively triaged by our team. If you are unsure whether to provide feedback or raise a change, please refer to our **[Contribution Guidelines and Code of Conduct]()**.  
 
-*   **To Track Progress:** You can "Watch" this repository to receive notifications on new Issues, discussions, and artefact updates. Progress on key design themes is also tracked on our **[FMAR Design Project Board](https://github.com/users/Mez-Elexon/projects/7/views/2)**.
+*   **To Track Progress:** You can "Watch" this repository to receive notifications on new Issues, discussions, and artefact updates. Progress on key design themes is also tracked on our **[FMAR Design Project Board](https://github.com/orgs/elexon-data/projects/1)**.
 
 The table of contents below is structured by way of the different architectural domains and artefacts that will be in scope of Elexon's High Level Design consultation in Winter 2025/2026.
 
