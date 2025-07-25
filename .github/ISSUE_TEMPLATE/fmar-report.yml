@@ -1,7 +1,7 @@
 ---
-name: Propose a dsign change or new requirement to the FMAR Design
+name: Propose a design change or new requirement to the FMAR Design
 description: Submit a proposal to change or add a requirement to the FMAR design.
-title: "[Design Change/New Requirement]: [Title of Proposal]"
+title: "[FMAR Design Change/New FMAR Requirement]: [Title of Proposal]"
 labels: ['Flexibility Market Rule Issue', 'FMAR Module: ARM', 'FMAR Module: SPUM', 'FMAR Module: PSQM', 'FMAR Module: GICM']
 projects: ["elexon-data/1"]
 assignees: []
