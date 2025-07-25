@@ -3,6 +3,11 @@
 >boilerplate text about the vision, include from UC descriptions document
 
 ## Vision:
+Our primary goal is to co-design a robust and future-proof FMAR system that will:
+*   **Simplify asset registration** with a "register once, use many times" capability, initially focusing data collection at the 'point of market entry'.
+*   **Lower barriers to entry** for flexibility providers by managing the lifecycle of asset and flexibility service data (data related to a counterparty and their contract with the asset owner).
+*   **Enhance visibility and data quality** for System Operators who will require improvements to operational visibility in a high- DER and CER system.
+*   **Provide a public interest digital asset** that supports an efficient, competitive, and decarbonised GB energy system.
 
 **FMAR Hub:**
 
