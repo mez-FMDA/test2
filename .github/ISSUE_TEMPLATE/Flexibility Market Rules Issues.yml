@@ -32,16 +32,7 @@ body:
       placeholder: e.g. DSO X or FSP B
     validations:
       required: true
-
-  - type: input
-    id: Issue_Name
-    attributes:
-      label: Issue Name
-      description: Name of the Issue you are raising
-      placeholder: 
-    validations:
-      required: true     
-
+   
   - type: textarea
     id: Issue_description
     attributes:
