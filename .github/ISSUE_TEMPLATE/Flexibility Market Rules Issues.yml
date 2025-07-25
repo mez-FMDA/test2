@@ -6,6 +6,15 @@ projects: FMR Lifecycle
 assignees: []
 body:
   - type: input
+    id: Issue Name
+    attributes:
+      label: Issue Name
+      description: Name of the Issue you are raising
+      placeholder: 
+    validations:
+      required: true
+      
+  - type: input
     id: rule_name
     attributes:
       label: Rule Name
@@ -49,6 +58,16 @@ body:
       description: What is the impact of the issue?
       placeholder: |
         Additional cost scrutinizing all the requirements and implementating the various obligations
+    validations:
+      required: false
+      
+  - type: textarea
+    id: Dependencies
+    attributes:
+      label: Known Dependencies
+      description: what else might need to be delivered before this can be resolved
+      placeholder: |
+        Registration process alignment
     validations:
       required: false
       
