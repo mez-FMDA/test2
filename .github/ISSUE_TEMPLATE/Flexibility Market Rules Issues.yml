@@ -5,15 +5,7 @@ labels: [Flexibility Market Rule Issue]
 projects: FMR Lifecycle
 assignees: []
 body:
-  - type: input
-    id: Issue Name
-    attributes:
-      label: Issue Name
-      description: Name of the Issue you are raising
-      placeholder: 
-    validations:
-      required: true
-      
+    
   - type: input
     id: rule_name
     attributes:
@@ -41,8 +33,17 @@ body:
     validations:
       required: true
 
+  - type: input
+    id: Issue_Name
+    attributes:
+      label: Issue Name
+      description: Name of the Issue you are raising
+      placeholder: 
+    validations:
+      required: true     
+
   - type: textarea
-    id: Issue
+    id: Issue_description
     attributes:
       label: Description of the Issue
       description: Describe the problem to be addressed.
