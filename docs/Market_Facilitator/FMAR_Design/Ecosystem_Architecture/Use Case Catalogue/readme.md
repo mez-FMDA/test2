@@ -13,7 +13,7 @@ Depending on the outcomes from Industry design workshops, FMAR could support ass
 
 It is designed to operate through modular components and some data flows potentially using a federated architecture via the Data Sharing Infrastructure (DSI). The modules reflect logical groupings to the lifecycle of asset data in the Registration phase of flexibility markets.
 
-To further understand what is in the Registration phase, we encourage you to refer to Elexon's Common End-to-End process workstream which provides a reference model 
+To further understand what is in the Registration phase, we encourage you to refer to Elexon's [Common End-to-End process](https://github.com/elexon-data/Market-Facilitator/blob/main/docs/Market_Facilitator/Rules_Development/FMR_E2E_process/E2Ebuildingblocksv1.md) workstream which informs our reference model for the market architecture. 
 
 This data would be an authoritative master record and have a unified API and reporting layer to support role-based access control on a non-discriminatory basis, underpinned by a common set of data standards and a shared ontology.
 
