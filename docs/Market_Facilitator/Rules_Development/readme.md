@@ -1,5 +1,3 @@
-coming soon...
-
 # Flexibility Market Rules Development
 
 **Welcome to the official  repository for the development of Flexibility Market Rules, managed by Elexon as the GB Market Facilitator.**
@@ -7,16 +5,13 @@ coming soon...
 
 ## Contributing
 
-We actively encourage participation from all industry stakeholders. Your expertise is crucial to our success.
+We actively encourage participation from all industry stakeholders. Your expertise is crucial to our success. 
 
-*   **Raise Issues with Market Rules:** Please raise issues you encounter with the suite of Flexibility Market Rules here: **[GitHub Issue](https://github.com/mez-FMDA/MF.github.io/issues)**. Some working groups are actively looking at these issues, prioritising them and looking to resolve. Others are not active yet, but getting visibility of issues will help us prioritise our work.
+*   **Raise Issues with Market Rules:** Please raise issues you encounter with the suite of Flexibility Market Rules here: **[GitHub Issue](https://github.com/mez-FMDA/MF.github.io/issues)** using the market rule template. Some working groups are actively looking at these issues, prioritising them and looking to resolve. Others are not active yet, but getting visibility of issues will help us prioritise our work.
 
 *   **To Track Progress:** You can "Watch" this repository to receive notifications on new Issues, discussions, and artefact updates. 
 
 *   **More engagement options coming in due course** 
-
-The table of contents shows the content currently available o
-
 
 ---
 
