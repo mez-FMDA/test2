@@ -7,7 +7,7 @@ This repository supports Elexon's role as the Market Facilitator for the GB flex
 | Section                                                                                                                    | Description                                                                                    |
 | -------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
 | [FMAR Design Artefacts](https://github.com/elexon-data/Market-Facilitator/tree/main/docs/Market_Facilitator/FMAR_Design)   | Design documents and specifications for the Flexibility Market Asset Registration programme.   |
-| [Rules Development](https://github.com/elexon-data/Market-Facilitator/tree/main/docs/Market_Facilitator/Rules_Development) | Working drafts and change history of Flexibility Market Rules (FMRs) under active development. |
+| [Rules Development](https://github.com/elexon-data/Market-Facilitator/tree/main/docs/Market_Facilitator/Rules_Development) | Working drafts and issue logs for Flexibility Market Rules under active development. |
 
 For further details about the FMAR Programme and Elexon's role as Market Facilitator, please visit the official [website](https://www.elexon.co.uk/what-we-do/about-our-services/market-facilitator-for-distributed-flexibility/).
 
