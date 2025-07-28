@@ -15,7 +15,7 @@ This dataset would function as an authoritative master record and have a unified
 
 It is designed to operate through modular components and some data flows potentially using a federated architecture via the Data Sharing Infrastructure (DSI). The modules reflect logical groupings to the lifecycle of asset data in the Registration phase of flexibility markets.
 
-To further understand what is in the Registration phase, we encourage you to refer to Elexon's [Common End-to-End process](https://github.com/elexon-data/Market-Facilitator/blob/main/docs/Market_Facilitator/Rules_Development/FMR_E2E_process/E2Ebuildingblocksv1.md) workstream which is part of our enterprise model to aid shared understanding. 
+To further understand what is in the Registration phase, we encourage you to refer to our [Programme Glossary](https://github.com/elexon-data/Market-Facilitator/blob/main/docs/Market_Facilitator/FMAR_Design/Programme_Level/Glossary.md) and our [Common End-to-End process](https://github.com/elexon-data/Market-Facilitator/blob/main/docs/Market_Facilitator/Rules_Development/FMR_E2E_process/E2Ebuildingblocksv1.md) workstream which is part of our enterprise model to aid shared understanding. 
 
 
 ### Module Key
