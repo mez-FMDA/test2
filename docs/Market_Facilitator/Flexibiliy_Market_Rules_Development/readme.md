@@ -11,7 +11,7 @@ We actively encourage participation from all industry stakeholders. Your experti
 
 *   **Review Documentations & Catch up on previous working groups** We have uploaded the key material from previous working groups so you can follow how the change is progressing.This includes the Terms of Reference for the group, the slides presented at the working group and the summary notes from the meetings.
 
-*   **To Track Progress:** You can "Watch" this repository to receive notifications on new **[Issues](https://github.com/mez-FMDA/MF.github.io/issues)**, **[Discussions}(https://github.com/elexon-data/Market-Facilitator/discussions)**, and artefact updates. 
+*   **To Track Progress:** You can "Watch" this repository to receive notifications on new **[Issues](https://github.com/mez-FMDA/MF.github.io/issues)**, **[Discussions](https://github.com/elexon-data/Market-Facilitator/discussions)**, and artefact updates. 
 
 ---
 
