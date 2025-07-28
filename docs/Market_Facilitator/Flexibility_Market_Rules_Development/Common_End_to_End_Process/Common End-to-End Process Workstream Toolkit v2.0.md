@@ -2,8 +2,9 @@
 
 | Version | Date       | Changes                      | Author   |
 |---------|------------|------------------------------|----------|
-| v0.9  | 2025-05 | Shared post-E2E workshop #2 | MB   |
-| v1.0  | 2025-07-29 | Published in FlexNews pre-workshop #1 | MB   |
+| v1.0  | 2025-05 | Shared over email post-E2E workshop #2 | MB   |
+| v1.5  | 2025-06 | Condensed R.1-R.3 Register User/Organisation/Related Entity to R.1 Register Counterparty. Added V.5 Report on Service Delivery  Was shown in select interviews post workshop #2 | MB   |
+| v2.0  | 2025-07-29 | Discussion page link included to be published in FlexNews pre-workshop #1 | MB   |
 
 ## Common End-to-End Process Workstream Toolkit v1.0
 
@@ -27,7 +28,7 @@ We focus primarily on FSP interactions and Independent Market Platforms, with se
 |----------------------|------------------------------------------------------------------------|
 | **June–July**        | Interviews with SOs/Market Operators (deep dive on Registration)       |
 | **July–August**      | Interviews focused on remaining phases                                 |
-| **August**       | Open industry workshop to review as-is swimlanes captured from interviews   |
+| **August**       | Open industry workshop to review as-is swimlanes captured from interviews (Level 3 Enterprise Model views)   |
 | **September**        | Confirm role of this toolkit in Day 1 Flexibility Market consultation   |
 | **Continuous**       | Open contributions via collaboration tools                             |
 
@@ -61,18 +62,15 @@ You can explore the business processes by phase below:
 
 | Code | Process                           |
 |------|-----------------------------------|
-| R.1  | Register/Manage Users             |
-| R.2  | Register/Manage Organisations     |
-| R.3  | Register/Manage Related Entities  |
-| R.4  | Issue and Sign Service T&Cs       |
-| R.5  | Qualify Commercially              |
-| R.6  | Register/Manage Assets            |
-| R.7  | Manage Asset Data                 |
-| R.8  | Qualify Assets                    |
-| R.9  | Register/Manage Units             |
-| R.10 | Qualify Units                     |
-| R.11 | Test Units                        |
-| R.12 | Manage Unit Data                  |
+| R.1  | Register Counterparty       |
+| R.2  | Qualify Counterparty       |
+| R.2  | Issue and Sign Service T&Cs       |
+| R.3  | Qualify Commercially              |
+| R.4  | Register Assets            |
+| R.6  | Qualify Assets                    |
+| R.7  | Register Units             |
+| R.8 | Qualify Units                     |
+| R.9 | Test Units                        |
 
 </details>
 
@@ -110,6 +108,7 @@ You can explore the business processes by phase below:
 | V.2  | Process Verification Data    |
 | V.3  | Communicate Performance      |
 | V.4  | Manage Disputes              |
+| V.5  | Report on Service Delivery    |
 
 </details>
 
