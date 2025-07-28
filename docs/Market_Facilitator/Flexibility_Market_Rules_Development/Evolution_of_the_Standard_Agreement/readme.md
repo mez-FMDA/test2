@@ -1,13 +1,15 @@
-# Vision for Market Coordination
+# Vision for Standard Agreement
 
-**See the latest updates on our work drive a clearer vision on how to improve coordination across flexibility markets**
+**See the latest updates on our work to improve the common legal framework for flexibility services**
 
 ## Aims
 
-As set out in the **[terms of reference](https://github.com/mez-FMDA/Market-Facilitator-FMAR/tree/main/docs/Market_Facilitator/Flexibility_Market_Rules_Development/Vision_for_Market_Coordination/Terms_of_Reference_Vision_for_Market_Coordination.pdf)**, the scope of the work is to: 
-* Clarifying what good market coordination across sub-markets could look like in GB.
-*	Developing principles to support effective co-delivery across sub-markets, alongside actions required to implement this in the market facilitator’s 2026-27 delivery plan
-*	Identify longer term options for coordination, and the work required to progress them.
+As set out in the **[terms of reference](https://github.com/mez-FMDA/Market-Facilitator-FMAR/tree/main/docs/Market_Facilitator/Flexibility_Market_Rules_Development/Evolution_of_the_Standard_Agreement/Terms_of_Reference_Standard_Agreement.pdf)**, the scope of the work is to: 
+*	Clarifying the value of aligned legal agreements for the provision of flexibility services. 
+*	Developing the desired end state of such legal agreements
+*	Identifying and finding resolutions (where required) to issues with the current version of the Standard Agreement, as handed over by the ENA to be implemented as a Day 1 Flexibility Market Rule. 
+*	Supporting the consultation on the Day 1 Flexibility Market Rule, and the review of any feedback following consultations. 
+
 
 
 ## Contents
@@ -22,9 +24,10 @@ On this page we will upload.
 
 ---
 
-## Rasining an issue with the Standard Agreement
+## Raising an issue with the Standard Agreement
 
 Use the **[GitHub Issue](https://github.com/mez-FMDA/MF.github.io/issues)** function to raise issues with coordination in current markets
 
 ---
 
+docs/Market_Facilitator/Flexibility_Market_Rules_Development/Evolution_of_the_Standard_Agreement/Terms of Reference Standard Agreement.pdf
