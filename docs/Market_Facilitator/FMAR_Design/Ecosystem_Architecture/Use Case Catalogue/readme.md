@@ -3,7 +3,7 @@
 
 | Version | Date       | Changes                      | Author   |
 |---------|------------|------------------------------|----------|
-| v0.9  | 2025-07-28 | Added standard agreement terms| MB   |
+| v0.9  | 2025-07-28 | Internal draft | MB   |
 | v1.0  | 2025-07-29 | Published in FlexNews pre-workshop #1 | MB   |
 
 
