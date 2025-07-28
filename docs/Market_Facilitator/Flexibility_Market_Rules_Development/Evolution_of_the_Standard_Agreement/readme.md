@@ -4,7 +4,7 @@
 
 ## Aims
 
-As set out in the **[terms of reference](https://github.com/mez-FMDA/Market-Facilitator-FMAR/tree/main/docs/Market_Facilitator/Flexibility_Market_Rules_Development/Evolution_of_the_Standard_Agreement/Terms_of_Reference_Standard_Agreement.pdf)**, the scope of the work is to: 
+As set out in the terms of reference, the scope of the work is to: 
 *	Clarifying the value of aligned legal agreements for the provision of flexibility services. 
 *	Developing the desired end state of such legal agreements
 *	Identifying and finding resolutions (where required) to issues with the current version of the Standard Agreement, as handed over by the ENA to be implemented as a Day 1 Flexibility Market Rule. 
