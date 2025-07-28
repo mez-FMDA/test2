@@ -29,3 +29,5 @@ Use the **[GitHub Issue](https://github.com/mez-FMDA/MF.github.io/issues)** func
 
 ---
 
+https://github.com/elexon-data/Market-Facilitator/blob/main/docs/Market_Facilitator/Flexibiliy_Market_Rules_Development/Vision_for_Market_Coordination/Terms%20of%20Reference%20Vision%20for%20Market%20Coordination.pdf
+
