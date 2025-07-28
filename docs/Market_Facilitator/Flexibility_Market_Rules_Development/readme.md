@@ -7,11 +7,11 @@
 
 We actively encourage participation from all industry stakeholders. Your expertise is crucial to our success. 
 
-*   **Raise Issues with Market Rules:** Please raise issues you encounter with the suite of Flexibility Market Rules here: **[GitHub Issue](https://github.com/elexon-data/MF.github.io/issues)** using the market rule template. Some working groups are actively looking at these issues, prioritising them and looking to resolve. Others are not active yet, but getting visibility of issues will help us prioritise our work.
+*   **Raise Issues with Market Rules:** Please raise issues you encounter with the suite of Flexibility Market Rules here: **[GitHub Issue](https://github.com/elexon-data/Market-Facilitator/issues)** using the market rule template. Some working groups are actively looking at these issues, prioritising them and looking to resolve. Others are not active yet, but getting visibility of issues will help us prioritise our work.
 
 *   **Review Documentations & Catch up on previous working groups** We have uploaded the key material from previous working groups so you can follow how the change is progressing.This includes the Terms of Reference for the group, the slides presented at the working group and the summary notes from the meetings.
 
-*   **To Track Progress:** You can "Watch" this repository to receive notifications on new **[Issues](https://github.com/elexon-data/MF.github.io/issues)**, **[Discussions](https://github.com/elexon-data/Market-Facilitator/discussions)**, and artefact updates. 
+*   **To Track Progress:** You can "Watch" this repository to receive notifications on new **[Issues](https://github.com/elexon-data/Market-Facilitator/issues)**, **[Discussions](https://github.com/elexon-data/Market-Facilitator/discussions)**, and artefact updates. 
 
 ---
 
@@ -19,8 +19,8 @@ We actively encourage participation from all industry stakeholders. Your experti
 
 The following rules are currently under development
 * [Common End to End process](https://github.com/elexon-data/Market-Facilitator/tree/main/docs/Market_Facilitator/Flexibility_Market_Rules_Development/Common_End_to_End_Process)
-* [Evolution of the Standard Agreement](https://github.com/elexon-data/Market-Facilitator-FMAR/tree/main/docs/Market_Facilitator/Flexibility_Market_Rules_Development/Evolution_of_the_Standard_Agreement)
-* [Vision for Market Coordination](https://github.com/elexon-data/Market-Facilitator-FMAR/tree/main/docs/Market_Facilitator/Flexibility_Market_Rules_Development/Vision_for_Market_Coordination)
+* [Evolution of the Standard Agreement](https://github.com/elexon-data/Market-Facilitator/tree/main/docs/Market_Facilitator/Flexibility_Market_Rules_Development/Evolution_of_the_Standard_Agreement)
+* [Vision for Market Coordination](https://github.com/elexon-data/Market-Facilitator/tree/main/docs/Market_Facilitator/Flexibility_Market_Rules_Development/Vision_for_Market_Coordination)
 
 ---
 
