@@ -30,4 +30,3 @@ Use the **[GitHub Issue](https://github.com/mez-FMDA/MF.github.io/issues)** func
 
 ---
 
-docs/Market_Facilitator/Flexibility_Market_Rules_Development/Evolution_of_the_Standard_Agreement/Terms of Reference Standard Agreement.pdf
