@@ -22,9 +22,9 @@ We focus primarily on FSP interactions and Independent Market Platforms, with se
 |----------------------|------------------------------------------------------------------------|
 | **June–July**        | Interviews with SOs/Market Operators (deep dive on Registration)       |
 | **July–August**      | Interviews focused on remaining phases                                 |
-| **August**       | Open industry workshop to review as-is swimlanes captured from intervidws   |
-| **Continuous**       | Open contributions via collaboration tools                             |
+| **August**       | Open industry workshop to review as-is swimlanes captured from interviews   |
 | **September**        | Confirm role of this toolkit in Day 1 Flexibility Market consultation   |
+| **Continuous**       | Open contributions via collaboration tools                             |
 
 ---
 
