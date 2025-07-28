@@ -18,7 +18,7 @@ We actively encourage participation from all industry stakeholders. Your experti
 ## Current changes in development
 
 The following rules are currently under development
-* [Common End to End process](https://github.com/Market-Facilitator/docs/Market_Facilitator/Flexibility_Market_Rules_Development/Common_End_to_End_Process)
+* [Common End to End process](https://github.com/Market-Facilitator/main/docs/Market_Facilitator/Flexibility_Market_Rules_Development/Common_End_to_End_Process)
 * [Evolution of the Standard Agreement](https://github.com/mez-FMDA/Market-Facilitator-FMAR/tree/main/docs/Market_Facilitator/Flexibility_Market_Rules_Development/Evolution_of_the_Standard_Agreement)
 * [Vision for Market Coordination](https://github.com/mez-FMDA/Market-Facilitator-FMAR/tree/main/docs/docs/Market_Facilitator/Flexibility_Market_Rules_Development/Vision_for_Market_Coordination)
 
