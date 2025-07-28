@@ -1,6 +1,11 @@
-# 📘 Business Process Building Blocks Glossary v1
+# Common End-to-End Process Workstream Toolkit v1.0
 
-## Common End-to-End Process Workstream Toolkit
+| Version | Date       | Changes                      | Author   |
+|---------|------------|------------------------------|----------|
+| v0.9  | 2025-05 | Shared post-E2E workshop #2 | MB   |
+| v1.0  | 2025-07-29 | Published in FlexNews pre-workshop #1 | MB   |
+
+## Common End-to-End Process Workstream Toolkit v1.0
 
 This document outlines the **Flexibility Market Business Processes and Systems**, with a focus on the **FSP User Journey**.
 
@@ -28,14 +33,14 @@ We focus primarily on FSP interactions and Independent Market Platforms, with se
 
 ---
 
-## 💬 Community Participation
+## Community Participation
 
 Have suggestions or feedback?  
-👉 [Join the discussion forum](https://github.com/mez-FMDA/MF_Repository_test/discussions)
+[Join the discussion forum](https://github.com/mez-FMDA/MF_Repository_test/discussions)
 
 ---
 
-## 🔎 Building Block Catalogue
+## Building Block Catalogue
 
 You can explore the business processes by phase below:
 
@@ -120,6 +125,6 @@ You can explore the business processes by phase below:
 
 ---
 
-## 🗂️ Raw Glossary (JSON)
+## Raw Glossary (JSON)
 
 We are also maintaining a JSON-formatted version of this glossary for machine-readable applications. If needed, you can request access via the repository team.
