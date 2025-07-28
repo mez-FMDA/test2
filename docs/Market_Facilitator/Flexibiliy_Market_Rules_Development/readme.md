@@ -9,9 +9,9 @@ We actively encourage participation from all industry stakeholders. Your experti
 
 *   **Raise Issues with Market Rules:** Please raise issues you encounter with the suite of Flexibility Market Rules here: **[GitHub Issue](https://github.com/mez-FMDA/MF.github.io/issues)** using the market rule template. Some working groups are actively looking at these issues, prioritising them and looking to resolve. Others are not active yet, but getting visibility of issues will help us prioritise our work.
 
-*   **To Track Progress:** You can "Watch" this repository to receive notifications on new Issues, discussions, and artefact updates. 
+*   **Review Documentations & Catch up on previous working groups** We have uploaded the material from previous working groups so you can follow how the change is progressing. 
 
-*   **More engagement options coming in due course** 
+*   **To Track Progress:** You can "Watch" this repository to receive notifications on new Issues, discussions, and artefact updates. 
 
 ---
 
