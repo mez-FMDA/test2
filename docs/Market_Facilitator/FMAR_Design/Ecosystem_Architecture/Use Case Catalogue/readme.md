@@ -3,19 +3,20 @@
 
 | Version | Date       | Changes                      | Author   |
 |---------|------------|------------------------------|----------|
-| v1.x  | 2025-07-28 | New draft pre-release | MB   |
+| v0.9  | 2025-07-28 | Internal draft pre-release | MB   |
+| v1.0  | 2025-07-29 | Published in FlexNews pre-workshop #1 | MB   |
 
 
+This document outlines the core use cases identified for the Flexibility Market Asset Registration (FMAR) solution.
 
-This document outlines the core use cases for the Flexibility Market Asset Registration (FMAR) solution.
+Depending on the outcomes from Elexon's Industry Design Workshops, FMAR could support asset visibility (collecting asset data at the point of market entry, and potentially collecting asset data at the point of installation, subject to DESNZ Asset Visibility policy), FSP unit registration and market qualification, and data sharing in GB flexibility markets.
 
-Depending on the outcomes from Industry design workshops, FMAR could support asset registration (potentially collecting data from the point of installation, subject to DESNZ Asset Visibility policy), unit (asset grouping) rights and market qualification, and data sharing for flexible assets participating in GB flexibility markets.
+This data would function as an authoritative master record and have a unified API and reporting layer to support role-based access control on a non-discriminatory basis, underpinned by a common set of data standards and a shared ontology.
 
 It is designed to operate through modular components and some data flows potentially using a federated architecture via the Data Sharing Infrastructure (DSI). The modules reflect logical groupings to the lifecycle of asset data in the Registration phase of flexibility markets.
 
-To further understand what is in the Registration phase, we encourage you to refer to Elexon's [Common End-to-End process](https://github.com/elexon-data/Market-Facilitator/blob/main/docs/Market_Facilitator/Rules_Development/FMR_E2E_process/E2Ebuildingblocksv1.md) workstream which informs our reference model for the market architecture. 
+To further understand what is in the Registration phase, we encourage you to refer to Elexon's [Common End-to-End process](https://github.com/elexon-data/Market-Facilitator/blob/main/docs/Market_Facilitator/Rules_Development/FMR_E2E_process/E2Ebuildingblocksv1.md) workstream which is part of our enterprise model to aid shared understanding. 
 
-This data would be an authoritative master record and have a unified API and reporting layer to support role-based access control on a non-discriminatory basis, underpinned by a common set of data standards and a shared ontology.
 
 ### Module Key
 
