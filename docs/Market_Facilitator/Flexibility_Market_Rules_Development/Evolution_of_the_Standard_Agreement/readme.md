@@ -26,7 +26,7 @@ On this page we will upload.
 
 ## Raising an issue with the Standard Agreement
 
-Use the **[GitHub Issue](https://github.com/mez-FMDA/MF.github.io/issues)** function to raise issues with coordination in current markets
+Use the **[GitHub Issue](https://github.com/elexon-data/Market-Facilitator/issues)** function to raise issues with coordination in current markets
 
 ---
 
