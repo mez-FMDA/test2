@@ -3,15 +3,15 @@
 
 | Version | Date       | Changes                      | Author   |
 |---------|------------|------------------------------|----------|
-| v0.9  | 2025-07-28 | Internal draft pre-release | MB   |
+| v0.9  | 2025-07-28 | Added standard agreement terms| MB   |
 | v1.0  | 2025-07-29 | Published in FlexNews pre-workshop #1 | MB   |
 
 
 This document outlines the core use cases identified for the Flexibility Market Asset Registration (FMAR) solution.
 
-Depending on the outcomes from Elexon's Industry Design Workshops, FMAR could support asset visibility (collecting asset data at the point of market entry, and potentially collecting asset data at the point of installation, subject to DESNZ Asset Visibility policy), FSP unit registration and market qualification, and data sharing in GB flexibility markets.
+Depending on the outcomes from Elexon's Industry Design Workshops, FMAR could support asset visibility (collecting asset data at the point of market entry, and potentially collecting asset data at the point of installation, subject to DESNZ Asset Visibility policy), FSP Unit Registration and Qualification, and accessible DSI data products for GB flexibility markets.
 
-This data would function as an authoritative master record and have a unified API and reporting layer to support role-based access control on a non-discriminatory basis, underpinned by a common set of data standards and a shared ontology.
+This dataset would function as an authoritative master record and have a unified API and reporting layer to support role-based access control on a non-discriminatory basis, underpinned by a common set of data standards and a shared ontology.
 
 It is designed to operate through modular components and some data flows potentially using a federated architecture via the Data Sharing Infrastructure (DSI). The modules reflect logical groupings to the lifecycle of asset data in the Registration phase of flexibility markets.
 
