@@ -14,7 +14,7 @@ As set out in the **[terms of reference](https://github.com/mez-FMDA/Market-Faci
 
 On this page we will upload. 
 
-*   **Workng group slides.**
+*   **Working group slides.**
 
 *   **Working group summary notes.** 
 
@@ -22,7 +22,7 @@ On this page we will upload.
 
 ---
 
-## Rasining an issue with the coordination in markets
+## Raising an issue with the coordination across markets
 
 Use the **[GitHub Issue](https://github.com/mez-FMDA/MF.github.io/issues)** function to raise issues with coordination in current markets
 
