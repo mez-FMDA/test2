@@ -15,6 +15,14 @@ We actively encourage participation from all industry stakeholders. Your experti
 
 ---
 
+## Current changes in development
+
+The following rules are currently under development
+* [Evolutons of the Standard Agreement](https://github.com/mez-FMDA/Market-Facilitator-FMAR/tree/main/docs/Market_Facilitator/Flexibiliy_Market_Rules_Development/Evolution_of_the_Standard_Agreement)
+* [Vision for Market Coordination](https://github.com/mez-FMDA/Market-Facilitator-FMAR/tree/main/docs/docs/Market_Facilitator/Flexibiliy_Market_Rules_Development/Vision_for_Market_Coordination)
+
+---
+
 ## Contribution & Code of Conduct
 
 All engagement in this repository is governed by our **[Contribution Guidelines and Code of Conduct](./CONTRIBUTING.md)**. We are committed to fostering an open, respectful, and collaborative environment.
