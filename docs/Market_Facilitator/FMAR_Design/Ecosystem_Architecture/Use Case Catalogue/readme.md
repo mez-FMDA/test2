@@ -3,7 +3,7 @@
 
 | Version | Date       | Changes                      | Author   |
 |---------|------------|------------------------------|----------|
-| v1.x  | 2025-07-23 | New draft pre-release | MB   |
+| v1.x  | 2025-07-28 | New draft pre-release | MB   |
 
 
 
