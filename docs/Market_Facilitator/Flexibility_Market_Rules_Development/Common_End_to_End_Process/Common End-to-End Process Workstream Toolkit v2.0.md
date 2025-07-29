@@ -64,9 +64,9 @@ You can explore the business processes by phase below:
 |------|-----------------------------------|
 | R.1  | Register Counterparty       |
 | R.2  | Qualify Counterparty       |
-| R.2  | Issue and Sign Service T&Cs       |
-| R.3  | Qualify Commercially              |
-| R.4  | Register Assets            |
+| R.3  | Issue and Sign Service T&Cs       |
+| R.4  | Qualify Commercially              |
+| R.5  | Register Assets            |
 | R.6  | Qualify Assets                    |
 | R.7  | Register Units             |
 | R.8 | Qualify Units                     |
