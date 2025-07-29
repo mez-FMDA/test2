@@ -4,7 +4,7 @@
 |---------|------------|-------------------------------------------------------------------------|--------|
 | v0.9    | 2025-07-29 | Added Standard Agreement Terms, ACER Demand Response NC terms. Yet to fully include all E2E terms | MB     |
 | v1.0    | 2025-07-29 |Live at FlexNews announcement pre-workshop #1                                  | MB     |
-| vX.0    | TBC        | Include table of comparison with standard ontology terms                | MB     |
+| vX.0    | TBC        | consolidate terms into one master list, Include table of comparison with standard ontology terms                | MB     |
 
 
 # FMAR Programme Glossary
