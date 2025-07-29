@@ -58,9 +58,7 @@ To further understand what is in the Registration phase, we encourage you to ref
 
 ---
 
-
-
-Out-of-scope modules:
+Currently Considered Out-of-scope modules:
 - 🔶 PSQM = Product & Service Qualification Management
 - 🔶 GICM = Grid Integration & Constraint Management
 
