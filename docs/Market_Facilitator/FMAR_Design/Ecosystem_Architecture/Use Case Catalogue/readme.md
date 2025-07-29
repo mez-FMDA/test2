@@ -13,7 +13,7 @@ Depending on the outcomes from Elexon's Industry Design Workshops, FMAR could su
 * **Organisation and User Onboarding and Maintenance**: A streamlined, secure process for organisations and user identitities to register with and manage their details on the FMAR Hub.
 * **Asset Registration and Maintenance**: Collecting asset data at the point of market entry, and potentially at the point of installation (subject to DESNZ Asset Visibility policy).
 * **(Market) Unit Registration and Maintenance**: Defining and managing the aggregations of assets that participate in markets.
-* **Product and Qualification Maintenance**: Managing a central product catalogue and the qualification status of Market Units against those products.
+* **Product and Qualification Management**: Managing a central product catalogue and the qualification status of Market Units against those products.
 * **Wider System Functions and Integrations**: Including the provision of accessible data products using the Data Sharing Infrastructure (DSI).
 
 This dataset would function as an authoritative master record and have a unified API and reporting layer to support role-based access control on a non-discriminatory basis, underpinned by a common set of data standards and a shared ontology for GB flexibility markets.
