@@ -20,9 +20,9 @@ This dataset would function as an authoritative master record and have a unified
 
 It is designed to operate through modular components and some data flows potentially using a federated architecture via the DSI. The modules reflect logical groupings to the lifecycle of asset data in the Registration phase of flexibility markets.
 
-To further understand what is in the Registration, we encourage you to refer to our [Programme Glossary](https://github.com/elexon-data/Market-Facilitator/blob/main/docs/Market_Facilitator/FMAR_Design/Programme_Level/Glossary.md) and our [Common End-to-End process](https://github.com/elexon-data/Market-Facilitator/blob/main/docs/Market_Facilitator/Flexibility_Market_Rules_Development/Common_End_to_End_Process/Common%20End-to-End%20Process%20Workstream%20Toolkit%20v2.0.md) workstream which are part of the enterprise model we are developing to aid shared understanding. 
+To further understand what is in the Registration phase, we encourage you to refer to our [Programme Glossary](https://github.com/elexon-data/Market-Facilitator/blob/main/docs/Market_Facilitator/FMAR_Design/Programme_Level/Glossary.md) and our [Common End-to-End process](https://github.com/elexon-data/Market-Facilitator/blob/main/docs/Market_Facilitator/Flexibility_Market_Rules_Development/Common_End_to_End_Process/Common%20End-to-End%20Process%20Workstream%20Toolkit%20v2.0.md) workstream which are part of the enterprise model we are developing to aid shared understanding. 
 
-In Workshop #1 and the ensuing refinement window (to be defined in our forthcoming Contribution Guidelines), we will work with industry to finalise the set of Use Cases that the FMAR will support at go-live  versus those deferred to the backlog. This will ensure that our efforts remain focused on delivering the most critical value first and informing the appropriate data and application architecture artefacts.
+In Workshop #1 and the ensuing refinement window (to be defined in our forthcoming Contribution Guidelines), we will work with industry to finalise the set of Use Cases that the FMAR will support at go-live versus those deferred to the backlog. This will ensure that our efforts remain focused on delivering the most critical value first and informing the appropriate data and application architecture artefacts.
 
 
 
