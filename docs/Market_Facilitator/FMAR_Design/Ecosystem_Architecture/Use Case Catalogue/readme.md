@@ -9,13 +9,21 @@
 
 This document outlines the core use cases identified for the Flexibility Market Asset Registration (FMAR) solution.
 
-Depending on the outcomes from Elexon's Industry Design Workshops, FMAR could support asset visibility (collecting asset data at the point of market entry, and potentially collecting asset data at the point of installation, subject to DESNZ Asset Visibility policy), FSP Unit Registration and Qualification (subject to Ofgem Flexibility Digital Infrastructure policy), and accessible Data Sharing Infrastructure (DSI) data products for GB flexibility markets.
+Depending on the outcomes from Elexon's Industry Design Workshops, FMAR could support a modular architecture for:
+* **Organisation and User Onboarding and Maintenance**: A streamlined, secure process for organisations and user identitities to register with and manage their details on the FMAR Hub.
+* **Asset Registration and Maintenance**: Collecting asset data at the point of market entry, and potentially at the point of installation (subject to DESNZ Asset Visibility policy).
+* **(Market) Unit Registration and Maintenance**: Defining and managing the aggregations of assets that participate in markets.
+* **Product and Qualification Maintenance**: Managing a central product catalogue and the qualification status of Market Units against those products.
+* **Wider System Functions and Integrations**: Including the provision of accessible data products using the Data Sharing Infrastructure (DSI).
 
-This dataset would function as an authoritative master record and have a unified API and reporting layer to support role-based access control on a non-discriminatory basis, underpinned by a common set of data standards and a shared ontology.
+This dataset would function as an authoritative master record and have a unified API and reporting layer to support role-based access control on a non-discriminatory basis, underpinned by a common set of data standards and a shared ontology for GB flexibility markets.
 
 It is designed to operate through modular components and some data flows potentially using a federated architecture via the DSI. The modules reflect logical groupings to the lifecycle of asset data in the Registration phase of flexibility markets.
 
-To further understand what is in the Registration phase, we encourage you to refer to our [Programme Glossary](https://github.com/elexon-data/Market-Facilitator/blob/main/docs/Market_Facilitator/FMAR_Design/Programme_Level/Glossary.md) and our [Common End-to-End process](https://github.com/elexon-data/Market-Facilitator/blob/main/docs/Market_Facilitator/Flexibility_Market_Rules_Development/Common_End_to_End_Process/Common%20End-to-End%20Process%20Workstream%20Toolkit%20v2.0.md) workstream which is part of our enterprise model to aid shared understanding. 
+To further understand what is in the Registration, we encourage you to refer to our [Programme Glossary](https://github.com/elexon-data/Market-Facilitator/blob/main/docs/Market_Facilitator/FMAR_Design/Programme_Level/Glossary.md) and our [Common End-to-End process](https://github.com/elexon-data/Market-Facilitator/blob/main/docs/Market_Facilitator/Flexibility_Market_Rules_Development/Common_End_to_End_Process/Common%20End-to-End%20Process%20Workstream%20Toolkit%20v2.0.md) workstream which are part of the enterprise model we are developing to aid shared understanding. 
+
+In Workshop #1 and the ensuing refinement window (to be defined in our forthcoming Contribution Guidelines), we will work with industry to finalise the set of Use Cases that the FMAR will support at go-live  versus those deferred to the backlog. This will ensure that our efforts remain focused on delivering the most critical value first and informing the appropriate data and application architecture artefacts.
+
 
 
 ### Module Key
