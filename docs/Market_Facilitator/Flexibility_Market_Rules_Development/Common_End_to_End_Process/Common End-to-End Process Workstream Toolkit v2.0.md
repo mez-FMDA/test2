@@ -3,7 +3,7 @@
 | Version | Date       | Changes                      | Author   |
 |---------|------------|------------------------------|----------|
 | v1.0  | 2025-05 | Shared over email post-E2E workshop #2 | MB   |
-| v1.5  | 2025-06 | Condensed R.1-R.3 Register User/Organisation/Related Entity to R.1 Register Counterparty. Added V.5 Report on Service Delivery  Was shown in select interviews post workshop #2 | MB   |
+| v1.5  | 2025-06 | Condensed R.1-R.3 Register User/Organisation/Related Entity to R.1 Register Counterparty. Added V.5 Report on Service Delivery.  Was shown in select interviews post workshop #2 | MB   |
 | v2.0  | 2025-07-29 | Discussion page link included to be published in FlexNews pre-workshop #1 | MB   |
 
 ## Common End-to-End Process Workstream Toolkit v1.0
