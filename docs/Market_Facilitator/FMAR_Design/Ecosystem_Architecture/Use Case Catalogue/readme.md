@@ -9,11 +9,11 @@
 
 This document outlines the core use cases identified for the Flexibility Market Asset Registration (FMAR) solution.
 
-Depending on the outcomes from Elexon's Industry Design Workshops, FMAR could support asset visibility (collecting asset data at the point of market entry, and potentially collecting asset data at the point of installation, subject to DESNZ Asset Visibility policy), FSP Unit Registration and Qualification, and accessible DSI data products for GB flexibility markets.
+Depending on the outcomes from Elexon's Industry Design Workshops, FMAR could support asset visibility (collecting asset data at the point of market entry, and potentially collecting asset data at the point of installation, subject to DESNZ Asset Visibility policy), FSP Unit Registration and Qualification (subject to Ofgem Flexibility Digital Infrastructure policy), and accessible Data Sharing Infrastructure (DSI) data products for GB flexibility markets.
 
 This dataset would function as an authoritative master record and have a unified API and reporting layer to support role-based access control on a non-discriminatory basis, underpinned by a common set of data standards and a shared ontology.
 
-It is designed to operate through modular components and some data flows potentially using a federated architecture via the Data Sharing Infrastructure (DSI). The modules reflect logical groupings to the lifecycle of asset data in the Registration phase of flexibility markets.
+It is designed to operate through modular components and some data flows potentially using a federated architecture via the DSI. The modules reflect logical groupings to the lifecycle of asset data in the Registration phase of flexibility markets.
 
 To further understand what is in the Registration phase, we encourage you to refer to our [Programme Glossary](https://github.com/elexon-data/Market-Facilitator/blob/main/docs/Market_Facilitator/FMAR_Design/Programme_Level/Glossary.md) and our [Common End-to-End process](https://github.com/elexon-data/Market-Facilitator/blob/main/docs/Market_Facilitator/Flexibility_Market_Rules_Development/Common_End_to_End_Process/Common%20End-to-End%20Process%20Workstream%20Toolkit%20v2.0.md) workstream which is part of our enterprise model to aid shared understanding. 
 
