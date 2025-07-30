@@ -20,18 +20,9 @@ This document provides definitions for key terms used within the Flexibility Mar
 
   <dt>Asset Registration Module (ARM)</dt>
   <dd>The FMAR Hub module that serves as the definitive, central registry for all flexible assets participating in GB flexibility markets. It is the Single Source of Truth for asset-specific technical and locational data.</dd>
-
-  <dt>Control System</dt>
-  <dd><em>No definition provided.</em></dd>
   
   <dt>Counterparty</dt>
   <dd>A legal entity that enters into a commercial agreement to either buy or sell a Flexibility Service. In the FMAR context, this typically refers to the Flexibility Service Provider (as the seller) and the System Operator (as the buyer).</dd>
-
-  <dt>Communication Test</dt>
-  <dd>A test to verify that the information and communication technology (ICT) systems of a Flexibility Service Provider and a System Operator can exchange data reliably and in accordance with required standards.</dd>
-
-  <dt>Dispatch Test</dt>
-  <dd><em>No definition provided.</em></dd>
 
   <dt>FMAR Hub </dt>
   <dd>The overall digital system, operated by Elexon, that provides the central point of control, governance, and access for all FMAR data modules and use cases. It acts as the "Flexibility Register" for GB.</dd>
@@ -55,7 +46,7 @@ This document provides definitions for key terms used within the Flexibility Mar
   <dd>The FMAR Hub module used to manage the qualification and verification status of Market Units (SPUs/SPGs) against defined GB flexibility Products. It contains the Product Catalogue and Table of Equivalences.</dd>
 
   <dt>Qualification</dt>
-  <dd>The end-to-end process of ensuring a participant is ready to provide a specific flexibility service. It has three key aspects:<br>
+  <dd>The end-to-end process of ensuring a counterparty is ready to provide a specific flexibility service. It has three key aspects:<br>
     a) Entity Qualification (SPUM): Is the FSP a valid commercial entity(Counterparty) who can be trusted to input correct data about the Assets and Units?<br>
     b) Grid Prequalification (GICM): Is the Market Unit's operation safe for the grid at its location? Are the Asset(s) connected to the grid at an appropriate point location such that Service Delivery can be technically supported by the connecting grid and any intermediate grid?<br>
     c) Product Qualification (PSQM): Is the Market Unit technically capable of delivering within the requirements of the specific Product?</dd>
@@ -165,8 +156,6 @@ etc.
   <dd>The process that defines and executes the monetary exchange between the buyer (SO) and seller (FSP) based on the Measurement of the Flexibility Service provided, as per the terms of the procured Product.</dd>
 
 </dl>
-</details>
-
 
 <img width="491" height="297" alt="image" src="https://github.com/user-attachments/assets/6057280d-80d3-41c2-bb52-5dfece926ef4" />
 
@@ -176,5 +165,5 @@ A useful diagram from ebIX. Image source: https://mwgstorage1.blob.core.windows.
 <img width="969" height="440" alt="image" src="https://github.com/user-attachments/assets/b858a238-da34-4b64-95e5-b3890c1714ed" />
 
 A useful diagram from Magnus Energy. Image source: https://magnusenergy.com/wp-content/uploads/2025/06/NC-DR-Brief-FINAL.pdf
-
+</details>
 ---
