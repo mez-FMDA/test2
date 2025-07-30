@@ -7,7 +7,7 @@
 | v2.0  | 2025-07-29 | Discussion page link included to be published in FlexNews pre-workshop #1 | MB   |
 
 
-This document outlines the **Flexibility Market Business Processes and Systems**, with a focus on the **FSP User Journey**.
+This document outlines the conceptual model for **Flexibility Market Business Processes and Systems**, with a focus on the **FSP User Journey**, as part of the Common End-to-End Process workstream.
 
 We are developing a shared glossary to support understanding of key concepts (e.g., *Asset*, *Unit*), starting with a pragmatic and lightweight approach using Excel. We will progressively transition to structured JSON, and eventually machine-readable formats.
 
@@ -15,7 +15,9 @@ We are developing a shared glossary to support understanding of key concepts (e.
 
 In initial stakeholder interviews, we will explore:
 
-- **a)** Business processes you undertake
+- **a)** Business processes you undertake, including pre-conditions, post-conditions and data object input/outputs that are useful for FSPs to know
+
+Where possible:
 - **b)** Data and communication flows supporting information exchange
 - **c)** Interfacing systems and platforms
 
@@ -62,7 +64,7 @@ You can explore the business processes by phase below:
 | Code | Process                           |
 |------|-----------------------------------|
 | R.1  | Register Counterparty       |
-| R.2  | Qualify Counterparty (Commerically) |
+| R.2  | Qualify Counterparty (Commercially) |
 | R.3  | Sign Service Contract       |
 | R.4  | Register Assets            |
 | R.5  | Qualify Assets                    |
