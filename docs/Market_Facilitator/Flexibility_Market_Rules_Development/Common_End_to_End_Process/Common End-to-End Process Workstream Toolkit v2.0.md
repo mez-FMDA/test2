@@ -7,11 +7,15 @@
 | v2.0  | 2025-07-29 | Discussion page link included to be published in FlexNews pre-workshop #1 | MB   |
 
 
-This document outlines the conceptual model for **Flexibility Market Business Processes and Systems**, with a focus on the **FSP User Journey**, as part of the Common End-to-End Process workstream.
+This workstream has three main lofty aims:
+1) to provide a framework to align business processes between System Operators, which is a prerequisite for any efficient technical solutions (like FMAR) that aims to promote interoperability and market liquidity
+2) to produce a useful toolkit for FSPs on the user journey to signpost basic inputs/outputs required for each market phase and
+3) to provide foundation for a machine-readable conceptual model of the 'flexibility market' to support reasoning in the flexibility market catalogue.
 
-We are developing a shared glossary to support understanding of key concepts (e.g., *Asset*, *Unit*), starting with a pragmatic and lightweight approach using Excel. We will progressively transition to structured JSON, and eventually machine-readable formats.
+This document outlines the conceptual model for flexibility market business processes with a focus on aspects relevant to the **FSP User Journey**, as part of the Common End-to-End Process workstream.
 
-### Key Interview Themes
+
+### Interview Discussions
 
 In initial stakeholder interviews, we will explore:
 
@@ -27,9 +31,9 @@ We focus primarily on FSP interactions and Independent Market Platforms, with se
 
 | Phase                | Focus                                                                 |
 |----------------------|------------------------------------------------------------------------|
-| **June–July**        | Interviews with SOs/Market Operators (deep dive on Registration)       |
+| **June–July**        | Interviews with SOs/Market Operators (deep dive on Qualification)       |
 | **July–August**      | Interviews focused on remaining phases                                 |
-| **August**       | Open industry workshop to review as-is swimlanes captured from interviews (Level 3 Enterprise Model views)   |
+| **August**       | Open industry workshop to review as-is swimlanes captured from interviews (Level 3 Enterprise Model views) date TBC |
 | **September**        | Confirm role of this toolkit in Day 1 Flexibility Market consultation   |
 | **Continuous**       | Open contributions via collaboration tools                             |
 
