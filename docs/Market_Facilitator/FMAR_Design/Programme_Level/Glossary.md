@@ -4,7 +4,7 @@
 |---------|------------|-------------------------------------------------------------------------|--------|
 | v0.9    | 2025-07-29 | Added Standard Agreement Terms, ACER Demand Response NC terms. Yet to fully include all E2E terms | MB     |
 | v1.0    | 2025-07-29 |Live at FlexNews announcement pre-workshop #1                                  | MB     |
-| vX.0    | TBC        | consolidate terms into one master list, Include table of comparison with standard ontology terms                | MB     |
+| vX.0    | TBC        | consolidate terms into one master list, Include table of comparison with standard ontology terms and mapping table for non-adopted DR NC terms               | MB     |
 
 
 # FMAR Programme Glossary
@@ -16,7 +16,7 @@ This document provides definitions for key terms used within the Flexibility Mar
   <dd>A unique reference for a point on the electricity network, such as a Meter Point Administration Number (MPAN), where energy flow is measured for market purposes.</dd>
 
   <dt>(Flexible) Asset</dt>
-  <dd>The physical device (e.g., EV charger, Battery Energy Storage System) that can provide flexibility. In FMAR, an Asset is a core record in the Asset Registration Module (ARM) and has an Accounting Point as one of its key attributes.</dd>
+  <dd>The unique physical device at a specific Accounting Point (like an MPAN) that can provide flexibility. In FMAR, an Asset is a core record in the Asset Registration Module (ARM) and has an Accounting Point as one of its key attributes.</dd>
 
   <dt>Asset Registration Module (ARM)</dt>
   <dd>The FMAR Hub module that serves as the definitive, central registry for all flexible assets participating in GB flexibility markets. It is the Single Source of Truth for asset-specific technical and locational data.</dd>
@@ -33,11 +33,14 @@ This document provides definitions for key terms used within the Flexibility Mar
   <dt>Dispatch Test</dt>
   <dd><em>No definition provided.</em></dd>
 
-  <dt>FMAR Hub (Flexibility Register)</dt>
+  <dt>FMAR Hub </dt>
   <dd>The overall digital system, operated by Elexon, that provides the central point of control, governance, and access for all FMAR data modules and use cases. It acts as the "Flexibility Register" for GB.</dd>
 
   <dt>Flexibility Service Provider (FSP)</dt>
   <dd>A specialist entity that manages one or more Market Units, aggregates multiple assets, and offers their combined flexibility to the market. FSP entities are registered and managed in the SPUM.</dd>
+
+  <dt>Flexibility</dt>
+  <dd><em>No definition provided.</em></dd>
 
   <dt>Grid Interaction & Constraints Module (GICM)</dt>
   <dd>A future FMAR Hub module for managing and disseminating information on grid prequalification status and any temporary operational limits imposed by System Operators on specific Market Units (SPUs/SPGs).</dd>
@@ -140,7 +143,7 @@ etc.
 ---
 
 <details>
-<summary><strong>ACER Demand Response Network Code terms</strong></summary>
+<summary><strong>ACER Demand Response Network Code terms - for reference</strong></summary>
 
 <dl>
   <dt>Activation</dt>
