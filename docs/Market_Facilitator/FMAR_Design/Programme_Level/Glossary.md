@@ -4,13 +4,67 @@
 |---------|------------|-------------------------------------------------------------------------|--------|
 | v0.9    | 2025-07-29 | Added Standard Agreement Terms, ACER Demand Response NC terms. Yet to fully include all E2E terms | MB     |
 | v1.0    | 2025-07-29 |Live at FlexNews announcement pre-workshop #1                                  | MB     |
-| vX.0    | TBC        | consolidate terms into one master list, Include table of comparison with standard ontology terms and mapping table for non-adopted DR NC terms               | MB     |
+| v1.1    | 2025-07-30 |Improved organisation and accessibility for workshop #1                                 | MB     |
+
 
 
 # FMAR Programme Glossary
 
 This document provides definitions for key terms used within the Flexibility Market Asset Register (FMAR) programme and its associated design artefacts.
 
+<strong>Asset and it's associated logical structures - Workshop #1 </strong>
+---
+<dl>
+  <dt>(Flexible) Asset</dt>
+  <dd>The primary record in FMAR's ARM. It represents a single, uniquely identifiable source of flexibility, which corresponds to an <strong>Installation</strong> at a single <strong>Accounting Point</strong>.</dd>
+
+  <dt>Accounting Point</dt>
+  <dd>The unique, formal point on the electricity network (e.g., an MPAN) where an <strong>Installation</strong> is connected and measured. It serves as the official point of verification for flexibility services.</dd>
+
+  <dt>Device</dt>
+  <dd>The most granular physical piece of equipment or technology that can contribute to flexibility (e.g., a single battery inverter, an EV charger, a heat pump). It is identified by attributes like a serial number.</dd>
+
+  <dt>Installation</dt>
+  <dd>The physical setup of one or more <strong>Devices</strong> and associated <strong>Meters</strong> at a specific location, as viewed for system operations.</dd>
+
+  <dt>Market Unit</dt>
+  <dd>The logical, commercial entity created by a Flexibility Service Provider that participates in the market (e.g., by submitting bids). A Market Unit is composed of one or more <strong>Flexible Assets</strong>.</dd>
+
+  <dt>Meter</dt>
+  <dd>A device used for the measurement of energy flow. It provides the data that quantifies the behaviour of an Installation at its Accounting Point.</dd>
+
+  <dt>Service Providing Group (SPG)</dt>
+  <dd>A type of <strong>Market Unit</strong> that consists of many <strong>Flexible Assets</strong> (or SPUs) from <strong>multiple Accounting Points</strong>.</dd>
+
+  <dt>Service Providing Unit (SPU)</dt>
+  <dd>A type of <strong>Market Unit</strong> that consists of one or more <strong>Flexible Assets</strong> located at a <strong>single Accounting Point</strong>.</dd>
+</dl>
+
+
+
+
+<strong>FMAR modules - Workshop #1 </strong>
+---
+<dl>
+  <dt><strong>FMAR Hub</strong></dt>
+  <dd>The overall digital system for Great Britain, operated by Elexon, that provides the central point of control, governance, and access for all FMAR data modules and use cases.</dd>
+
+  <dt><strong>Asset Registration Module (ARM)</strong></dt>
+  <dd>The FMAR Hub module serving as the definitive, central registry for all <strong>Flexible Assets</strong>. It is the Single Source of Truth for asset-specific technical, locational, and ownership data.</dd>
+
+  <dt><strong>Service Provider & User Module (SPUM)</strong></dt>
+  <dd>The FMAR Hub module that serves as the central registry for all entities (FSPs, SOs, etc.) and individual <strong>Users</strong> that interact with the FMAR Hub. It manages identity, roles, and access control.</dd>
+
+  <dt><strong>Product & Service Qualification Module (PSQM)</strong></dt>
+  <dd>The FMAR Hub module used to manage the qualification status of <strong>Market Units (SPUs/SPGs)</strong> against defined GB flexibility Products. It contains the Product Catalogue and Table of Equivalences.</dd>
+
+  <dt><strong>Grid Interaction & Constraints Module (GICM)</strong></dt>
+  <dd>A potential future FMAR Hub module for managing and disseminating information on the grid prequalification status and temporary operational limits imposed by System Operators on specific <strong>Flexible Assets</strong>.</dd>
+</dl>
+
+
+<details>
+<summary><strong>Additional Programme Terms under exploration</strong></summary>
 <dl>
   <dt>Accounting Point</dt>
   <dd>A unique reference for a point on the electricity network, such as a Meter Point Administration Number (MPAN), where energy flow is measured for market purposes.</dd>
@@ -25,7 +79,7 @@ This document provides definitions for key terms used within the Flexibility Mar
   <dd>A legal entity that enters into a commercial agreement to either buy or sell a Flexibility Service. In the FMAR context, this typically refers to the Flexibility Service Provider (as the seller) and the System Operator (as the buyer).</dd>
 
   <dt>FMAR Hub </dt>
-  <dd>The overall digital system, operated by Elexon, that provides the central point of control, governance, and access for all FMAR data modules and use cases. It acts as the "Flexibility Register" for GB.</dd>
+  <dd>The overall digital system, operated by Elexon, that provides the central point of control, governance, and access for all FMAR data modules and use cases.</dd>
 
   <dt>Flexibility Service Provider (FSP)</dt>
   <dd>A specialist entity that manages one or more Market Units, aggregates multiple assets, and offers their combined flexibility to the market. FSP entities are registered and managed in the SPUM.</dd>
@@ -73,7 +127,7 @@ This document provides definitions for key terms used within the Flexibility Mar
 ---
 
 <details>
-<summary><strong>Standard Agreement Glossary</strong></summary>
+<summary><strong>Standard Agreement Glossary - for reference</strong></summary>
 
 <dl>
   <dt>Accepted [MW/MVAR]</dt>
