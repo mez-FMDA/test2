@@ -1,4 +1,4 @@
-# Glossary v1.0
+# FMAR Programme Glossary
 
 | Version | Date       | Changes                                                                 | Author |
 |---------|------------|-------------------------------------------------------------------------|--------|
@@ -6,9 +6,6 @@
 | v1.0    | 2025-07-29 |Live at FlexNews announcement pre-workshop #1                                  | MB     |
 | v1.1    | 2025-07-30 |Improved organisation and accessibility for workshop #1                                 | MB     |
 
-
-
-# FMAR Programme Glossary
 
 This document provides definitions for key terms used within the Flexibility Market Asset Register (FMAR) programme and its associated design artefacts.
 
