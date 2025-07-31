@@ -13,7 +13,7 @@ This document provides definitions for key terms used within the Flexibility Mar
 ---
 <dl>
   <dt>(Flexible) Asset</dt>
-  <dd>The primary record in FMAR's ARM. It represents a single, uniquely identifiable source of flexibility, which corresponds to an <strong>Installation</strong> at a single <strong>Accounting Point</strong>.</dd>
+  <dd>The primary record in FMAR's ARM. It represents a single, uniquely identifiable device, which corresponds to an <strong>Installation</strong> at a single <strong>Accounting Point</strong>.</dd>
 
   <dt>Accounting Point</dt>
   <dd>The unique, formal point on the electricity network (e.g., an MPAN) where an <strong>Installation</strong> is connected and measured. It serves as the official point of verification for flexibility services.</dd>
