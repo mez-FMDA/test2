@@ -43,23 +43,11 @@ In this section, we will set the strategic context for FMAR within the wider GB 
     *   Using high-level Use Case Diagrams to frame FMAR and introduce our forward-looking approach.
     *   **[Level 4 View: Use Case Diagrams](https://miro.com/app/board/uXjVIn3HnUM=/)**
 
----
-
-## Session 2: Vision, Scope & Our Ways of Working (15 mins)
-
-Here, we will introduce the specific vision and principles for the FMAR solution and clarify how we will collaborate.
-
-*   **2.1: Policy Context & Vision**
+*   **1.7: Policy Context & Vision**
     *   The regulatory and policy landscape we inherit that is informing FMAR's Use Case scoping.
     *   **FMAR Policy Context and Vision slides**
 
-*   **2.2: Design Principles & Self-Scoring**
-    *   The core principles guiding our design decisions.
-    *   **[FMAR Issue Self-scoring  Matrix](https://github.com/elexon-data/Market-Facilitator/blob/main/docs/Market_Facilitator/FMAR_Design/Programme_Level/self-scoring-matrix.md)**
 
-*   **2.3: Our Agile Design & Feedback Framework**
-    *   Clarifying the role of today's session within our Architecture Team's review loop, and the rules of engagement for providing feedback.
-    *   **[Contribution Guidelines & Design Workflow](https://github.com/elexon-data/Market-Facilitator/blob/main/docs/Market_Facilitator/FMAR_Design/Programme_Level/Agile%20Design%20and%20Feedback%20Framework.md)**
 
 ---
 
@@ -99,5 +87,13 @@ In this final section, we will clarify the roadmap and our ongoing collaboration
 *   **5.3: Introduction to our GitHub Collaboration Tool (15 mins)**
     *   A practical walkthrough of how to use our GitHub repository for asynchronous feedback, including how to raise Issues.
     *   We will be live-demoing the **[FMAR Design Artefacts Repository]([LINK_TO_REPO_HOMEPAGE])** itself.
+
+*   **5.3.1: Design Principles & Self-Scoring**
+    *   The core principles guiding our design decisions.
+    *   **[FMAR Issue Self-scoring  Matrix](https://github.com/elexon-data/Market-Facilitator/blob/main/docs/Market_Facilitator/FMAR_Design/Programme_Level/self-scoring-matrix.md)**
+
+*   **5.3.2: Our Agile Design & Feedback Framework**
+    *   Clarifying the role of today's session within our Architecture Team's review loop, and the rules of engagement for providing feedback.
+    *   **[Contribution Guidelines & Design Workflow](https://github.com/elexon-data/Market-Facilitator/blob/main/docs/Market_Facilitator/FMAR_Design/Programme_Level/Agile%20Design%20and%20Feedback%20Framework.md)**
 
 **Thank you for your contributions today!**
