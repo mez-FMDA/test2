@@ -28,7 +28,7 @@ In this section, we will set the strategic context for FMAR within the wider GB 
     *   **[Enterprise Model](https://miro.com/app/board/uXjVIn3HnUM=/)**
 
 *   **1.3: As-Is Qualification process - Level 3 View Example**
-    *   *Description:* A deep-dive view to understand an existing, complex registration process.
+    *   A deep-dive view to understand an existing, complex registration process.
     *   **[Level 3 View: NESO As-Is Registration Processes WIP](https://miro.com/app/board/uXjVIlQckCo=/)**
 
 *   **1.4: Sub-Markets and Actors**
@@ -86,7 +86,7 @@ In this final section, we will clarify the roadmap and our ongoing collaboration
 
 *   **5.3: Introduction to our GitHub Collaboration Tool (15 mins)**
     *   A practical walkthrough of how to use our GitHub repository for asynchronous feedback, including how to raise Issues.
-    *   We will be live-demoing the **[FMAR Design Artefacts Repository]([LINK_TO_REPO_HOMEPAGE])** itself.
+    *   We will be live-demoing the **[FMAR Design Artefacts Repository](https://github.com/elexon-data/Market-Facilitator/tree/main)** itself.
 
 *   **5.3.1: Design Principles & Self-Scoring**
     *   The core principles guiding our design decisions.
