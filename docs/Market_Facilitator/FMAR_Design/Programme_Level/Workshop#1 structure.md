@@ -15,7 +15,7 @@ This document will act as our **anchor and agenda** for the day. We will be scre
 
 ---
 
-## Session 1: Programme Introduction & Scene-Setting (15 mins)
+## Session 1: Programme Introduction & Scene-Setting (25 mins)
 
 In this section, we will set the strategic context for FMAR within the wider GB energy market.
 
