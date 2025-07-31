@@ -15,7 +15,7 @@ This document will act as our **anchor and agenda** for the day. We will be scre
 
 ---
 
-## Session 1: Programme Introduction & Scene-Setting (25 mins)
+## Programme Introduction & Scene-Setting (25 mins)
 
 In this section, we will set the strategic context for FMAR within the wider GB energy market.
 
@@ -51,7 +51,7 @@ In this section, we will set the strategic context for FMAR within the wider GB 
 
 ---
 
-### Session 3: Q&A on Vision & Scope (5 mins)
+### Q&A on Vision & Scope (5 mins)
 
 An opportunity for initial clarifying questions on the context and our approach before we dive into the details.
 
@@ -59,7 +59,7 @@ An opportunity for initial clarifying questions on the context and our approach 
 
 ---
 
-## Session 4: Ecosystem Architecture - Use Case Catalogue Walkthrough (50 mins)
+## Ecosystem Architecture - Use Case Catalogue Walkthrough (50 mins)
 
 This is the core interactive part of our session. We will walk through the draft Use Case Catalogue to build a shared understanding.
 
@@ -72,7 +72,7 @@ This is the core interactive part of our session. We will walk through the draft
 
 ---
 
-## Session 5: Next Steps & Collaboration (30 mins)
+## Next Steps & Collaboration (30 mins)
 
 In this final section, we will clarify the roadmap and our ongoing collaboration methods.
 
