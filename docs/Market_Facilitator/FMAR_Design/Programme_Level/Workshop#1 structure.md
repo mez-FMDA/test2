@@ -77,7 +77,7 @@ This is the core interactive part of our session. We will walk through the draft
 In this final section, we will clarify the roadmap and our ongoing collaboration methods.
 
 *   **5.1: Wrapping-up Go-Live vs. Phase 3 Functionality (5 mins)**
-    * A brief discussion to distinguish between the immediate MVP scope and longer-term ambition based on the use case walkthrough.
+    * A brief discussion to distinguish between the go-live scope and longer-term ambition based on the use case walkthrough.
     * Discussion
 
 *   **5.2: Agreeing Roadmap Checkpoints (10 mins)**
