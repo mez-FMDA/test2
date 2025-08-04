@@ -31,7 +31,7 @@ body:
       description: Who is proposing this change?
       placeholder: e.g. DSO X or FSP B
     validations:
-      required: true
+      required: false
    
   - type: textarea
     id: Issue_description
