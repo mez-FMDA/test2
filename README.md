@@ -1,5 +1,12 @@
 # Market Facilitator Repository
 
+<div style="background-color: #fff3b0; border-left: 5px solid #ffbf47; padding: 1em; margin-bottom: 1em;">
+  <strong>⚠️ BETA – This repository is for early design and may change frequently.</strong><br>
+  This is a new service. Help us improve it – <a href="mailto:communications@elexon.co.uk">give your feedback by email</a>.
+</div>
+
+<br>
+
 **Welcome to the official Github repository for the Market Facilitator managed by Elexon.**
 
 This repository supports Elexon's role as the Market Facilitator for the GB flexibility market. It provides a collaborative, version-controlled space for developing the Flexibility Market Asset Registration (FMAR) design artefacts and our Flexibility Market Rules. GitHub is used to manage the evolution of these materials, capture and triage feedback from stakeholders and workshops, maintain traceability of changes, and enable structured, transparent engagement across the industry.
