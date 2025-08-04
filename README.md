@@ -1,7 +1,7 @@
 # Market Facilitator Repository
 
 <div style="background-color: #fff3b0; border-left: 5px solid #ffbf47; padding: 1em; margin-bottom: 1em;">
-  <strong>⚠️ BETA – This repository is for early design and may change frequently.</strong><br>
+  <strong>⚠️ BETA – This repository is in early design and may change frequently.</strong><br>
   This is a new service. Help us improve it – <a href="mailto:communications@elexon.co.uk">give your feedback by email</a>.
 </div>
 
