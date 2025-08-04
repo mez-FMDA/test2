@@ -208,6 +208,11 @@ etc.
 
 </dl>
 
+<img width="551" height="69" alt="image" src="https://github.com/user-attachments/assets/c5c2689f-61f9-44cd-a6b2-d0b827207ee5" />
+
+A useful diagram from IDSA. Image source: https://internationaldataspaces.org/wp-content/uploads/dlm_uploads/IDSA-Position-Paper-Interoperability-Framework-in-Energy-Data-Spaces-v2-3.pdf 
+
+
 <img width="491" height="297" alt="image" src="https://github.com/user-attachments/assets/6057280d-80d3-41c2-bb52-5dfece926ef4" />
 
 A useful diagram from ebIX. Image source: https://mwgstorage1.blob.core.windows.net/public/Ebix/ebIX%20BRS%20for%20Flexibility%20register%20administration%20-%20Draft%20for%20v1r0B%2020220614.pdf
@@ -217,4 +222,6 @@ A useful diagram from ebIX. Image source: https://mwgstorage1.blob.core.windows.
 
 A useful diagram from Magnus Energy. Image source: https://magnusenergy.com/wp-content/uploads/2025/06/NC-DR-Brief-FINAL.pdf
 </details>
+
+
 ---
