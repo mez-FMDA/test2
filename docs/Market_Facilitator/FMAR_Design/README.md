@@ -37,7 +37,7 @@ This repository contains the design documentation for the FMAR project. Use the 
 We will be running a series of thematic design workshops to collaboratively define the FMAR system. Artefacts in this repository will serve as pre-reading and will be updated based on workshop outcomes.
 
 *   **Next Workshop:** 
-*   **Date:** *31st July 2025*
+*   **Date:** *28th August 2025*
 *   **Registration & Details:** *[https://www.elexon.co.uk/what-we-do/about-our-services/market-facilitator-for-distributed-flexibility/]*
 *   **[View the full Workshop Series Roadmap](./Workshops/README.md)**
 
