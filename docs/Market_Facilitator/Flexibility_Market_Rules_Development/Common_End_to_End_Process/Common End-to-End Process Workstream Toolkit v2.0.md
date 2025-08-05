@@ -67,14 +67,14 @@ You can explore the business processes by phase below:
 
 | Code | Process                           |
 |------|-----------------------------------|
-| R.1  | Register Counterparty       |
-| R.2  | Qualify Counterparty (Commercially) |
-| R.3  | Sign Service Contract       |
-| R.4  | Register Assets            |
-| R.5  | Qualify Assets                    |
-| R.6  | Register Units             |
-| R.7 | Qualify Units                     |
-| R.8 | Test Units                        |
+| Q.1  | Register Counterparty       |
+| Q.2  | Qualify Counterparty (Commercially) |
+| Q.3  | Sign Service Contract       |
+| Q.4  | Register Assets            |
+| Q.5  | Qualify Assets                    |
+| Q.6  | Register Units             |
+| Q.7 | Qualify Units                     |
+| Q.8 | Test Units                        |
 
 </details>
 
@@ -97,9 +97,8 @@ You can explore the business processes by phase below:
 | D.1  | Maintain Unit Availability           |
 | D.2  | Provide Operational Visibility       |
 | D.3  | Dispatch Units                       |
-| D.4  | Deliver Service                      |
-| D.5  | Cease Units                          |
-| D.6  | Cease Assets                         |
+| D.4  | Cease Units                          |
+| D.5  | Cease Assets                         |
 
 
 </details>
