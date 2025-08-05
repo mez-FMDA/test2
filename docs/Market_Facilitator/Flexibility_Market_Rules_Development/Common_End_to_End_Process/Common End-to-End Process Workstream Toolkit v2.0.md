@@ -97,8 +97,9 @@ You can explore the business processes by phase below:
 | D.1  | Maintain Unit Availability           |
 | D.2  | Provide Operational Visibility       |
 | D.3  | Dispatch Units                       |
-| D.4  | Cease Units                          |
-| D.5  | Cease Assets                         |
+| D.4  | Dispatch Assets                       |
+| D.5  | Cease Units                          |
+| D.6  | Cease Assets                         |
 
 
 </details>
