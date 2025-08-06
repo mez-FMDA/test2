@@ -5,6 +5,7 @@
 | v1.0  | 2025-05 | Shared over email post-E2E workshop #2 | MB   |
 | v1.5  | 2025-06 | Changed L1 Registration to Qualification following FDI workshop. Condensed R.1-R.3 Register User/Organisation/Related Entity to R.1 Register Counterparty. Added V.5 Report on Service Delivery.  Was shown in select interviews post workshop #2 | MB   |
 | v2.0  | 2025-07-29 | Discussion page link included to be published in FlexNews pre-workshop #1 | MB   |
+| v2.1  | 2025-08-06 | Added raw JSON for the latest building blocks | MB   |
 
 
 This workstream has three main lofty aims:
@@ -129,6 +130,49 @@ You can explore the business processes by phase below:
 
 ---
 
-## Raw Glossary (JSON)
+<details>
+<summary><strong>Raw Glossary (JSON)</strong></summary>
 
-We are also maintaining a JSON-formatted version of this glossary for machine-readable applications. If needed, you can request access via the repository team.
+```json
+{
+  "Exploration": [
+    { "code": "E.1", "process": "Define Sub-Market" },
+    { "code": "E.2", "process": "Understand Markets" },
+    { "code": "E.3", "process": "Build Investment Case" },
+    { "code": "E.4", "process": "Develop Operational Strategy" }
+  ],
+  "Qualification": [
+    { "code": "Q.1", "process": "Register Counterparty" },
+    { "code": "Q.2", "process": "Qualify Counterparty (Commercially)" },
+    { "code": "Q.3", "process": "Sign Service Contract" },
+    { "code": "Q.4", "process": "Register Assets" },
+    { "code": "Q.5", "process": "Qualify Assets" },
+    { "code": "Q.6", "process": "Register Units" },
+    { "code": "Q.7", "process": "Qualify Units" },
+    { "code": "Q.8", "process": "Test Units" }
+  ],
+  "Competition": [
+    { "code": "C.1", "process": "Communicate Buy Requirements" },
+    { "code": "C.2", "process": "Communicate Sell Requirements" },
+    { "code": "C.3", "process": "Clear Market" }
+  ],
+  "Schedule/Dispatch": [
+    { "code": "D.1", "process": "Maintain Unit Availability" },
+    { "code": "D.2", "process": "Provide Operational Visibility" },
+    { "code": "D.3", "process": "Dispatch Units" },
+    { "code": "D.4", "process": "Dispatch Assets" },
+    { "code": "D.5", "process": "Cease Units" },
+    { "code": "D.6", "process": "Cease Assets" }
+  ],
+  "Verification": [
+    { "code": "V.1", "process": "Collate Verification Data" },
+    { "code": "V.2", "process": "Process Verification Data" },
+    { "code": "V.3", "process": "Communicate Performance" },
+    { "code": "V.4", "process": "Manage Disputes" },
+    { "code": "V.5", "process": "Report on Service Delivery" }
+  ],
+  "Settlement": [
+    { "code": "S.1", "process": "Generate Invoices" },
+    { "code": "S.2", "process": "Process Payments" }
+  ]
+}
