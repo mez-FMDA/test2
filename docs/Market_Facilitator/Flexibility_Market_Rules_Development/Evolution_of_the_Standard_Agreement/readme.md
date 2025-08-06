@@ -1,4 +1,4 @@
-# Vision for Standard Agreement
+# Vision for the Standard Agreement
 
 **See the latest updates on our work to improve the common legal framework for flexibility services**
 
@@ -12,21 +12,23 @@ As set out in the terms of reference, the scope of the work is to:
 
 
 
-## Contents
+## Content
 
 On this page we will upload. 
 
-*   **Workng group slides.**
+*   **Working group slides.**
 
 *   **Working group summary notes.** 
 
 *   **Other documentation as needed.** 
 
----
 
-## Raising an issue with the Standard Agreement
+## Reviewing and Raising an issue with the Standard Agreement
 
-Use the **[GitHub Issue](https://github.com/elexon-data/Market-Facilitator/issues)** function to raise issues with coordination in current markets
+Use the **[Backlog](https://github.com/orgs/elexon-data/projects/2)** to see the issues we are currently aware of, and their current priority and status.
+Click on individual issues to comment on them or give them a thumbs up.
+
+Use the **[GitHub Issue](https://github.com/elexon-data/Market-Facilitator/issues)** function to raise new issues with the agreements, and we will triage them and add them to the backlog
 
 ---
 
