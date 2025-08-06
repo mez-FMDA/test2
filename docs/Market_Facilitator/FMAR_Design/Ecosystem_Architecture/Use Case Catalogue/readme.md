@@ -6,35 +6,22 @@
 | v0.9  | 2025-07-28 | Internal draft | MB   |
 | v1.0  | 2025-07-29 | Published in FlexNews pre-workshop #1 | MB   |
 | v1.1  | 2025-07-30 | Minor edit to align market phase terminology  | MB   |
+| v1.2| 2025-08-06 | Reposition text and added workshop registration form link| MB   |
+
 
 
 This document outlines the core use cases identified for the Flexibility Market Asset Registration (FMAR) solution.
 
-Depending on the outcomes from Elexon's Industry Design Workshops, FMAR could support a modular architecture for:
-1) **Organisation and User Onboarding and Maintenance**: A streamlined, secure process for organisations and user identitities to register with and manage their details on the FMAR Hub.
-2) **Asset Registration and Maintenance**: Collecting asset data at the point of market entry, and potentially at the point of installation (subject to DESNZ Asset Visibility policy).
-3) **(Market) Unit Registration and Maintenance**: Defining and managing the aggregations of assets that participate in markets.
-4) **Product and Qualification Management**: Managing a central product catalogue and the qualification status of Market Units against those products.
-5) **Wider System Functions and Integrations**: Including the provision of accessible data products using the Data Sharing Infrastructure (DSI).
-
 This dataset would function as an authoritative master record and have a unified API and reporting layer to support role-based access control on a non-discriminatory basis, underpinned by a common set of data standards and a shared ontology for GB flexibility markets.
 
-It is designed to operate through modular components and some data flows potentially using a federated architecture via the DSI. The modules reflect logical groupings to the lifecycle of asset data in the Qualification phase of flexibility markets.
+It will be designed to operate through modular components and some data flows potentially using a federated architecture via the DSI. The modules reflect logical groupings to the lifecycle of asset data in the Qualification phase of flexibility markets.
 
 To further understand what is in the Qualification phase, we encourage you to refer to our [Programme Glossary](https://github.com/elexon-data/Market-Facilitator/blob/main/docs/Market_Facilitator/FMAR_Design/Programme_Level/Glossary.md) and our [Common End-to-End process](https://github.com/elexon-data/Market-Facilitator/blob/main/docs/Market_Facilitator/Flexibility_Market_Rules_Development/Common_End_to_End_Process/Common%20End-to-End%20Process%20Workstream%20Toolkit%20v2.0.md) workstream which are part of the enterprise model we are developing to aid shared understanding. 
 
+Register [here](https://forms.office.com/pages/responsepage.aspx?id=hVMjGild4UCW_bxewnBjYVDZj_uWG3FFl7RzO2MzvgpUMlRNT1hKU0UyTjI5V0oyNEZBMzk0WlRWUC4u&route=shorturl) to attend the upcoming workshop on August 12th.
+
 In Workshop #1 and the ensuing refinement window (to be defined in our forthcoming Contribution Guidelines), we will work with industry to finalise the set of Use Cases that the FMAR will support at go-live versus those deferred to the backlog. This will ensure that our efforts remain focused on delivering the most critical value first and informing the appropriate data and application architecture artefacts.
 
-
-
-### Module Key
-
-- **SPUM** – Service Provider & User Module  
-- **ARM** – Asset Registration Module  
-- **PSQM** – Product & Service Qualification Module  
-- **GICM** – Grid Interaction & Constraints Module  
-- **API Layer** – Federated data access layer for authorised consumers  
-- **Reporting Layer** – Common reporting interface drawing from all modules
 
 **🔶 = Expected to be out of scope for go-live. May be prioritised depending on stakeholder workshop outcomes.**
 | UC ID    | Use Case Grouping                      | Use Case Name                                          | Description                                                                                                                                              | 🔶 |
@@ -66,8 +53,21 @@ In Workshop #1 and the ensuing refinement window (to be defined in our forthcomi
 
 
 ---
+### Module Key
 
+- **SPUM** – Service Provider & User Module  
+- **ARM** – Asset Registration Module  
+- **PSQM** – Product & Service Qualification Module  
+- **GICM** – Grid Interaction & Constraints Module  
+- **API Layer** – Federated data access layer for authorised consumers  
+- **Reporting Layer** – Common reporting interface drawing from all modules
 Currently Considered Out-of-scope modules:
 - 🔶 PSQM = Product & Service Qualification Management
 - 🔶 GICM = Grid Integration & Constraint Management
 
+In summary, depending on the outcomes from Elexon's Industry Design Workshops, FMAR could support a modular architecture for:
+1) **Organisation and User Onboarding and Maintenance**: A streamlined, secure process for organisations and user identitities to register with and manage their details on the FMAR Hub.
+2) **Asset Registration and Maintenance**: Collecting asset data at the point of market entry, and potentially at the point of installation (subject to DESNZ Asset Visibility policy).
+3) **(Market) Unit Registration and Maintenance**: Defining and managing the aggregations of assets that participate in markets.
+4) **Product and Qualification Management**: Managing a central product catalogue and the qualification status of Market Units against those products.
+5) **Wider System Functions and Integrations**: Including the provision of accessible data products using the Data Sharing Infrastructure (DSI).
