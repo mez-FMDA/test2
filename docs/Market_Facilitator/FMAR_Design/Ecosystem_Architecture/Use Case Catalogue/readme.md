@@ -6,7 +6,7 @@
 | v0.9  | 2025-07-28 | Internal draft | MB   |
 | v1.0  | 2025-07-29 | Published in FlexNews pre-workshop #1 | MB   |
 | v1.1  | 2025-07-30 | Minor edit to align market phase terminology  | MB   |
-| v1.2| 2025-08-06 | Reposition text and added workshop registration form link| MB   |
+| v1.2| 2025-08-06 | Reposition text and added E2E workshop registration form link| MB   |
 
 
 
