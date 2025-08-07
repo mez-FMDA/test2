@@ -1,8 +1,10 @@
 # FMAR Design Workshop #1: Programme Vision, Scope & Use Case Foundations
 
-**Date:** 31.07.2025
-**Version:** 1.0
 
+| Version | Date       | Changes                      | Author   |
+|---------|------------|------------------------------|----------|
+| v1.0  | 2025-07 | Presented in Workshop 1| MB   |
+| v1.1  | 2025-08 | Updated to include POAP slide and housekeeping edits for inclusion in WS1 minutes| MB   |
 ---
 
 ## Welcome & Purpose
@@ -19,6 +21,8 @@ This document will act as our **anchor and agenda** for the day. We will be scre
 
 In this section, we will set the strategic context for FMAR within the wider GB energy market.
 
+*Please note Miro boards containing the Enterprise Model will be rendered accessible in due course and are being developed through our [Common End-to-End process workstream](https://github.com/elexon-data/Market-Facilitator/blob/main/docs/Market_Facilitator/Flexibility_Market_Rules_Development/Common_End_to_End_Process/Common%20End-to-End%20Process%20Workstream%20Toolkit%20v2.0.md).*
+
 *   **1.1: Our Enterprise Model of Flexibility Markets**
     *   A view of the integrated flexibility market with the Market Facilitator at its heart.
     *   **[Enterprise Model](https://miro.com/app/board/uXjVIn3HnUM=/)**
@@ -29,7 +33,7 @@ In this section, we will set the strategic context for FMAR within the wider GB 
 
 *   **1.3: As-Is Qualification process - Level 3 View Example**
     *   A deep-dive view to understand an existing, complex registration process.
-    *   **[Level 3 View: NESO As-Is Registration Processes WIP](https://miro.com/app/board/uXjVIlQckCo=/)**
+    *   **[Level 3 View: NESO As-Is Qualification Processes WIP](https://miro.com/app/board/uXjVIlQckCo=/)**
 
 *   **1.4: Sub-Markets and Actors**
     *   Identifying the different markets in scope and the key players involved in the Use Cases.
@@ -76,15 +80,21 @@ This is the core interactive part of our session. We will walk through the draft
 
 In this final section, we will clarify the roadmap and our ongoing collaboration methods.
 
-*   **5.1: Wrapping-up Go-Live vs. Phase 3 Functionality (5 mins)**
+*   **5.1: Wrapping-up Go-Live vs. Phase 3 Functionality**
     * A brief discussion to distinguish between the go-live scope and longer-term ambition based on the use case walkthrough.
     * Discussion
 
-*   **5.2: Agreeing Roadmap Checkpoints (10 mins)**
+*   **5.2: Agreeing Roadmap Checkpoints**
     *   We will agree on high-level checkpoints for 2025/2027 and confirm the upcoming workshop themes.
-    *   FMAR High-Level Roadmap slide
+    *   FMAR High-Level Roadmap slide (see below)
 
-*   **5.3: Introduction to our GitHub Collaboration Tool (15 mins)**
+<img width="1313" height="724" alt="image" src="https://github.com/user-attachments/assets/74f6f6a3-5304-4022-8b66-5b3a2c23776a" />
+
+
+
+
+
+*   **5.3: Introduction to our GitHub Collaboration Tool**
     *   A practical walkthrough of how to use our GitHub repository for asynchronous feedback, including how to raise Issues.
     *   We will be live-demoing the **[FMAR Design Artefacts Repository](https://github.com/elexon-data/Market-Facilitator/tree/main)** itself.
 
