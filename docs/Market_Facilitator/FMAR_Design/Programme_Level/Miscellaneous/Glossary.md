@@ -7,7 +7,7 @@
 | v1.1    | 2025-07-30 |Improved organisation and accessibility for workshop #1                                 | MB     |
 
 
-This document provides definitions for key terms used within the Flexibility Market Asset Register (FMAR) programme and its associated design artefacts.
+This is a live document providing definitions for key terms used within the Flexibility Market Asset Registration (FMAR) programme and its associated design artefacts.
 
 <strong>Asset and it's associated logical structures - Workshop #1 </strong>
 ---
