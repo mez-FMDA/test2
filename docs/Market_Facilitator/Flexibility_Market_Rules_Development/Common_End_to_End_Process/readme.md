@@ -5,11 +5,10 @@
 ## Aims
 As set out in the terms of reference, the scope of the work is to:
 
-* To provide a policy instrument for market facilitator to align business processes between System Operators, which is a prerequisite for any efficient technical solution like FMAR that aims to promote interoperability and market liquidity;
-
-* To produce a useful toolkit for FSPs on the user journey to signpost the latest version of basic inputs/outputs required for each market activity, and; 
-
-* Provide a foundation for a machine-readable conceptual model of the 'flexibility market' to support reasoning in the flexibility market catalogue
+* Provide feedback on the workstream’s canonical vocabulary and conceptual model used to describe business processes that make up a common end-to-end process for flexibility service delivery and facilitate stakeholder consensus on contested or ambiguous terms.
+* Provide continuous validation and feedback on how the end-to-end process differs across sub-markets (e.g., DNO Scheduled Utilisation vs. NESO Slow Reserve), based on experience and content produced from structured bilateral engagement undertaken by the workstream.
+* Provide input to improve the accessibility of workstream artefacts (e.g. glossaries, concept maps) intended for 
+Industry re-use, and the desired end state of such artefacts.
 
 
 ## Content
