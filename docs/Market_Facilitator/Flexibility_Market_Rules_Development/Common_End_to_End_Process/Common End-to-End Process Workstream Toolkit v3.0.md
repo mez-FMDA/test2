@@ -1,5 +1,15 @@
 # Common End to End process – Level 1 and Level 2 Definitions with Time Dimension for Workshop
 
+| Version | Date       | Changes                      | Author   |
+|---------|------------|------------------------------|----------|
+| v1.0  | 2025-05 | Shared over email post-E2E workshop #2 | MB   |
+| v1.5  | 2025-06 | Changed L1 Registration to Qualification following FDI workshop. Condensed R.1-R.3 Register User/Organisation/Related Entity to R.1 Register Counterparty, added V.5 Report on Service Delivery, following SME interviews. | MB   |
+| v2.0  | 2025-07-29 | Published in markdown on GitHub, linked in FlexNews pre- FMAR workshop #1| MB   |
+| v2.1  | 2025-08 | Addition of R.9 Register Baseline, addition of Data Object Inputs/Outputs, addition of Time Dimensions| MB   |
+| v3.0  | 2025-08 | Published in markdown on GitHub, shared in E2E Workshop pre-consultation| MB   |
+| v3.1  | 2025-08 | Inclusion of JSON for v3.0 building blocks| MB   |
+
+
 ## Level 1 – Market Phases
 
 1. **Exploration**  
@@ -145,3 +155,55 @@
 | S.2  | Process Payments | Transfer funds. | Payment due date |
 
 </details>
+
+
+
+
+<details>
+<summary><strong>Raw Glossary (JSON)</strong></summary>
+
+```json
+{
+  "Exploration": [
+    { "code": "E.1", "process": "Define Sub-Market" },
+    { "code": "E.2", "process": "Understand Markets" },
+    { "code": "E.3", "process": "Build Investment Case" },
+    { "code": "E.4", "process": "Develop Operational Strategy" }
+  ],
+  "Qualification": [
+    { "code": "Q.1", "process": "Register Counterparty" },
+    { "code": "Q.2", "process": "Qualify Counterparty (Commercially)" },
+    { "code": "Q.3", "process": "Sign Service Contract" },
+    { "code": "Q.4", "process": "Register Assets" },
+    { "code": "Q.5", "process": "Qualify Assets" },
+    { "code": "Q.6", "process": "Register Units" },
+    { "code": "Q.7", "process": "Qualify Units" },
+    { "code": "Q.8", "process": "Test Units" },
+    { "code": "Q.9", "process": "Register Baseline" }
+  ],
+  "Competition": [
+    { "code": "C.1", "process": "Communicate Buy Requirements" },
+    { "code": "C.2", "process": "Communicate Sell Requirements" },
+    { "code": "C.3", "process": "Clear Market" }
+  ],
+  "Scheduling & Dispatch": [
+    { "code": "D.1", "process": "Maintain Unit Availability" },
+    { "code": "D.2", "process": "Provide Operational Visibility" },
+    { "code": "D.3", "process": "Dispatch Units" },
+    { "code": "D.4", "process": "Dispatch Assets" },
+    { "code": "D.5", "process": "Cease Units" },
+    { "code": "D.6", "process": "Cease Assets" }
+  ],
+  "Verification": [
+    { "code": "V.1", "process": "Collate Verification Data" },
+    { "code": "V.2", "process": "Process Verification Data" },
+    { "code": "V.3", "process": "Communicate Performance" },
+    { "code": "V.4", "process": "Manage Disputes" },
+    { "code": "V.5", "process": "Report on Service Delivery" }
+  ],
+  "Settlement": [
+    { "code": "S.1", "process": "Generate Invoices" },
+    { "code": "S.2", "process": "Process Payments" }
+  ]
+}
+
