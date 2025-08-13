@@ -26,7 +26,7 @@ The following rules are currently under development
 
 ## Contribution & Code of Conduct
 
-All engagement in this repository is governed by our **[Contribution Guidelines and Code of Conduct](./CONTRIBUTING.md)**. We are committed to fostering an open, respectful, and collaborative environment.
+All engagement in this repository is governed by our **[Contribution Guidelines and Code of Conduct](https://github.com/elexon-data/Market-Facilitator/blob/main/docs/Market_Facilitator/FMAR_Design/Programme_Level/Miscellaneous/rules-of-engagement.md)**. We are committed to fostering an open, respectful, and collaborative environment.
 
 ## Licensing & security policy
 
