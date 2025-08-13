@@ -18,7 +18,7 @@ All engagement in this repository is governed by a professional code of conduct.
 
 ## Getting Started: Staying Informed
 
-- **Sign-up to GitHub**: Create a free account here to get started. Watch this quick 2 minute User Guide for further details about GitHub.
+- **Sign-up to GitHub**: Create a free account [here](https://github.com/) to get started. Watch this quick 2 minute [User Guide](https://www.youtube.com/watch?v=Y32Rm9WRHGU) for further details about GitHub.
 
 This repository is an active development space. To stay informed without being overwhelmed by notifications:
 
@@ -28,7 +28,7 @@ This repository is an active development space. To stay informed without being o
   - The [Discussions Page](https://github.com/elexon-data/Market-Facilitator/discussions): For ongoing conversations and clarifications.
   - The [Issues Page](https://github.com/elexon-data/Market-Facilitator/issues): For live issues.
 
-- **DO Subscribe to Official Channels**: All major artefact releases, consultation periods, and workshop announcements will be communicated via the official Flex News and other established Elexon email channels.
+- **DO Subscribe to Official Channels**: All major artefact releases, consultation periods, and workshop announcements will be communicated via the official [Flex News](https://www.elexon.co.uk/news-insights/subscribe-to-our-newsletter-and-circulars/) and other established Elexon email channels.
 
 ## How to Provide Feedback: Issues vs. Discussions
 
