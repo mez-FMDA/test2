@@ -2,6 +2,8 @@
 
 **See the latest updates on our work to define a common 'End to End process' for flexibility services**
 
+The latest building blocks can be found [here](https://github.com/elexon-data/Market-Facilitator/blob/main/docs/Market_Facilitator/Flexibility_Market_Rules_Development/Common_End_to_End_Process/Common%20End-to-End%20Process%20Workstream%20Toolkit%20v3.0.md)
+
 ## Aims
 As set out in the terms of reference, the scope of the work is to:
 
