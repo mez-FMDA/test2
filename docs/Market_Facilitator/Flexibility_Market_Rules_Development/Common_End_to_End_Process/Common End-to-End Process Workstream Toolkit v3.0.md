@@ -71,6 +71,85 @@
 
 </details>
 
+## Level 3 - Time Dimension
+
+<details>
+<summary><strong>Exploration</strong> (E.1–E.4)</summary>
+
+| Code | Building Block | Definition | Key Time Dimension(s) |
+|------|----------------|------------|----------------------|
+| E.1  | Define Sub-Market | Identify and describe the scope, operator, and objectives. | [TBD – future alignment milestone dates] |
+| E.2  | Understand Markets | Gather and analyse market design, rules, and price signals. | [TBD – market information publication schedule] |
+| E.3  | Build Investment Case | Assess costs, revenues, and risks. | [TBD – internal project deadlines] |
+| E.4  | Develop Operational Strategy | Formulate internal processes and readiness plans. | [TBD – depends on commercial team ↔ operations/control room interfaces] |
+
+</details>
+
+<details>
+<summary><strong>Qualification</strong> (Q.1–Q.9)</summary>
+
+| Code | Building Block | Definition | Key Time Dimension(s) |
+|------|----------------|------------|----------------------|
+| Q.1  | Register Counterparty | Submit entity info to be recognised. | Registration window close date (e.g., T–X before first GCT) |
+| Q.2  | Qualify Counterparty (Commercially) | Credit, compliance, insurance. | Qualification expiry date; requalification cycle |
+| Q.3  | Sign Service Contract | Execute binding agreements. | Contract signature deadline before GCT |
+| Q.4  | Register Assets | Provide asset info. | Asset registration deadline (T–X before service start) |
+| Q.5  | Qualify Assets | Demonstrate assets meet requirements. | Technical test completion deadline |
+| Q.6  | Register Units | Define market units. | Unit registration deadline before GCT |
+| Q.7  | Qualify Units | Test and verify unit performance. | Unit qualification deadline |
+| Q.8  | Test Units | Operational trials to confirm readiness. | Test completion deadline |
+| Q.9  | Register Baseline | Submit baseline profile. | Baseline submission deadline (T–X before first delivery MTU); updates locked at GOT |
+
+</details>
+
+<details>
+<summary><strong>Competition</strong> (C.1–C.3)</summary>
+
+| Code | Building Block | Definition | Key Time Dimension(s) |
+|------|----------------|------------|----------------------|
+| C.1  | Communicate Buy Requirements | Publish system needs. | Buy requirement publication time (T–X), GOT (Gate Open Time) |
+| C.2  | Communicate Sell Requirements | Submit offers/availability. | GOT, GCT (Gate Closure Time) |
+| C.3  | Clear Market | Match orders, determine prices. | GCT; market results publication time (T–X) |
+
+</details>
+
+<details>
+<summary><strong>Scheduling & Dispatch</strong> (D.1–D.6)</summary>
+
+| Code | Building Block | Definition | Key Time Dimension(s) |
+|------|----------------|------------|----------------------|
+| D.1  | Maintain Unit Availability | Ensure readiness. | [TBD – availability declaration windows] |
+| D.2  | Provide Operational Visibility | Share status data. | [TBD – telemetry update intervals] |
+| D.3  | Dispatch Units | Issue instructions. | Dispatch issue timestamp (MTU-aligned) |
+| D.4  | Dispatch Assets | Send commands to assets. | Dispatch execution timestamp (MTU-aligned) |
+| D.5  | Cease Units | Terminate operation. | Cease instruction time (MTU-aligned) |
+| D.6  | Cease Assets | Stop service delivery. | Cease execution time (MTU-aligned) |
+
+</details>
+
+<details>
+<summary><strong>Verification</strong> (V.1–V.6)</summary>
+
+| Code | Building Block | Definition | Key Time Dimension(s) |
+|------|----------------|------------|----------------------|
+| V.1  | Collate Verification Data | Gather performance data. | [TBD – data submission deadline post-delivery] |
+| V.2  | Process Verification Data | Analyse delivery. | Verification processing window |
+| V.3  | Communicate Performance | Report outcomes. | Performance report date (i.e., T+D) |
+| V.4  | Communicate Penalty | Report penalties. | Penalty report date|
+| V.5  | Manage Disputes | Resolve verification disagreements. | Dispute submission window |
+| V.6  | Report on Service Delivery | Regulatory/contractual reports. | Regulatory reporting date |
+
+</details>
+
+<details>
+<summary><strong>Settlement</strong> (S.1–S.2)</summary>
+
+| Code | Building Block | Definition | Key Time Dimension(s) |
+|------|----------------|------------|----------------------|
+| S.1  | Generate Invoices | Prepare invoices. | Invoicing date |
+| S.2  | Process Payments | Transfer funds. | Payment due date |
+
+</details>
 
 
 
